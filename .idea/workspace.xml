@@ -4,11 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4b677f8f-b1bf-432f-8422-b4a6a6cde4b3" name="Changes" comment="Deleting 1 of the .idea folder">
-      <change beforePath="$PROJECT_DIR$/bidblitz/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/bidblitz/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bidblitz/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bidblitz/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bidblitz/.idea/misc.xml" beforeDir="false" />
+    <list default="true" id="4b677f8f-b1bf-432f-8422-b4a6a6cde4b3" name="Changes" comment="Relocating the .idea folder and patching the JDK JDK isn't specified for the program module error.">
+      <change beforePath="$PROJECT_DIR$/bidblitz/original-project-bidblitz/assignment-1-individual-quoc-huy2004/out/production/assignment-1-individual-quoc-huy2004/BidBlitz/Auction.class" beforeDir="false" afterPath="$PROJECT_DIR$/bidblitz/original-project-bidblitz/assignment-1-individual-quoc-huy2004/out/production/assignment-1-individual-quoc-huy2004/BidBlitz/Auction.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bidblitz/original-project-bidblitz/assignment-1-individual-quoc-huy2004/out/production/assignment-1-individual-quoc-huy2004/BidBlitz/AuctionManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/bidblitz/original-project-bidblitz/assignment-1-individual-quoc-huy2004/out/production/assignment-1-individual-quoc-huy2004/BidBlitz/AuctionManager.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bidblitz/original-project-bidblitz/assignment-1-individual-quoc-huy2004/out/production/assignment-1-individual-quoc-huy2004/BidBlitz/AuctionManagerImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/bidblitz/original-project-bidblitz/assignment-1-individual-quoc-huy2004/out/production/assignment-1-individual-quoc-huy2004/BidBlitz/AuctionManagerImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bidblitz/original-project-bidblitz/assignment-1-individual-quoc-huy2004/out/production/assignment-1-individual-quoc-huy2004/BidBlitz/Category.class" beforeDir="false" afterPath="$PROJECT_DIR$/bidblitz/original-project-bidblitz/assignment-1-individual-quoc-huy2004/out/production/assignment-1-individual-quoc-huy2004/BidBlitz/Category.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bidblitz/original-project-bidblitz/assignment-1-individual-quoc-huy2004/out/production/assignment-1-individual-quoc-huy2004/BidBlitz/DataLoader.class" beforeDir="false" afterPath="$PROJECT_DIR$/bidblitz/original-project-bidblitz/assignment-1-individual-quoc-huy2004/out/production/assignment-1-individual-quoc-huy2004/BidBlitz/DataLoader.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bidblitz/original-project-bidblitz/assignment-1-individual-quoc-huy2004/out/production/assignment-1-individual-quoc-huy2004/BidBlitz/DataSaver.class" beforeDir="false" afterPath="$PROJECT_DIR$/bidblitz/original-project-bidblitz/assignment-1-individual-quoc-huy2004/out/production/assignment-1-individual-quoc-huy2004/BidBlitz/DataSaver.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bidblitz/original-project-bidblitz/assignment-1-individual-quoc-huy2004/out/production/assignment-1-individual-quoc-huy2004/BidBlitz/Item.class" beforeDir="false" afterPath="$PROJECT_DIR$/bidblitz/original-project-bidblitz/assignment-1-individual-quoc-huy2004/out/production/assignment-1-individual-quoc-huy2004/BidBlitz/Item.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bidblitz/original-project-bidblitz/assignment-1-individual-quoc-huy2004/out/production/assignment-1-individual-quoc-huy2004/BidBlitz/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/bidblitz/original-project-bidblitz/assignment-1-individual-quoc-huy2004/out/production/assignment-1-individual-quoc-huy2004/BidBlitz/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bidblitz/original-project-bidblitz/assignment-1-individual-quoc-huy2004/out/production/assignment-1-individual-quoc-huy2004/BidBlitz/Payment.class" beforeDir="false" afterPath="$PROJECT_DIR$/bidblitz/original-project-bidblitz/assignment-1-individual-quoc-huy2004/out/production/assignment-1-individual-quoc-huy2004/BidBlitz/Payment.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bidblitz/original-project-bidblitz/assignment-1-individual-quoc-huy2004/out/production/assignment-1-individual-quoc-huy2004/BidBlitz/Person.class" beforeDir="false" afterPath="$PROJECT_DIR$/bidblitz/original-project-bidblitz/assignment-1-individual-quoc-huy2004/out/production/assignment-1-individual-quoc-huy2004/BidBlitz/Person.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bidblitz/original-project-bidblitz/assignment-1-individual-quoc-huy2004/out/production/assignment-1-individual-quoc-huy2004/BidBlitz/Status/AuctionStatus.class" beforeDir="false" afterPath="$PROJECT_DIR$/bidblitz/original-project-bidblitz/assignment-1-individual-quoc-huy2004/out/production/assignment-1-individual-quoc-huy2004/BidBlitz/Status/AuctionStatus.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bidblitz/original-project-bidblitz/assignment-1-individual-quoc-huy2004/out/production/assignment-1-individual-quoc-huy2004/BidBlitz/Status/PaymentStatus.class" beforeDir="false" afterPath="$PROJECT_DIR$/bidblitz/original-project-bidblitz/assignment-1-individual-quoc-huy2004/out/production/assignment-1-individual-quoc-huy2004/BidBlitz/Status/PaymentStatus.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bidblitz/original-project-bidblitz/assignment-1-individual-quoc-huy2004/out/production/assignment-1-individual-quoc-huy2004/BidBlitz/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/bidblitz/original-project-bidblitz/assignment-1-individual-quoc-huy2004/out/production/assignment-1-individual-quoc-huy2004/BidBlitz/User.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,6 +79,11 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Le Huy Hoang\OneDrive\Documents\further-programming-intellij-idea-project\assignment-works\project-bidblitz\.idea" />
+    </key>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -94,12 +108,21 @@
       <option name="project" value="LOCAL" />
       <updated>1776760984543</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Relocating the .idea folder and patching the JDK JDK isn't specified for the program module error.">
+      <option name="closed" value="true" />
+      <created>1776761302809</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1776761302809</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Publish project bidblitz files from local device." />
     <MESSAGE value="Deleting 1 of the .idea folder" />
-    <option name="LAST_COMMIT_MESSAGE" value="Deleting 1 of the .idea folder" />
+    <MESSAGE value="Relocating the .idea folder and patching the JDK JDK isn't specified for the program module error." />
+    <option name="LAST_COMMIT_MESSAGE" value="Relocating the .idea folder and patching the JDK JDK isn't specified for the program module error." />
   </component>
 </project>
