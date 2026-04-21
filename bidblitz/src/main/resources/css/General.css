@@ -1,0 +1,52 @@
+.navigationBar {
+    -fx-background-color: #57A0D2;
+    -fx-spacing: 52px;
+}
+
+.navigationButton {
+    -fx-cursor: hand;
+    -fx-background-color: transparent;
+    -fx-text-fill: black;
+    -fx-background-insets: 0;
+    -fx-background-radius: 0;
+    -fx-padding: 5 15 5 15;
+    -fx-font-size: 21px;
+    -fx-font-weight: 900;
+}
+
+.navigationButton:hover, .navigationButton:focused {
+    -fx-background-color: #E4CD05;
+    -fx-text-fill: #00674F;
+}
+
+.navigationButton:focused{
+
+    -fx-background-insets: 0, 1, 2;
+    -fx-background-radius: 5, 4, 3;
+
+}
+
+.navigationButton:pressed {
+    -fx-background-color: #FF7F50, transparent;
+    -fx-text-fill: darkblue;
+    -fx-underline: true;
+    -fx-font-weight: 900;
+}
+
+.navigationButton:pressed, .navigationButton:armed {
+    -fx-scale-x: 1.0;
+    -fx-scale-y: 1.0;
+}
+
+.searchBar{
+
+    -fx-pref-width: 360px;
+    -fx-min-width: 200px;
+
+}
+
+.homeButton{
+
+ -fx-text-fill: #FF7F50;
+
+}
