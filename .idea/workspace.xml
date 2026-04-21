@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4b677f8f-b1bf-432f-8422-b4a6a6cde4b3" name="Changes" comment="Reuploading process (Delete phase)" />
+    <list default="true" id="4b677f8f-b1bf-432f-8422-b4a6a6cde4b3" name="Changes" comment="Reuploading original bidblitz file">
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bidblitz/original-project-bidblitz/ReportTemplate.pdf" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -120,7 +123,15 @@
       <option name="project" value="LOCAL" />
       <updated>1776762113104</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Reuploading original bidblitz file">
+      <option name="closed" value="true" />
+      <created>1776762253230</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1776762253230</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -129,6 +140,7 @@
     <MESSAGE value="Relocating the .idea folder and patching the JDK JDK isn't specified for the program module error." />
     <MESSAGE value="Uploading the phase 1 bidblitz system (Original version)" />
     <MESSAGE value="Reuploading process (Delete phase)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Reuploading process (Delete phase)" />
+    <MESSAGE value="Reuploading original bidblitz file" />
+    <option name="LAST_COMMIT_MESSAGE" value="Reuploading original bidblitz file" />
   </component>
 </project>
