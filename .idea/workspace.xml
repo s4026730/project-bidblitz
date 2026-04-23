@@ -4,9 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4b677f8f-b1bf-432f-8422-b4a6a6cde4b3" name="Changes" comment="Reuploading original bidblitz file">
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bidblitz/original-project-bidblitz/ReportTemplate.pdf" beforeDir="false" />
+    <list default="true" id="4b677f8f-b1bf-432f-8422-b4a6a6cde4b3" name="Changes" comment="Updating vcs files.">
+      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bidblitz/src/main/resources/com/example/bidblitz/guest-about-us-view.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bidblitz/src/main/resources/com/example/bidblitz/guest-auction-view.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bidblitz/src/main/resources/com/example/bidblitz/guest-category-view.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bidblitz/src/main/resources/com/example/bidblitz/guest-help-view.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bidblitz/src/main/resources/com/example/bidblitz/user-main-view.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bidblitz/src/main/resources/com/example/bidblitz/user-transaction-history-view.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bidblitz/src/main/java/com/example/bidblitz/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/bidblitz/src/main/java/com/example/bidblitz/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bidblitz/src/main/java/com/example/bidblitz/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/bidblitz/src/main/java/com/example/bidblitz/MainController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bidblitz/src/main/resources/com/example/bidblitz/guest-main-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/bidblitz/src/main/resources/com/example/bidblitz/guest-main-view.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,12 +33,12 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="ROOT_SYNC" value="SYNC" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "s4026730"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;s4026730&quot;
   }
-}]]></component>
+}</component>
   <component name="GithubPullRequestsUISettings">{
   &quot;selectedUrlAndAccountId&quot;: {
     &quot;url&quot;: &quot;https://github.com/s4026730/project-bidblitz.git&quot;,
@@ -51,27 +60,28 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.Launcher.executor": "Run",
-    "Application.Main.executor": "Run",
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "main",
-    "ignore.virus.scanning.warn.message": "true",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/Le Huy Hoang/OneDrive/Documents/further-programming-intellij-idea-project/assignment-works/project-bidblitz",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.0",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.Launcher.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Le Huy Hoang/OneDrive/Documents/further-programming-intellij-idea-project/assignment-works/project-bidblitz&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Le Huy Hoang\OneDrive\Documents\further-programming-intellij-idea-project\assignment-works\project-bidblitz" />
       <recent name="C:\Users\Le Huy Hoang\OneDrive\Documents\further-programming-intellij-idea-project\assignment-works\project-bidblitz\.idea" />
     </key>
   </component>
@@ -131,7 +141,15 @@
       <option name="project" value="LOCAL" />
       <updated>1776762253230</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Updating vcs files.">
+      <option name="closed" value="true" />
+      <created>1776763729123</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1776763729123</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -141,6 +159,7 @@
     <MESSAGE value="Uploading the phase 1 bidblitz system (Original version)" />
     <MESSAGE value="Reuploading process (Delete phase)" />
     <MESSAGE value="Reuploading original bidblitz file" />
-    <option name="LAST_COMMIT_MESSAGE" value="Reuploading original bidblitz file" />
+    <MESSAGE value="Updating vcs files." />
+    <option name="LAST_COMMIT_MESSAGE" value="Updating vcs files." />
   </component>
 </project>
