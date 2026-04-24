@@ -2,8 +2,6 @@ package com.example.bidblitz;
 
 import java.io.IOException;
 import java.io.InputStream;
-import java.util.HashMap;
-
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
@@ -18,7 +16,7 @@ public class Main extends Application {
     @Override
     public void start(Stage stage) throws IOException {
         FXMLLoader fxmlLoader = new FXMLLoader(Main.class.getResource("guest-main-view.fxml"));
-        Scene mainScene = new Scene(fxmlLoader.load(), 1710, 1000);
+        Scene mainScene = new Scene(fxmlLoader.load());
         mainScene.getStylesheets().add(getClass().getResource("/css/General.css").toExternalForm());
         InputStream iconStream = getClass().getResourceAsStream("/applicationImages/bidblitz-icon.png");
 

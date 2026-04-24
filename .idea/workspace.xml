@@ -4,11 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4b677f8f-b1bf-432f-8422-b4a6a6cde4b3" name="Changes" comment="Update Project BidBlitz Maven File (workspace.xml)">
+    <list default="true" id="4b677f8f-b1bf-432f-8422-b4a6a6cde4b3" name="Changes" comment="Minor updates on the contents of main and home files.">
       <change afterPath="$PROJECT_DIR$/bidblitz/src/main/resources/com/example/bidblitz/user-main-view.fxml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/bidblitz/src/main/resources/com/example/bidblitz/user-transaction-history-view.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bidblitz/src/main/java/com/example/bidblitz/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/bidblitz/src/main/java/com/example/bidblitz/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bidblitz/src/main/resources/com/example/bidblitz/guest-about-us-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/bidblitz/src/main/resources/com/example/bidblitz/guest-about-us-view.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bidblitz/src/main/resources/com/example/bidblitz/guest-auction-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/bidblitz/src/main/resources/com/example/bidblitz/guest-auction-view.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bidblitz/src/main/resources/com/example/bidblitz/guest-category-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/bidblitz/src/main/resources/com/example/bidblitz/guest-category-view.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bidblitz/src/main/resources/com/example/bidblitz/guest-help-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/bidblitz/src/main/resources/com/example/bidblitz/guest-help-view.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bidblitz/src/main/resources/com/example/bidblitz/guest-main-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/bidblitz/src/main/resources/com/example/bidblitz/guest-main-view.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -159,7 +163,15 @@
       <option name="project" value="LOCAL" />
       <updated>1776956808537</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Minor updates on the contents of main and home files.">
+      <option name="closed" value="true" />
+      <created>1776958014863</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1776958014863</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -172,6 +184,7 @@
     <MESSAGE value="Updating vcs files." />
     <MESSAGE value="Creating application icon and the project's README File. Adding all guest pages except sign in and sign up pages and it's navigation bar mechanism and layout." />
     <MESSAGE value="Update Project BidBlitz Maven File (workspace.xml)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update Project BidBlitz Maven File (workspace.xml)" />
+    <MESSAGE value="Minor updates on the contents of main and home files." />
+    <option name="LAST_COMMIT_MESSAGE" value="Minor updates on the contents of main and home files." />
   </component>
 </project>
