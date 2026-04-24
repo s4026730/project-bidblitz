@@ -1,33 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.layout.BorderPane?>
+<?import java.net.URL?>
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.control.ToolBar?>
+<?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.text.Font?>
-<?import javafx.scene.control.Label?>
-<?import java.net.URL?>
 
-<BorderPane prefHeight="1000" prefWidth="1710" xmlns:fx="http://javafx.com/fxml"
+<BorderPane prefHeight="1000" prefWidth="1710" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/25"
             fx:controller="com.example.bidblitz.MainController">
     <Button styleClass="navigationButton"></Button>
     <top>
         <ToolBar prefHeight="40.0" prefWidth="200.0" styleClass="navigationBar">
             <items>
-                <Button mnemonicParsing="false" text="BIDBLITZ" styleClass="navigationButton, homeButton"
+                <Button mnemonicParsing="false" styleClass="navigationButton, homeButton" text="BIDBLITZ"
                         onAction="#switchToGuestHome">
                     <font>
                         <Font size="20.0" />
                     </font>
                 </Button>
-                <Button layoutX="10.0" layoutY="12.0" mnemonicParsing="false" text="AUCTION" styleClass="navigationButton"
+                <Button layoutX="10.0" layoutY="12.0" mnemonicParsing="false" styleClass="navigationButton" text="AUCTION"
                         onAction="#switchToGuestAuction">
                     <font>
                         <Font size="20.0" />
                     </font>
                 </Button>
-                <Button layoutX="66.0" layoutY="12.0" mnemonicParsing="false" text="CATEGORY" styleClass="navigationButton"
+                <Button layoutX="66.0" layoutY="12.0" mnemonicParsing="false" styleClass="navigationButton" text="CATEGORY"
                         onAction="#switchToGuestCategory">
                     <font>
                         <Font size="20.0" />
@@ -38,18 +38,18 @@
                         <Font size="20.0" />
                     </font>
                 </TextField>
-                <Button layoutX="122.0" layoutY="12.0" mnemonicParsing="false" text="Button" styleClass="navigationButton">
+                <Button layoutX="122.0" layoutY="12.0" mnemonicParsing="false" styleClass="navigationButton" text="Button">
                     <font>
                         <Font size="20.0" />
                     </font>
                 </Button>
-                <Button layoutX="195.0" layoutY="12.0" mnemonicParsing="false" text="HELP" styleClass="navigationButton"
+                <Button layoutX="195.0" layoutY="12.0" mnemonicParsing="false" styleClass="navigationButton" text="HELP"
                         onAction="#switchToGuestHelp">
                     <font>
                         <Font size="20.0" />
                     </font>
                 </Button>
-                <Button layoutX="251.0" layoutY="12.0" mnemonicParsing="false" text="ABOUT US" styleClass="navigationButton"
+                <Button layoutX="251.0" layoutY="12.0" mnemonicParsing="false" styleClass="navigationButton" text="ABOUT US"
                         onAction="#switchToGuestAboutUs">
                     <font>
                         <Font size="20.0" />
@@ -74,10 +74,13 @@
         </ToolBar>
     </top>
 
-    <center><Label>CATEGORY:</Label></center>
+    <center>
+        <Label>SIGN IN</Label>
+    </center>
 
-    <bottom></bottom>
+    <bottom>
 
+    </bottom>
     <stylesheets>
         <URL value="@../../../css/General.css" />
     </stylesheets>

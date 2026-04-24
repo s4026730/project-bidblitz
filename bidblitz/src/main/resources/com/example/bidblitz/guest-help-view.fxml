@@ -55,12 +55,14 @@
                         <Font size="20.0" />
                     </font>
                 </Button>
-                <Button layoutX="473.0" layoutY="10.0" mnemonicParsing="false" text="SIGN IN" styleClass="navigationButton">
+                <Button layoutX="473.0" layoutY="10.0" mnemonicParsing="false" styleClass="navigationButton" text="SIGN IN"
+                        onAction="#switchToGuestSignIn">
                     <font>
                         <Font size="20.0" />
                     </font>
                 </Button>
-                <Button layoutX="587.0" layoutY="10.0" mnemonicParsing="false" text="SIGN UP" styleClass="navigationButton">
+                <Button layoutX="587.0" layoutY="10.0" mnemonicParsing="false" styleClass="navigationButton" text="SIGN UP"
+                        onAction="#switchToGuestSignUp">
                     <font>
                         <Font size="20.0" />
                     </font>

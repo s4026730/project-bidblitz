@@ -104,7 +104,7 @@ public class MainController {
 
     public void switchToGuestSignIn(ActionEvent event) throws IOException{
         try{
-            FXMLLoader fxmlLoader = new FXMLLoader(Main.class.getResource(""));
+            FXMLLoader fxmlLoader = new FXMLLoader(Main.class.getResource("sign-in-view.fxml"));
             Parent root = fxmlLoader.load();
             stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
             demonstratedScene = new Scene(root, 1710, 1000);
@@ -120,7 +120,7 @@ public class MainController {
 
     public void switchToGuestSignUp(ActionEvent event) throws IOException{
         try{
-            FXMLLoader fxmlLoader = new FXMLLoader(Main.class.getResource(""));
+            FXMLLoader fxmlLoader = new FXMLLoader(Main.class.getResource("sign-up-view.fxml"));
             Parent root = fxmlLoader.load();
             stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
             demonstratedScene = new Scene(root, 1710, 1000);
