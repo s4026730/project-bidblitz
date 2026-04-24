@@ -12,24 +12,24 @@
 
 <BorderPane prefHeight="1000" prefWidth="1710" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/25"
             fx:controller="com.example.bidblitz.MainController">
-    <stylesheets>
-        <URL value="@../../../css/General.css" />
-    </stylesheets>
-
+    <Button styleClass="navigationButton"></Button>
     <top>
         <ToolBar prefHeight="40.0" prefWidth="200.0" styleClass="navigationBar">
             <items>
-                <Button mnemonicParsing="false" onAction="#switchToGuestHome" styleClass="navigationButton, homeButton" text="BIDBLITZ">
+                <Button mnemonicParsing="false" styleClass="navigationButton, homeButton" text="BIDBLITZ"
+                        onAction="#switchToGuestHome">
                     <font>
                         <Font size="20.0" />
                     </font>
                 </Button>
-                <Button layoutX="10.0" layoutY="12.0" mnemonicParsing="false" onAction="#switchToGuestAuction" styleClass="navigationButton" text="AUCTION">
+                <Button layoutX="10.0" layoutY="12.0" mnemonicParsing="false" styleClass="navigationButton" text="AUCTION"
+                        onAction="#switchToGuestAuction">
                     <font>
                         <Font size="20.0" />
                     </font>
                 </Button>
-                <Button layoutX="66.0" layoutY="12.0" mnemonicParsing="false" onAction="#switchToGuestCategory" styleClass="navigationButton" text="CATEGORY">
+                <Button layoutX="66.0" layoutY="12.0" mnemonicParsing="false" styleClass="navigationButton" text="CATEGORY"
+                        onAction="#switchToGuestCategory">
                     <font>
                         <Font size="20.0" />
                     </font>
@@ -44,12 +44,14 @@
                         <Font size="20.0" />
                     </font>
                 </Button>
-                <Button layoutX="195.0" layoutY="12.0" mnemonicParsing="false" onAction="#switchToGuestHelp" styleClass="navigationButton" text="HELP">
+                <Button layoutX="195.0" layoutY="12.0" mnemonicParsing="false" styleClass="navigationButton" text="HELP"
+                        onAction="#switchToGuestHelp">
                     <font>
                         <Font size="20.0" />
                     </font>
                 </Button>
-                <Button layoutX="251.0" layoutY="12.0" mnemonicParsing="false" onAction="#switchToGuestAboutUs" styleClass="navigationButton" text="ABOUT US">
+                <Button layoutX="251.0" layoutY="12.0" mnemonicParsing="false" styleClass="navigationButton" text="ABOUT US"
+                        onAction="#switchToGuestAboutUs">
                     <font>
                         <Font size="20.0" />
                     </font>
@@ -76,5 +78,7 @@
     </center>
 
     <bottom><Label>BOTTOM:</Label></bottom>
-
+    <stylesheets>
+        <URL value="@../../../css/General.css" />
+    </stylesheets>
 </BorderPane>

@@ -11,10 +11,7 @@
 <?import java.net.URL?>
 <BorderPane prefHeight="1000" prefWidth="1710" xmlns:fx="http://javafx.com/fxml"
             fx:controller="com.example.bidblitz.MainController">
-    <stylesheets>
-        <URL value="@../../../css/General.css" />
-    </stylesheets>
-
+    <Button styleClass="navigationButton"></Button>
     <top>
         <ToolBar prefHeight="40.0" prefWidth="200.0" styleClass="navigationBar">
             <items>
@@ -79,4 +76,7 @@
 
     <bottom></bottom>
 
+    <stylesheets>
+        <URL value="@../../../css/General.css" />
+    </stylesheets>
 </BorderPane>

@@ -10,12 +10,9 @@
 <?import javafx.scene.control.Label?>
 <?import java.net.URL?>
 
-<BorderPane prefHeight="1000" prefWidth="1710.0" xmlns:fx="http://javafx.com/fxml"
+<BorderPane prefHeight="1000" prefWidth="1710" xmlns:fx="http://javafx.com/fxml"
             fx:controller="com.example.bidblitz.MainController">
-    <stylesheets>
-        <URL value="@../../../css/General.css" />
-    </stylesheets>
-
+    <Button styleClass="navigationButton"></Button>
     <top>
         <ToolBar prefHeight="40.0" prefWidth="200.0" styleClass="navigationBar">
             <items>
@@ -76,8 +73,11 @@
         </ToolBar>
     </top>
 
-    <center><Label>AbOUT US:</Label></center>
+    <center><Label>ABOUT US:</Label></center>
 
     <bottom></bottom>
 
+    <stylesheets>
+        <URL value="@../../../css/General.css" />
+    </stylesheets>
 </BorderPane>

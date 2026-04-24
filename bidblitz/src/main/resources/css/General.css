@@ -14,7 +14,7 @@
     -fx-font-weight: 900;
 }
 
-.navigationButton:hover, .navigationButton:focused {
+.navigationButton:hover, .navigationButton:focused{
     -fx-background-color: #E4CD05;
     -fx-text-fill: #00674F;
 }
@@ -33,7 +33,7 @@
     -fx-font-weight: 900;
 }
 
-.navigationButton:pressed, .navigationButton:armed {
+.navigationButton:pressed {
     -fx-scale-x: 1.0;
     -fx-scale-y: 1.0;
 }
@@ -49,4 +49,9 @@
 
  -fx-text-fill: #FF7F50;
 
+}
+
+.lightPageLayout{
+
+    -fx-background-color: #DBE2E9;
 }
