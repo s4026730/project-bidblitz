@@ -66,7 +66,7 @@
 
 /* Sign Up and Sign In Pages Style Codes */
 
-Text, #signupLabel, #signupUsername, #signupEmail, #signupPassword{
+Text, #signupLabel, #signupUsername, #signupEmail, #signupPassword, #signinLabel, #signinUsername, #signinPassword{
 
     -fx-text-fill: black;
     -fx-font-weight: 900;
@@ -74,7 +74,7 @@ Text, #signupLabel, #signupUsername, #signupEmail, #signupPassword{
 
 }
 
-.signupTextfield{
+.signupTextfield, .signinTextfield{
 
     -fx-text-fill black;
     -fx-font-size: 25px;
@@ -83,7 +83,7 @@ Text, #signupLabel, #signupUsername, #signupEmail, #signupPassword{
 
 }
 
-#signupButton, #signupGoogleButton{
+#signupButton, #signupGoogleButton, #signinButton, #signinGoogleButton{
     -fx-cursor: hand;
     -fx-background-insets: 0;
     -fx-background-radius: 0;
@@ -104,14 +104,14 @@ Text, #signupLabel, #signupUsername, #signupEmail, #signupPassword{
 
 }
 
-#signupButton{
+#signupButton, #signinButton{
 
     -fx-text-fill: white;
     -fx-background-color: #57A0D2;
 
 }
 
-#signupGoogleButton{
+#signupGoogleButton, #signinGoogleButton{
 
     -fx-underline: false;
     -fx-background-color: white;
@@ -128,19 +128,20 @@ Text, #signupLabel, #signupUsername, #signupEmail, #signupPassword{
       white-space: nowrap;*/
 }
 
-#signupButton:hover, #signupButton:focused, #signupGoogleButton:hover, #signupGoogleButton:focused{
+#signupButton:hover, #signupButton:focused, #signupGoogleButton:hover, #signupGoogleButton:focused,
+#signinButton:hover, #signinButton:focused, #signinGoogleButton:hover, #signinGoogleButton:focused{
     -fx-background-color: #E4CD05;
     -fx-text-fill: #00674F;
 }
 
-#signupButton:focused, #signupGoogleButton:focused{
+#signupButton:focused, #signupGoogleButton:focused, #signinButton:focused, #signinGoogleButton:focused{
 
     -fx-background-insets: 0, 1, 2;
     -fx-background-radius: 5, 4, 3;
 
 }
 
-#signupButton:pressed, #signupGoogleButton:pressed{
+#signupButton:pressed, #signupGoogleButton:pressed, #signinButton:pressed, #signinGoogleButton:pressed{
     -fx-background-color: #FF7F50, transparent;
     -fx-text-fill: darkblue;
     -fx-underline: true;

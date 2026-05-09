@@ -1,13 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.AnchorPane?>
 <?import java.net.URL?>
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
 <?import javafx.scene.control.Label?>
-<?import javafx.scene.control.TextField?>
 <?import javafx.scene.control.ToolBar?>
-<?import javafx.scene.layout.BorderPane?>
-<?import javafx.scene.text.Font?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.control.TextField?>
 
 <BorderPane prefHeight="1000" prefWidth="1710" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/25"
             fx:controller="com.example.bidblitz.MainController">
@@ -32,7 +36,22 @@
     </top>
 
     <center>
-        <Label>SIGN IN</Label>
+        <AnchorPane>
+            <Label fx:id="signinLabel" layoutX="633.0" layoutY="7.0" text="Sign In your account:" />
+            <Label fx:id="signinUsername" layoutX="527.0" layoutY="65.0" text="Username:" />
+            <Label fx:id="signinPassword" layoutX="527.0" layoutY="205.0" text="Password" />
+            <TextField layoutX="527.0" layoutY="123.0" styleClass="signinTextfield" />
+            <TextField layoutX="527.0" layoutY="263.0" styleClass="signinTextfield" />
+            <Button fx:id="signinButton" layoutX="527.0" layoutY="529.0" mnemonicParsing="false" text="Sign In" />
+            <Text layoutX="799.0" layoutY="654.0" strokeType="OUTSIDE" strokeWidth="0.0" text="OR" />
+            <Hyperlink fx:id="signinGoogleButton" layoutX="527.0" layoutY="689.0" text="Sign In With Google" textAlignment="CENTER">
+                <graphic>
+                    <ImageView fitHeight="40.0" fitWidth="40.0" preserveRatio="true" smooth="true" styleClass="googleIcon">
+                        <Image url="@../../../image/google-round-icon.png" />
+                    </ImageView>
+                </graphic>
+            </Hyperlink>
+        </AnchorPane>
     </center>
 
     <bottom>
