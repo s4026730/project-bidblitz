@@ -1,3 +1,5 @@
+/* Navigation Bar Style Codes */
+
 .navigationBar {
     -fx-background-color: #57A0D2;
     -fx-spacing: 52px;
@@ -31,9 +33,6 @@
     -fx-text-fill: darkblue;
     -fx-underline: true;
     -fx-font-weight: 900;
-}
-
-.navigationButton:pressed {
     -fx-scale-x: 1.0;
     -fx-scale-y: 1.0;
 }
@@ -63,20 +62,16 @@
     -fx-background-color: #DBE2E9;
 }
 
+
+
+/* Sign Up and Sign In Pages Style Codes */
+
 Text, #signupLabel, #signupUsername, #signupEmail, #signupPassword{
 
     -fx-text-fill: black;
     -fx-font-weight: 900;
     -fx-font-size: 40px;
 
-}
-
-.googleIcon{
-
-    -fx-fit-height: 40px;
-    -fx-preserve-ratio: true;
-    -fx-smooth: true;
-    -fx-padding: 0 20;
 }
 
 .signupTextfield{
@@ -110,6 +105,7 @@ Text, #signupLabel, #signupUsername, #signupEmail, #signupPassword{
 }
 
 #signupButton{
+
     -fx-text-fill: white;
     -fx-background-color: #57A0D2;
 
@@ -129,32 +125,28 @@ Text, #signupLabel, #signupUsername, #signupEmail, #signupPassword{
       -webkit-transition: background-color .218s, border-color .218s, box-shadow .218s;
       transition: background-color .218s, border-color .218s, box-shadow .218s;
       vertical-align: middle;
-      white-space: nowrap;
-      width: auto;
-      max-width: 400px;
-      min-width: min-content;*/
+      white-space: nowrap;*/
 }
 
-#signupButton:hover, #signupButton:focused{
+#signupButton:hover, #signupButton:focused, #signupGoogleButton:hover, #signupGoogleButton:focused{
     -fx-background-color: #E4CD05;
     -fx-text-fill: #00674F;
 }
 
-#signupButton:focused{
+#signupButton:focused, #signupGoogleButton:focused{
 
     -fx-background-insets: 0, 1, 2;
     -fx-background-radius: 5, 4, 3;
 
 }
 
-#signupButton:pressed {
+#signupButton:pressed, #signupGoogleButton:pressed{
     -fx-background-color: #FF7F50, transparent;
     -fx-text-fill: darkblue;
     -fx-underline: true;
     -fx-font-weight: 900;
-}
-
-#signupButton:pressed {
+    -fx-background-insets: 0, 1;
     -fx-scale-x: 1.0;
     -fx-scale-y: 1.0;
 }
+
