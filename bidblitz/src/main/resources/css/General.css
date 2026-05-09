@@ -63,3 +63,18 @@
     -fx-background-color: #DBE2E9;
 }
 
+Text, #signupLabel, #signupUsername, #signupEmail, #signupPassword{
+
+    -fx-text-fill: black;
+    -fx-font-weight: 900;
+    -fx-font-size: 40px;
+
+}
+
+.googleIcon{
+
+    -fx-fit-height: 40px;
+    -fx-preserve-ratio: true;
+    -fx-smooth: true;
+    -fx-padding: 0 20;
+}
