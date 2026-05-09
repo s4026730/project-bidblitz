@@ -6,67 +6,25 @@
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.control.ToolBar?>
+<?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
 
-<BorderPane prefHeight="1000" prefWidth="1710" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/25"
-            fx:controller="com.example.bidblitz.MainController">
-    <Button styleClass="navigationButton"></Button>
+<BorderPane prefHeight="1000" prefWidth="1710" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.bidblitz.MainController">
+    <Button styleClass="navigationButton" />
     <top>
         <ToolBar prefHeight="40.0" prefWidth="200.0" styleClass="navigationBar">
             <items>
-                <Button mnemonicParsing="false" styleClass="navigationButton, homeButton" text="BIDBLITZ"
-                        onAction="#switchToGuestHome">
-                    <font>
-                        <Font size="20.0" />
-                    </font>
-                </Button>
-                <Button layoutX="10.0" layoutY="12.0" mnemonicParsing="false" styleClass="navigationButton" text="AUCTION"
-                        onAction="#switchToGuestAuction">
-                    <font>
-                        <Font size="20.0" />
-                    </font>
-                </Button>
-                <Button layoutX="66.0" layoutY="12.0" mnemonicParsing="false" styleClass="navigationButton" text="CATEGORY"
-                        onAction="#switchToGuestCategory">
-                    <font>
-                        <Font size="20.0" />
-                    </font>
-                </Button>
-                <TextField promptText="Search Bar" styleClass="searchBar">
-                    <font>
-                        <Font size="20.0" />
-                    </font>
-                </TextField>
-                <Button layoutX="122.0" layoutY="12.0" mnemonicParsing="false" styleClass="navigationButton" text="Button">
-                    <font>
-                        <Font size="20.0" />
-                    </font>
-                </Button>
-                <Button layoutX="195.0" layoutY="12.0" mnemonicParsing="false" styleClass="navigationButton" text="HELP"
-                        onAction="#switchToGuestHelp">
-                    <font>
-                        <Font size="20.0" />
-                    </font>
-                </Button>
-                <Button layoutX="251.0" layoutY="12.0" mnemonicParsing="false" styleClass="navigationButton" text="ABOUT US"
-                        onAction="#switchToGuestAboutUs">
-                    <font>
-                        <Font size="20.0" />
-                    </font>
-                </Button>
-                <Button layoutX="473.0" layoutY="10.0" mnemonicParsing="false" styleClass="navigationButton" text="SIGN IN"
-                        onAction="#switchToGuestSignIn">
-                    <font>
-                        <Font size="20.0" />
-                    </font>
-                </Button>
-                <Button layoutX="587.0" layoutY="10.0" mnemonicParsing="false" styleClass="navigationButton" text="SIGN UP"
-                        onAction="#switchToGuestSignUp">
-                    <font>
-                        <Font size="20.0" />
-                    </font>
-                </Button>
+                <Button mnemonicParsing="false" onAction="#switchToGuestHome" styleClass="navigationButton, homeButton" text="BIDBLITZ"/>
+                <Button layoutX="10.0" layoutY="12.0" mnemonicParsing="false" onAction="#switchToGuestAuction" styleClass="navigationButton" text="AUCTION"/>
+                <Button layoutX="66.0" layoutY="12.0" mnemonicParsing="false" onAction="#switchToGuestCategory" styleClass="navigationButton" text="CATEGORY"/>
+                <TextField promptText="Search Bar" styleClass="searchBar"/>
+                <Button layoutX="122.0" layoutY="12.0" mnemonicParsing="false" styleClass="navigationButton" text="Button"/>
+                <Button layoutX="195.0" layoutY="12.0" mnemonicParsing="false" onAction="#switchToGuestHelp" styleClass="navigationButton" text="HELP"/>
+                <Button layoutX="251.0" layoutY="12.0" mnemonicParsing="false" onAction="#switchToGuestAboutUs" styleClass="navigationButton" text="ABOUT US"/>
+                <Button layoutX="473.0" layoutY="10.0" mnemonicParsing="false" onAction="#switchToGuestSignIn" styleClass="navigationButton" text="SIGN IN"/>
+                <Button layoutX="587.0" layoutY="10.0" mnemonicParsing="false" onAction="#switchToGuestSignUp" styleClass="navigationButton" text="SIGN UP"/>
             </items>
             <padding>
                 <Insets top="-1.0" />
@@ -75,7 +33,15 @@
     </top>
 
     <center>
-        <Label>SIGN UP</Label>
+        <AnchorPane>
+            <Label fx:id="signUpLabel" layoutX="557.0" layoutY="103.0" text="Create your account:">SIGN UP:</Label>
+            <Label fx:id="signUpUsername" layoutX="500.0" layoutY="176.0" text="Username:">Username:</Label>
+            <Label fx:id="signUpPassword" layoutX="500.0" layoutY="356.0" text="Password:">Password:</Label>
+            <TextField layoutX="500.0" layoutY="249.0" prefHeight="55.0" prefWidth="600.0" styleClass="signUpTextfield" />
+            <TextField layoutX="500.0" layoutY="429.0" prefHeight="55.0" prefWidth="600.0" styleClass="signUpTextfield" />
+            <Button layoutX="774.0" layoutY="580.0" mnemonicParsing="false" text="Button" />
+            <Text layoutX="789.0" layoutY="648.0" strokeType="OUTSIDE" strokeWidth="0.0" text="OR" />
+        </AnchorPane>
     </center>
 
     <bottom>
@@ -83,5 +49,6 @@
     </bottom>
     <stylesheets>
         <URL value="@../../../css/General.css" />
+        <URL value="@../../../css/SignUp.css" />
     </stylesheets>
 </BorderPane>

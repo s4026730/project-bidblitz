@@ -1,0 +1,30 @@
+#signUpLabel{
+
+    -fx-text-fill: black;
+    -fx-font-weight: 900;
+    -fx-font-size: 50px;
+
+}
+
+#signUpUsername{
+
+    -fx-text-fill: black;
+    -fx-font-weight: 900;
+    -fx-font-size: 50px;
+
+}
+
+#signUpPassword{
+
+    -fx-text-fill: black;
+    -fx-font-weight:900;
+    -fx-font-size: 50px;
+
+}
+
+.signUpTextfield{
+
+    -fx-text-fill black;
+    -fx-font-size: 40px;
+
+}

@@ -38,20 +38,28 @@
     -fx-scale-y: 1.0;
 }
 
+
+.homeButton{
+
+    -fx-text-fill: #FF7F50;
+
+}
+
 .searchBar{
 
     -fx-pref-width: 360px;
     -fx-min-width: 200px;
+    -fx-font-size: 21px;
 
 }
 
-.homeButton{
-
- -fx-text-fill: #FF7F50;
+#usernameSignUpLabel{
+    -fx-text-fill: #352E32
+    -fx-font-size: 100px;
 
 }
 
 .lightPageLayout{
-
     -fx-background-color: #DBE2E9;
 }
+
