@@ -45,13 +45,13 @@
             <TextField layoutX="527.0" layoutY="399.0" styleClass="signupTextfield" />
             <Button fx:id="signupButton" layoutX="527.0" layoutY="529.0" mnemonicParsing="false" text="Sign Up" />
             <Text layoutX="799.0" layoutY="654.0" strokeType="OUTSIDE" strokeWidth="0.0" text="OR" />
-            <Hyperlink fx:id="signupGoogleButton" layoutX="527.0" layoutY="689.0" text="Sign Up With Google" textAlignment="CENTER">
+            <Button fx:id="signupGoogleButton" layoutX="527.0" layoutY="689.0" text="Sign Up With Google" textAlignment="CENTER">
                 <graphic>
                 <ImageView fitHeight="40.0" fitWidth="40.0" preserveRatio="true" smooth="true" styleClass="googleIcon">
                     <Image url="@../../../image/google-round-icon.png" />
                 </ImageView>
                 </graphic>
-            </Hyperlink>
+            </Button>
         </AnchorPane>
     </center>
 
