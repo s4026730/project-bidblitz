@@ -150,3 +150,9 @@ Text, #signupLabel, #signupUsername, #signupEmail, #signupPassword, #signinLabel
     -fx-scale-y: 1.0;
 }
 
+#alreadyHaveAnAccount, #forgotUsername, #forgotPassword, #dontHaveAnAccount{
+
+    -fx-font-size: 20px;
+
+}
+

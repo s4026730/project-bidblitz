@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ToolBar?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.control.TextField?>
+
+<BorderPane prefHeight="1000" prefWidth="1710" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/25"
+            fx:controller="com.example.bidblitz.MainController">
+    <Button styleClass="navigationButton"></Button>
+    <top>
+        <ToolBar prefHeight="40.0" prefWidth="200.0" styleClass="navigationBar">
+            <items>
+                <Button mnemonicParsing="false" onAction="#switchToGuestHome" styleClass="navigationButton, homeButton" text="BIDBLITZ"/>
+                <Button layoutX="10.0" layoutY="12.0" mnemonicParsing="false" onAction="#switchToGuestAuction" styleClass="navigationButton" text="AUCTION"/>
+                <Button layoutX="66.0" layoutY="12.0" mnemonicParsing="false" onAction="#switchToGuestCategory" styleClass="navigationButton" text="CATEGORY"/>
+                <TextField promptText="Search Bar" styleClass="searchBar"/>
+                <Button layoutX="122.0" layoutY="12.0" mnemonicParsing="false" styleClass="navigationButton" text="Button"/>
+                <Button layoutX="195.0" layoutY="12.0" mnemonicParsing="false" onAction="#switchToGuestHelp" styleClass="navigationButton" text="HELP"/>
+                <Button layoutX="251.0" layoutY="12.0" mnemonicParsing="false" onAction="#switchToGuestAboutUs" styleClass="navigationButton" text="ABOUT US"/>
+                <Button layoutX="473.0" layoutY="10.0" mnemonicParsing="false" onAction="#switchToSignIn" styleClass="navigationButton" text="SIGN IN"/>
+                <Button layoutX="587.0" layoutY="10.0" mnemonicParsing="false" onAction="#switchToSignUp" styleClass="navigationButton" text="SIGN UP"/>
+            </items>
+            <padding>
+                <Insets top="-1.0" />
+            </padding>
+        </ToolBar>
+    </top>
+
+    <center>
+        <AnchorPane>
+            <Label fx:id="signinLabel" layoutX="633.0" layoutY="7.0" text="Sign In your account:" />
+            <Label fx:id="signinUsername" layoutX="527.0" layoutY="65.0" text="Username:" />
+            <Label fx:id="signinPassword" layoutX="527.0" layoutY="205.0" text="Password" />
+            <TextField layoutX="527.0" layoutY="123.0" styleClass="signinTextfield" />
+            <TextField layoutX="527.0" layoutY="263.0" styleClass="signinTextfield" />
+            <Button fx:id="signinButton" layoutX="527.0" layoutY="529.0" mnemonicParsing="false" text="Sign In" />
+            <Text layoutX="799.0" layoutY="654.0" strokeType="OUTSIDE" strokeWidth="0.0" text="OR" />
+            <Button fx:id="signinGoogleButton" layoutX="527.0" layoutY="689.0" text="Sign In With Google" textAlignment="CENTER">
+                <graphic>
+                    <ImageView fitHeight="40.0" fitWidth="40.0" preserveRatio="true" smooth="true" styleClass="googleIcon">
+                        <Image url="@../../../image/google-round-icon.png" />
+                    </ImageView>
+                </graphic>
+            </Button>
+        </AnchorPane>
+    </center>
+
+    <bottom>
+
+    </bottom>
+    <stylesheets>
+        <URL value="@../../../css/General.css" />
+    </stylesheets>
+</BorderPane>
