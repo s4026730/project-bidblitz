@@ -136,12 +136,11 @@ Text, #signupLabel, #signupUsername, #signupEmail, #signupPassword, #signinLabel
 
 #signupButton:focused, #signupGoogleButton:focused, #signinButton:focused, #signinGoogleButton:focused{
 
-    -fx-background-insets: 0, 1, 2;
-    -fx-background-radius: 5, 4, 3;
+    -fx-background-insets: 0;
 
 }
 
-#signupButton:pressed, #signupGoogleButton:pressed, #signinButton:pressed, #signinGoogleButton:pressed{
+#signupButton:armed, #signupGoogleButton:armed, #signinButton:armed, #signinGoogleButton:armed{
     -fx-background-color: #FF7F50, transparent;
     -fx-text-fill: darkblue;
     -fx-underline: true;

@@ -102,7 +102,7 @@ public class MainController {
         }
     }//[1] [2] [3]
 
-    public void switchToGuestSignIn(ActionEvent event) throws IOException{
+    public void switchToSignIn(ActionEvent event) throws IOException{
         try{
             FXMLLoader fxmlLoader = new FXMLLoader(Main.class.getResource("sign-in-view.fxml"));
             Parent root = fxmlLoader.load();
@@ -118,7 +118,7 @@ public class MainController {
         }
     }//[1] [2] [3]
 
-    public void switchToGuestSignUp(ActionEvent event) throws IOException{
+    public void switchToSignUp(ActionEvent event) throws IOException{
         try{
             FXMLLoader fxmlLoader = new FXMLLoader(Main.class.getResource("sign-up-view.fxml"));
             Parent root = fxmlLoader.load();
@@ -133,5 +133,22 @@ public class MainController {
             e.printStackTrace();
         }
     }//[1] [2] [3]
+
+    public void switchToForgotPassword(ActionEvent event) throws IOException{
+        try{
+            FXMLLoader fxmlLoader = new FXMLLoader(Main.class.getResource("sign-up-view.fxml"));
+            Parent root = fxmlLoader.load();
+            stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+            demonstratedScene = new Scene(root, 1710, 1000);
+            demonstratedScene.getStylesheets().add(getClass().getResource("/css/General.css").toExternalForm());
+            stage.setScene(demonstratedScene);
+            stage.show();
+        }
+        catch(IOException e){
+            System.err.println("Could not find guest-auction-view.fxml. Check your folder structure!");
+            e.printStackTrace();
+        }
+    }//[1] [2] [3]
+
 }
 
