@@ -4,15 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4b677f8f-b1bf-432f-8422-b4a6a6cde4b3" name="Changes" comment="Adding forgot password page and simplify the navigation function name of sign up and sign in page">
-      <change afterPath="$PROJECT_DIR$/bidblitz/src/main/resources/com/example/bidblitz/forgot-username-view.fxml" afterDir="false" />
+    <list default="true" id="4b677f8f-b1bf-432f-8422-b4a6a6cde4b3" name="Changes" comment="Adding forgot username, forgot password, already having an account and don't have an account function and their style. Adding forgot username page and complete all the core functions of Sign Up and Sign In Page.">
       <change afterPath="$PROJECT_DIR$/bidblitz/src/main/resources/com/example/bidblitz/user-main-view.fxml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/bidblitz/src/main/resources/com/example/bidblitz/user-transaction-history-view.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bidblitz/src/main/java/com/example/bidblitz/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/bidblitz/src/main/java/com/example/bidblitz/MainController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bidblitz/src/main/resources/com/example/bidblitz/sign-in-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/bidblitz/src/main/resources/com/example/bidblitz/sign-in-view.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bidblitz/src/main/resources/com/example/bidblitz/sign-up-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/bidblitz/src/main/resources/com/example/bidblitz/sign-up-view.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bidblitz/src/main/resources/css/General.css" beforeDir="false" afterPath="$PROJECT_DIR$/bidblitz/src/main/resources/css/General.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -254,7 +249,15 @@
       <option name="project" value="LOCAL" />
       <updated>1778339066277</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="Adding forgot username, forgot password, already having an account and don't have an account function and their style. Adding forgot username page and complete all the core functions of Sign Up and Sign In Page.">
+      <option name="closed" value="true" />
+      <created>1778347915385</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1778347915385</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -278,6 +281,7 @@
     <MESSAGE value="Adding the Sign In Page Layout" />
     <MESSAGE value="Change hyperlink to button in google button because they function almost the same." />
     <MESSAGE value="Adding forgot password page and simplify the navigation function name of sign up and sign in page" />
-    <option name="LAST_COMMIT_MESSAGE" value="Adding forgot password page and simplify the navigation function name of sign up and sign in page" />
+    <MESSAGE value="Adding forgot username, forgot password, already having an account and don't have an account function and their style. Adding forgot username page and complete all the core functions of Sign Up and Sign In Page." />
+    <option name="LAST_COMMIT_MESSAGE" value="Adding forgot username, forgot password, already having an account and don't have an account function and their style. Adding forgot username page and complete all the core functions of Sign Up and Sign In Page." />
   </component>
 </project>

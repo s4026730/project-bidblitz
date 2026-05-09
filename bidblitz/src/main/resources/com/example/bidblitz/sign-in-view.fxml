@@ -38,21 +38,21 @@
         <AnchorPane>
             <Label fx:id="signinLabel" layoutX="633.0" layoutY="7.0" text="Sign In Your Account:" />
             <Label fx:id="signinUsername" layoutX="527.0" layoutY="65.0" text="Username:" />
-            <Label fx:id="signinPassword" layoutX="527.0" layoutY="187.0" text="Password" />
+            <Label fx:id="signinPassword" layoutX="526.0" layoutY="175.0" text="Password" />
             <TextField layoutX="527.0" layoutY="123.0" styleClass="signinTextfield" />
-            <TextField layoutX="527.0" layoutY="245.0" styleClass="signinTextfield" />
-            <Button fx:id="signinButton" layoutX="527.0" layoutY="347.0" mnemonicParsing="false" text="Sign In" />
-            <Text layoutX="799.0" layoutY="462.0" strokeType="OUTSIDE" strokeWidth="0.0" text="OR" />
-            <Button fx:id="signinGoogleButton" layoutX="527.0" layoutY="491.0" text="Sign In With Google" textAlignment="CENTER">
+            <TextField layoutX="527.0" layoutY="233.0" styleClass="signinTextfield" />
+            <Button fx:id="signinButton" layoutX="527.0" layoutY="335.0" mnemonicParsing="false" text="Sign In" />
+            <Text layoutX="799.0" layoutY="447.0" strokeType="OUTSIDE" strokeWidth="0.0" text="OR" />
+            <Button fx:id="signinGoogleButton" layoutX="527.0" layoutY="469.0" text="Sign In With Google" textAlignment="CENTER">
                 <graphic>
                     <ImageView fitHeight="40.0" fitWidth="40.0" preserveRatio="true" smooth="true" styleClass="googleIcon">
                         <Image url="@../../../image/google-round-icon.png" />
                     </ImageView>
                 </graphic>
             </Button>
-            <Hyperlink fx:id="forgotUsername" layoutX="458.0" layoutY="610.0" onAction="#switchToSignIn" text="Forgot your username? Click Here." />
-            <Hyperlink fx:id="forgotPassword" layoutX="884.0" layoutY="610.0" onAction="#switchToForgotPassword" text="Forgot your password? Click Here." />
-            <Hyperlink fx:id="dontHaveAnAccount" layoutX="664.0" layoutY="687.0" onAction="#switchToSignUp" text="Don't Have An Account? Click Here." />
+            <Hyperlink fx:id="forgotUsername" layoutX="457.0" layoutY="572.0" onAction="#switchToForgotUsername" text="Forgot your username? Click Here." />
+            <Hyperlink fx:id="forgotPassword" layoutX="884.0" layoutY="572.0" onAction="#switchToForgotPassword" text="Forgot your password? Click Here." />
+            <Hyperlink fx:id="dontHaveAnAccount" layoutX="664.0" layoutY="644.0" onAction="#switchToSignUp" text="Don't Have An Account? Click Here." />
         </AnchorPane>
     </center>
 
