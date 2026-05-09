@@ -78,3 +78,83 @@ Text, #signupLabel, #signupUsername, #signupEmail, #signupPassword{
     -fx-smooth: true;
     -fx-padding: 0 20;
 }
+
+.signupTextfield{
+
+    -fx-text-fill black;
+    -fx-font-size: 25px;
+    -fx-pref-width: 600px;
+    -fx-height: 50px;
+
+}
+
+#signupButton, #signupGoogleButton{
+    -fx-cursor: hand;
+    -fx-background-insets: 0;
+    -fx-background-radius: 0;
+    -fx-font-size: 40px;
+    -fx-font-weight: 900;
+    -fx-background-image: none;
+    -fx-border-width: 2px;
+    -fx-border-style: solid;
+    -fx-border-color: black;
+    -fx-border-radius: 20px;
+    -fx-background-radius: 20px;
+    -fx-box-size: border-box;
+    -fx-text-fill: #1f1f1f;
+    -fx-font-family: 'Roboto', arial, sans-serif;
+    -fx-outline: none;
+    -fx-padding: 0;
+    -fx-pref-width: 600.0px;
+
+}
+
+#signupButton{
+    -fx-text-fill: white;
+    -fx-background-color: #57A0D2;
+
+}
+
+#signupGoogleButton{
+
+    -fx-underline: false;
+    -fx-background-color: white;
+    -fx-text-fill: black;
+    -fx-graphic-text-gap: 20px;
+    -fx-alignment: CENTER;
+    /*
+      overflow: hidden;
+      position: relative;
+      text-align: center;
+      -webkit-transition: background-color .218s, border-color .218s, box-shadow .218s;
+      transition: background-color .218s, border-color .218s, box-shadow .218s;
+      vertical-align: middle;
+      white-space: nowrap;
+      width: auto;
+      max-width: 400px;
+      min-width: min-content;*/
+}
+
+#signupButton:hover, #signupButton:focused{
+    -fx-background-color: #E4CD05;
+    -fx-text-fill: #00674F;
+}
+
+#signupButton:focused{
+
+    -fx-background-insets: 0, 1, 2;
+    -fx-background-radius: 5, 4, 3;
+
+}
+
+#signupButton:pressed {
+    -fx-background-color: #FF7F50, transparent;
+    -fx-text-fill: darkblue;
+    -fx-underline: true;
+    -fx-font-weight: 900;
+}
+
+#signupButton:pressed {
+    -fx-scale-x: 1.0;
+    -fx-scale-y: 1.0;
+}
