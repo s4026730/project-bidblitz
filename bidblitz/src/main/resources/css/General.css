@@ -1,3 +1,20 @@
+/* Universal Style Codes (Apply For Multiple Pages */
+
+.generalText{
+
+    -fx-text-fill: black;
+    -fx-font-size: 30px;
+
+}
+
+.OR, .AND, .importantText{
+
+    -fx-text-fill: black;
+    -fx-font-weight: 900;
+    -fx-font-size: 40px;
+
+}
+
 /* Navigation Bar Style Codes */
 
 .navigationBar {
@@ -21,12 +38,6 @@
     -fx-text-fill: #00674F;
 }
 
-.navigationButton:focused{
-
-    -fx-background-insets: 0, 1, 2;
-    -fx-background-radius: 5, 4, 3;
-
-}
 
 .navigationButton:pressed {
     -fx-background-color: #FF7F50, transparent;
@@ -66,14 +77,6 @@
 
 /* Sign Up and Sign In Pages Style Codes */
 
-Text, #signupLabel, #signupUsername, #signupEmail, #signupPassword, #signinLabel, #signinUsername, #signinPassword{
-
-    -fx-text-fill: black;
-    -fx-font-weight: 900;
-    -fx-font-size: 40px;
-
-}
-
 .signupTextfield, .signinTextfield{
 
     -fx-text-fill black;
@@ -83,10 +86,12 @@ Text, #signupLabel, #signupUsername, #signupEmail, #signupPassword, #signinLabel
 
 }
 
-#signupButton, #signupGoogleButton, #signinButton, #signinGoogleButton{
+.submitButton{
     -fx-cursor: hand;
+    -fx-background-color: #57A0D2;
     -fx-background-insets: 0;
     -fx-background-radius: 0;
+    -fx-text-fill: white;
     -fx-font-size: 40px;
     -fx-font-weight: 900;
     -fx-background-image: none;
@@ -104,13 +109,6 @@ Text, #signupLabel, #signupUsername, #signupEmail, #signupPassword, #signinLabel
 
 }
 
-#signupButton, #signinButton{
-
-    -fx-text-fill: white;
-    -fx-background-color: #57A0D2;
-
-}
-
 #signupGoogleButton, #signinGoogleButton{
 
     -fx-underline: false;
@@ -123,36 +121,51 @@ Text, #signupLabel, #signupUsername, #signupEmail, #signupPassword, #signinLabel
       position: relative;
       text-align: center;
       -webkit-transition: background-color .218s, border-color .218s, box-shadow .218s;
-      transition: background-color .218s, border-color .218s, box-shadow .218s;
-      vertical-align: middle;
-      white-space: nowrap;*/
+      transition: background-color .218s, border-color .218s, box-shadow .218s;*/
 }
 
-#signupButton:hover, #signupButton:focused, #signupGoogleButton:hover, #signupGoogleButton:focused,
-#signinButton:hover, #signinButton:focused, #signinGoogleButton:hover, #signinGoogleButton:focused{
+.submitButton:hover, .submitButton:focused,
+#signupGoogleButton:hover, #signupGoogleButton:focused,
+#signinGoogleButton:hover, #signinGoogleButton:focused{
     -fx-background-color: #E4CD05;
     -fx-text-fill: #00674F;
 }
 
-#signupButton:focused, #signupGoogleButton:focused, #signinButton:focused, #signinGoogleButton:focused{
+.submitButton:focused,
+Hyperlink:focused{
 
     -fx-background-insets: 0;
 
 }
 
-#signupButton:armed, #signupGoogleButton:armed, #signinButton:armed, #signinGoogleButton:armed{
+.submitButton:armed, #signinGoogleButton:armed, #signupGoogleButton:armed{
+
     -fx-background-color: #FF7F50, transparent;
     -fx-text-fill: darkblue;
-    -fx-underline: true;
     -fx-font-weight: 900;
     -fx-background-insets: 0, 1;
     -fx-scale-x: 1.0;
     -fx-scale-y: 1.0;
+
 }
 
 #alreadyHaveAnAccount, #forgotUsername, #forgotPassword, #dontHaveAnAccount{
 
     -fx-font-size: 20px;
+    -fx-background-image: transparent;
+    -fx-outline: transparent;
+    -fx-padding: 0;
+}
+
+#alreadyHaveAnAccount:focused, #alreadyHaveAnAccount:visited, #alreadyHaveAnAccount:armed,
+#forgotUsername:focused, #forgotUsername:visited, #forgotUsername:armed,
+#forgotPassword:focused, #forgotPassword:visited, #forgotPassword:armed,
+#dontHaveAnAccount:focused, #dontHaveAnAccount:visited, #dontHaveAnAccount:armed{
+
+    -fx-text-fill: #FF7F50;
+    -fx-focus-color: transparent;
+    -fx-border-color: transparent;
 
 }
+
 
