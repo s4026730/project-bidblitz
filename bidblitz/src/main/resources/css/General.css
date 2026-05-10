@@ -94,7 +94,7 @@
     -fx-text-fill: white;
     -fx-font-size: 40px;
     -fx-font-weight: 900;
-    -fx-background-image: none;
+    -fx-background-image: transparent;
     -fx-border-width: 2px;
     -fx-border-style: solid;
     -fx-border-color: black;
@@ -102,7 +102,7 @@
     -fx-background-radius: 20px;
     -fx-box-size: border-box;
     -fx-font-family: 'Roboto', arial, sans-serif;
-    -fx-outline: none;
+    -fx-outline: transparent;
     -fx-padding: 0;
     -fx-pref-width: 600.0px;
 }
