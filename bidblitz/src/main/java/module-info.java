@@ -1,8 +1,11 @@
 module com.example.bidblitz {
     requires javafx.controls;
     requires javafx.fxml;
-    requires javafx.web;
     requires javafx.graphics;
+    requires javafx.web;
+    requires javafx.swing;
+    requires javafx.media;
+
     requires org.controlsfx.controls;
     requires com.dlsc.formsfx;
     requires net.synedra.validatorfx;
@@ -13,5 +16,6 @@ module com.example.bidblitz {
     requires com.almasb.fxgl.all;
 
     opens com.example.bidblitz to javafx.fxml;
+
     exports com.example.bidblitz;
 }

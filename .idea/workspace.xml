@@ -4,93 +4,54 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4b677f8f-b1bf-432f-8422-b4a6a6cde4b3" name="Changes" comment="Update OpenJDK version 21 to 25.0.2 that matches with the Maven Selection made at the very beginning of the project.">
+    <list default="true" id="02ae6a1a-35c8-472c-8de6-6c67efd03109" name="Changes" comment="">
       <change afterPath="$PROJECT_DIR$/bidblitz/src/main/resources/com/example/bidblitz/user-main-view.fxml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/bidblitz/src/main/resources/com/example/bidblitz/user-transaction-history-view.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bidblitz/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/bidblitz/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bidblitz/src/main/resources/com/example/bidblitz/forgot-password-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/bidblitz/src/main/resources/com/example/bidblitz/forgot-password-view.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bidblitz/src/main/resources/com/example/bidblitz/forgot-username-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/bidblitz/src/main/resources/com/example/bidblitz/forgot-username-view.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bidblitz/src/main/resources/com/example/bidblitz/guest-about-us-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/bidblitz/src/main/resources/com/example/bidblitz/guest-about-us-view.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bidblitz/src/main/resources/com/example/bidblitz/guest-auction-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/bidblitz/src/main/resources/com/example/bidblitz/guest-auction-view.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bidblitz/src/main/resources/com/example/bidblitz/guest-category-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/bidblitz/src/main/resources/com/example/bidblitz/guest-category-view.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bidblitz/src/main/resources/com/example/bidblitz/guest-help-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/bidblitz/src/main/resources/com/example/bidblitz/guest-help-view.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bidblitz/src/main/resources/com/example/bidblitz/guest-main-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/bidblitz/src/main/resources/com/example/bidblitz/guest-main-view.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bidblitz/src/main/resources/com/example/bidblitz/sign-in-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/bidblitz/src/main/resources/com/example/bidblitz/sign-in-view.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bidblitz/src/main/resources/com/example/bidblitz/sign-up-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/bidblitz/src/main/resources/com/example/bidblitz/sign-up-view.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bidblitz/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/bidblitz/src/main/java/module-info.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="FxmlFile" />
-      </list>
-    </option>
-  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-    <option name="ROOT_SYNC" value="SYNC" />
   </component>
-  <component name="GitHubPullRequestSearchHistory">{
-  &quot;lastFilter&quot;: {
-    &quot;state&quot;: &quot;OPEN&quot;,
-    &quot;assignee&quot;: &quot;s4026730&quot;
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "s4026730"
   }
-}</component>
-  <component name="GithubPullRequestsUISettings">{
-  &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/s4026730/project-bidblitz.git&quot;,
-    &quot;accountId&quot;: &quot;5cebb5c4-30d3-4ea2-b8c4-48856a81428c&quot;
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/s4026730/project-bidblitz.git",
+    "accountId": "5cebb5c4-30d3-4ea2-b8c4-48856a81428c"
   }
-}</component>
-  <component name="MavenImportPreferences">
-    <option name="generalSettings">
-      <MavenGeneralSettings>
-        <option name="mavenHomeTypeForPersistence" value="WRAPPER" />
-      </MavenGeneralSettings>
-    </option>
-  </component>
-  <component name="ProjectColorInfo">{
-  &quot;associatedIndex&quot;: 5
-}</component>
-  <component name="ProjectId" id="3CbeB7qIaUz8aHqshV2UikDTaCp" />
+}]]></component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 6
+}]]></component>
+  <component name="ProjectId" id="3DXLfAlYjGTcnFQ5OuSSFlwyGHV" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.Launcher.executor&quot;: &quot;Run&quot;,
-    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Le Huy Hoang/OneDrive/Documents/further-programming-intellij-idea-project/assignment-works/project-bidblitz/bidblitz/src/main/resources/image&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true"
   }
-}</component>
-  <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\Le Huy Hoang\OneDrive\Documents\further-programming-intellij-idea-project\assignment-works\project-bidblitz\bidblitz\src\main\resources\image" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\Le Huy Hoang\OneDrive\Documents\further-programming-intellij-idea-project\assignment-works\project-bidblitz\bidblitz\src\main\resources\image" />
-      <recent name="C:\Users\Le Huy Hoang\OneDrive\Documents\further-programming-intellij-idea-project\assignment-works\project-bidblitz" />
-      <recent name="C:\Users\Le Huy Hoang\OneDrive\Documents\further-programming-intellij-idea-project\assignment-works\project-bidblitz\.idea" />
-    </key>
-  </component>
+}]]></component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -100,234 +61,12 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="4b677f8f-b1bf-432f-8422-b4a6a6cde4b3" name="Changes" comment="" />
-      <created>1776658559980</created>
+      <changelist id="02ae6a1a-35c8-472c-8de6-6c67efd03109" name="Changes" comment="" />
+      <created>1778423573842</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1776658559980</updated>
-      <workItem from="1776686205813" duration="41000" />
+      <updated>1778423573842</updated>
     </task>
-    <task id="LOCAL-00001" summary="Deleting 1 of the .idea folder">
-      <option name="closed" value="true" />
-      <created>1776760984543</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1776760984543</updated>
-    </task>
-    <task id="LOCAL-00002" summary="Relocating the .idea folder and patching the JDK JDK isn't specified for the program module error.">
-      <option name="closed" value="true" />
-      <created>1776761302809</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1776761302809</updated>
-    </task>
-    <task id="LOCAL-00003" summary="Uploading the phase 1 bidblitz system (Original version)">
-      <option name="closed" value="true" />
-      <created>1776761988133</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1776761988133</updated>
-    </task>
-    <task id="LOCAL-00004" summary="Reuploading process (Delete phase)">
-      <option name="closed" value="true" />
-      <created>1776762113104</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1776762113104</updated>
-    </task>
-    <task id="LOCAL-00005" summary="Reuploading original bidblitz file">
-      <option name="closed" value="true" />
-      <created>1776762253230</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1776762253230</updated>
-    </task>
-    <task id="LOCAL-00006" summary="Updating vcs files.">
-      <option name="closed" value="true" />
-      <created>1776763729123</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1776763729123</updated>
-    </task>
-    <task id="LOCAL-00007" summary="Creating application icon and the project's README File. Adding all guest pages except sign in and sign up pages and it's navigation bar mechanism and layout.">
-      <option name="closed" value="true" />
-      <created>1776912528204</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1776912528204</updated>
-    </task>
-    <task id="LOCAL-00008" summary="Update Project BidBlitz Maven File (workspace.xml)">
-      <option name="closed" value="true" />
-      <created>1776956808537</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1776956808537</updated>
-    </task>
-    <task id="LOCAL-00009" summary="Minor updates on the contents of main and home files.">
-      <option name="closed" value="true" />
-      <created>1776958014863</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1776958014863</updated>
-    </task>
-    <task id="LOCAL-00010" summary="Moving CSS file implementation from Main.java to all current guest to make them available to be edited through SceneBuilder.">
-      <option name="closed" value="true" />
-      <created>1776999074798</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1776999074798</updated>
-    </task>
-    <task id="LOCAL-00011" summary="Fixing the home button being focused by adding an invisible button infront of the navigation bar and adding a new class for lightModeLayout (WIP)">
-      <option name="closed" value="true" />
-      <created>1777012672607</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1777012672607</updated>
-    </task>
-    <task id="LOCAL-00012" summary="Adding Sign In &amp; Sign Up Files which complete all application pages of guest mode and add their navigation mechanism.">
-      <option name="closed" value="true" />
-      <created>1777014716861</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1777014716861</updated>
-    </task>
-    <task id="LOCAL-00013" summary="Making the navigation code being much cleaner, adding sign up page and it's style file.">
-      <option name="closed" value="true" />
-      <created>1778286135733</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1778286135733</updated>
-    </task>
-    <task id="LOCAL-00014" summary="Finish the Sign Up function layout for Sign Up page and replace the directory name of applicationImage to image.">
-      <option name="closed" value="true" />
-      <created>1778324798407</created>
-      <option name="number" value="00014" />
-      <option name="presentableId" value="LOCAL-00014" />
-      <option name="project" value="LOCAL" />
-      <updated>1778324798407</updated>
-    </task>
-    <task id="LOCAL-00015" summary="Removin Sign Up CSS file and make General.css the only CSS file to simplify">
-      <option name="closed" value="true" />
-      <created>1778328113394</created>
-      <option name="number" value="00015" />
-      <option name="presentableId" value="LOCAL-00015" />
-      <option name="project" value="LOCAL" />
-      <updated>1778328113394</updated>
-    </task>
-    <task id="LOCAL-00016" summary="Adding the code to adjust the Google Icon size due to it being broke in real life deployment (non SceneBuilder Deployment)">
-      <option name="closed" value="true" />
-      <created>1778332456773</created>
-      <option name="number" value="00016" />
-      <option name="presentableId" value="LOCAL-00016" />
-      <option name="project" value="LOCAL" />
-      <updated>1778332456773</updated>
-    </task>
-    <task id="LOCAL-00017" summary="Adding the Sign In Page Layout">
-      <option name="closed" value="true" />
-      <created>1778334876380</created>
-      <option name="number" value="00017" />
-      <option name="presentableId" value="LOCAL-00017" />
-      <option name="project" value="LOCAL" />
-      <updated>1778334876380</updated>
-    </task>
-    <task id="LOCAL-00018" summary="Change hyperlink to button in google button because they function almost the same.">
-      <option name="closed" value="true" />
-      <created>1778336404470</created>
-      <option name="number" value="00018" />
-      <option name="presentableId" value="LOCAL-00018" />
-      <option name="project" value="LOCAL" />
-      <updated>1778336404470</updated>
-    </task>
-    <task id="LOCAL-00019" summary="Adding forgot password page and simplify the navigation function name of sign up and sign in page">
-      <option name="closed" value="true" />
-      <created>1778339066277</created>
-      <option name="number" value="00019" />
-      <option name="presentableId" value="LOCAL-00019" />
-      <option name="project" value="LOCAL" />
-      <updated>1778339066277</updated>
-    </task>
-    <task id="LOCAL-00020" summary="Adding forgot username, forgot password, already having an account and don't have an account function and their style. Adding forgot username page and complete all the core functions of Sign Up and Sign In Page.">
-      <option name="closed" value="true" />
-      <created>1778347915385</created>
-      <option name="number" value="00020" />
-      <option name="presentableId" value="LOCAL-00020" />
-      <option name="project" value="LOCAL" />
-      <updated>1778347915385</updated>
-    </task>
-    <task id="LOCAL-00021" summary="Making change to the elements positioning in Sign In and Sign Up Page. Updating the latest version of function within those elements.">
-      <option name="closed" value="true" />
-      <created>1778348411934</created>
-      <option name="number" value="00021" />
-      <option name="presentableId" value="LOCAL-00021" />
-      <option name="project" value="LOCAL" />
-      <updated>1778348411934</updated>
-    </task>
-    <task id="LOCAL-00022" summary="Adding layouts for Sign Up, Sign in, Forgot Password and Forgot Username page.">
-      <option name="closed" value="true" />
-      <created>1778384244879</created>
-      <option name="number" value="00022" />
-      <option name="presentableId" value="LOCAL-00022" />
-      <option name="project" value="LOCAL" />
-      <updated>1778384244879</updated>
-    </task>
-    <task id="LOCAL-00023" summary="Updating the pom.xml (Maven file) to the latest version + adding more layout for the forgot password and forgot username pages and their styles.">
-      <option name="closed" value="true" />
-      <created>1778403367323</created>
-      <option name="number" value="00023" />
-      <option name="presentableId" value="LOCAL-00023" />
-      <option name="project" value="LOCAL" />
-      <updated>1778403367323</updated>
-    </task>
-    <task id="LOCAL-00024" summary="Update OpenJDK version 21 to 25.0.2 that matches with the Maven Selection made at the very beginning of the project.">
-      <option name="closed" value="true" />
-      <created>1778415647652</created>
-      <option name="number" value="00024" />
-      <option name="presentableId" value="LOCAL-00024" />
-      <option name="project" value="LOCAL" />
-      <updated>1778415647652</updated>
-    </task>
-    <option name="localTasksCounter" value="25" />
     <servers />
-  </component>
-  <component name="VcsManagerConfiguration">
-    <MESSAGE value="Publish project bidblitz files from local device." />
-    <MESSAGE value="Deleting 1 of the .idea folder" />
-    <MESSAGE value="Relocating the .idea folder and patching the JDK JDK isn't specified for the program module error." />
-    <MESSAGE value="Uploading the phase 1 bidblitz system (Original version)" />
-    <MESSAGE value="Reuploading process (Delete phase)" />
-    <MESSAGE value="Reuploading original bidblitz file" />
-    <MESSAGE value="Updating vcs files." />
-    <MESSAGE value="Creating application icon and the project's README File. Adding all guest pages except sign in and sign up pages and it's navigation bar mechanism and layout." />
-    <MESSAGE value="Update Project BidBlitz Maven File (workspace.xml)" />
-    <MESSAGE value="Minor updates on the contents of main and home files." />
-    <MESSAGE value="Moving CSS file implementation from Main.java to all current guest to make them available to be edited through SceneBuilder." />
-    <MESSAGE value="Fixing the home button being focused by adding an invisible button infront of the navigation bar and adding a new class for lightModeLayout (WIP)" />
-    <MESSAGE value="Adding Sign In &amp; Sign Up Files which complete all application pages of guest mode and add their navigation mechanism." />
-    <MESSAGE value="Making the navigation code being much cleaner, adding sign up page and it's style file." />
-    <MESSAGE value="Finish the Sign Up function layout for Sign Up page and replace the directory name of applicationImage to image." />
-    <MESSAGE value="Removin Sign Up CSS file and make General.css the only CSS file to simplify" />
-    <MESSAGE value="Adding the code to adjust the Google Icon size due to it being broke in real life deployment (non SceneBuilder Deployment)" />
-    <MESSAGE value="Adding the Sign In Page Layout" />
-    <MESSAGE value="Change hyperlink to button in google button because they function almost the same." />
-    <MESSAGE value="Adding forgot password page and simplify the navigation function name of sign up and sign in page" />
-    <MESSAGE value="Adding forgot username, forgot password, already having an account and don't have an account function and their style. Adding forgot username page and complete all the core functions of Sign Up and Sign In Page." />
-    <MESSAGE value="Making change to the elements positioning in Sign In and Sign Up Page. Updating the latest version of function within those elements." />
-    <MESSAGE value="Adding layouts for Sign Up, Sign in, Forgot Password and Forgot Username page." />
-    <MESSAGE value="Updating the pom.xml (Maven file) to the latest version + adding more layout for the forgot password and forgot username pages and their styles." />
-    <MESSAGE value="Update OpenJDK version 21 to 25.0.2 that matches with the Maven Selection made at the very beginning of the project." />
-    <option name="LAST_COMMIT_MESSAGE" value="Update OpenJDK version 21 to 25.0.2 that matches with the Maven Selection made at the very beginning of the project." />
   </component>
 </project>
