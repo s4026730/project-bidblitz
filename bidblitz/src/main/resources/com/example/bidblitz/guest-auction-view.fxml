@@ -10,7 +10,7 @@
 <?import javafx.scene.control.Label?>
 <?import java.net.URL?>
 
-<BorderPane prefHeight="1000" prefWidth="1710" xmlns:fx="http://javafx.com/fxml"
+<BorderPane prefHeight="1000" prefWidth="1710" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1"
             fx:controller="com.example.bidblitz.MainController">
     <Button styleClass="navigationButton"></Button>
     <top>
