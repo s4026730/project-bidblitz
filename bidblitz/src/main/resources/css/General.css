@@ -86,7 +86,7 @@
 
 }
 
-.submitButton{
+.actionButton{
     -fx-cursor: hand;
     -fx-background-color: #57A0D2;
     -fx-background-insets: 0;
@@ -101,12 +101,10 @@
     -fx-border-radius: 20px;
     -fx-background-radius: 20px;
     -fx-box-size: border-box;
-    -fx-text-fill: #1f1f1f;
     -fx-font-family: 'Roboto', arial, sans-serif;
     -fx-outline: none;
     -fx-padding: 0;
     -fx-pref-width: 600.0px;
-
 }
 
 #signupGoogleButton, #signinGoogleButton{
@@ -124,21 +122,21 @@
       transition: background-color .218s, border-color .218s, box-shadow .218s;*/
 }
 
-.submitButton:hover, .submitButton:focused,
+.actionButton:hover, .actionButton:focused,
 #signupGoogleButton:hover, #signupGoogleButton:focused,
 #signinGoogleButton:hover, #signinGoogleButton:focused{
     -fx-background-color: #E4CD05;
     -fx-text-fill: #00674F;
 }
 
-.submitButton:focused,
+.actionButton:focused,
 Hyperlink:focused{
 
     -fx-background-insets: 0;
 
 }
 
-.submitButton:armed, #signinGoogleButton:armed, #signupGoogleButton:armed{
+.actionButton:armed, #signinGoogleButton:armed, #signupGoogleButton:armed{
 
     -fx-background-color: #FF7F50, transparent;
     -fx-text-fill: darkblue;
@@ -149,7 +147,7 @@ Hyperlink:focused{
 
 }
 
-#alreadyHaveAnAccount, #forgotUsername, #forgotPassword, #dontHaveAnAccount{
+.actionHyperLink{
 
     -fx-font-size: 20px;
     -fx-background-image: transparent;
@@ -157,10 +155,7 @@ Hyperlink:focused{
     -fx-padding: 0;
 }
 
-#alreadyHaveAnAccount:focused, #alreadyHaveAnAccount:visited, #alreadyHaveAnAccount:armed,
-#forgotUsername:focused, #forgotUsername:visited, #forgotUsername:armed,
-#forgotPassword:focused, #forgotPassword:visited, #forgotPassword:armed,
-#dontHaveAnAccount:focused, #dontHaveAnAccount:visited, #dontHaveAnAccount:armed{
+.actionHyperLink:focused, .actionHyperLink:visited, .actionHyperLink:armed{
 
     -fx-text-fill: #FF7F50;
     -fx-focus-color: transparent;

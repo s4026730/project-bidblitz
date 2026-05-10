@@ -41,18 +41,20 @@
             <Label fx:id="signinPassword" styleClass="importantText" layoutX="526.0" layoutY="175.0" text="Password" />
             <TextField layoutX="527.0" layoutY="123.0" styleClass="signinTextfield" />
             <TextField layoutX="527.0" layoutY="233.0" styleClass="signinTextfield" />
-            <Button fx:id="signinButton" styleClass="submitButton" layoutX="527.0" layoutY="335.0" mnemonicParsing="false" text="Sign In" />
+            <Button fx:id="signinButton" styleClass="actionButton" layoutX="527.0" layoutY="335.0" mnemonicParsing="false" text="Sign In" />
             <Text styleClass="OR" layoutX="799.0" layoutY="447.0" strokeType="OUTSIDE" strokeWidth="0.0" text="OR" />
-            <Button fx:id="signinGoogleButton" styleClass="submitButton" layoutX="527.0" layoutY="469.0" text="Sign In With Google" textAlignment="CENTER">
+            <Button fx:id="signinGoogleButton" styleClass="actionButton" layoutX="527.0" layoutY="469.0" text="Sign In With Google" textAlignment="CENTER">
                 <graphic>
                     <ImageView fitHeight="40.0" fitWidth="40.0" preserveRatio="true" smooth="true" styleClass="googleIcon">
                         <Image url="@../../../image/google-round-icon.png" />
                     </ImageView>
                 </graphic>
             </Button>
-            <Hyperlink fx:id="forgotUsername" layoutX="457.0" layoutY="572.0" onAction="#switchToForgotUsername" text="Forgot your username? Click Here." />
-            <Hyperlink fx:id="forgotPassword" layoutX="884.0" layoutY="572.0" onAction="#switchToForgotPassword" text="Forgot your password? Click Here." />
-            <Hyperlink fx:id="dontHaveAnAccount" layoutX="664.0" layoutY="644.0" onAction="#switchToSignUp" text="Don't Have An Account? Click Here." />
+            <Hyperlink fx:id="forgotUsername"  styleClass="actionHyperLink" layoutX="457.0" layoutY="572.0" onAction="#switchToForgotUsername"
+                       text="Forgot your username? Click here." />
+            <Hyperlink fx:id="forgotPassword" styleClass="actionHyperLink" layoutX="884.0" layoutY="572.0" onAction="#switchToForgotPassword"
+                       text="Forgot your password? Click here." />
+            <Hyperlink styleClass="actionHyperLink" layoutX="664.0" layoutY="644.0" onAction="#switchToSignUp" text="Don't have an account? Click here" />
         </AnchorPane>
     </center>
 
