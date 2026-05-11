@@ -42,14 +42,14 @@
                         <Label wrapText="true" maxWidth="300">
                             <text>
                                 BidBlitz is an online auction and trading platform that recreates the experience of traditional
-                                in person auctions in a digital space. It supports seamless user to user communication,
-                                maintains secure and detailed transaction tracking, logging and delivers a simple, user-friendly interface.
+                                in person auctions in a digital space.
                             </text>
                         </Label>
                         <Separator maxWidth="200" halignment="CENTER" visible="false"/>
                         <Label wrapText="true" maxWidth="300">
                             <text>
-                                BidBlitz serves for kind of matters except those that 100% related to serious crime
+                                It supports seamless user to user communication, maintains secure and detailed transaction tracking,
+                                logging and delivers a simple, user-friendly interface.
                             </text>
                         </Label>
                     </VBox>
@@ -58,8 +58,68 @@
             <TitledPane expanded="false" layoutX="786.0" layoutY="132.0" styleClass="collapsibleContainer" text="Rules">
                 <content>
                     <VBox spacing="5">
-                        <Label wrapText="true" maxWidth="300"
-                               text="1. Respects to each others and be professional. Racism and hatred comments are strictly prohibited" />
+                        <Label wrapText="true" maxWidth="300">
+                            <text>
+                                1) Users must communicate respectfully and may not engage in harassment, threats or abusive behavior.
+                            </text>
+                        </Label>
+                        <Separator maxWidth="200" halignment="CENTER" visible="false"/>
+                        <Label wrapText="true" maxWidth="300">
+                            <text>
+                                2) Users must provide accurate and truthful account information during registration.
+                            </text>
+                        </Label>
+                        <Separator maxWidth="200" halignment="CENTER" visible="false"/>
+                        <Label wrapText="true" maxWidth="300">
+                            <text>
+                                3) Users must provide accurate and truthful account information during registration.
+                            </text>
+                        </Label>
+                        <Separator maxWidth="200" halignment="CENTER" visible="false"/>
+                        <Label wrapText="true" maxWidth="300">
+                            <text>
+                                4) All bids placed by users are considered final and legally binding once submitted.
+                            </text>
+                        </Label>
+                        <Separator maxWidth="200" halignment="CENTER" visible="false"/>
+                        <Label wrapText="true" maxWidth="300">
+                            <text>
+                                5) Sellers are required to auction only legal, authentic and permitted items,
+                                accompanied by accurate descriptions, relevant images and clear condition details.
+                            </text>
+                        </Label>
+                        <Separator maxWidth="200" halignment="CENTER" visible="false"/>
+                        <Label wrapText="true" maxWidth="300">
+                            <text>
+                                6) Sellers are strictly prohibited from bidding on their own auction listings.
+                            </text>
+                        </Label>
+                        <Separator maxWidth="200" halignment="CENTER" visible="false"/>
+                        <Label wrapText="true" maxWidth="300">
+                            <text>
+                                7) Winning bidders must complete payment within the specified payment period.
+                            </text>
+                        </Label>
+                        <Separator maxWidth="200" halignment="CENTER" visible="false"/>
+                        <Label wrapText="true" maxWidth="300">
+                            <text>
+                                8) Fraudulent activities, fake bids, scams and price manipulation are strictly prohibited.
+                            </text>
+                        </Label>
+                        <Separator maxWidth="200" halignment="CENTER" visible="false"/>
+                        <Label wrapText="true" maxWidth="300">
+                            <text>
+                                9) The platform reserves the right to suspend or permanently ban accounts
+                                that violate marketplace policies.
+                            </text>
+                        </Label>
+                        <Separator maxWidth="200" halignment="CENTER" visible="false"/>
+                        <Label wrapText="true" maxWidth="300">
+                            <text>
+                                10) All transactions, bidding activities and user interactions are securely monitored and recorded
+                                to ensure platform security, transparency and fairness.
+                            </text>
+                        </Label>
                     </VBox>
                 </content>
             </TitledPane>
