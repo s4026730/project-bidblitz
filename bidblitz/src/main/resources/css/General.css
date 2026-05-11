@@ -15,6 +15,42 @@
 
 }
 
+
+.titled-pane.collapsibleContainer > .title{
+
+    -fx-alignment: CENTER;
+    -fx-background-color: lightgreen;
+    -fx-text-fill: black;
+    -fx-font-weight: 900;
+    -fx-font-size: 20px;
+    -fx-background-insets: 0;
+    -fx-border-width: 2px;
+    -fx-border-style: solid;
+    -fx-border-color: black;
+    -fx-effect: transparent;
+}
+
+/*.titled-pane.collapsibleContainer > .title > .arrow-button {
+    -fx-padding: 0 50;
+}*/
+
+.titled-pane.collapsibleContainer > .title > .text {
+    -fx-translate-x: 5;
+}
+
+.titled-pane.collapsibleContainer > .content{
+
+    -fx-background-color: white;
+    -fx-text-fill: black;
+    -fx-font-weight: 500;
+    -fx-font-size: 14px;
+    -fx-background-insets: 0;
+    -fx-border-width: 2px;
+    -fx-border-style: solid;
+    -fx-border-color: black;
+
+}
+
 /* Navigation Bar Style Codes */
 
 .navigationBar {
