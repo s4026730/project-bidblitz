@@ -35,7 +35,7 @@
     </top>
 
     <center>
-        <ScrollPane fitToWidth="true" hbarPolicy="NEVER" vbarPolicy="AS_NEEDED" pannable="true">
+        <ScrollPane fitToWidth="true" hbarPolicy="NEVER" vbarPolicy="ALWAYS" pannable="true">
             <AnchorPane>
                 <Label layoutX="800" styleClass="importantText" text="ABOUT US" />
                 <TitledPane maxHeight="900" maxWidth="300" expanded="false" layoutX="433.0" layoutY="84.0" styleClass="collapsibleContainer" text="What and Why?">
