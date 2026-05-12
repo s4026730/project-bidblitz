@@ -107,7 +107,7 @@
 }
 
 #usernameSignUpLabel{
-    -fx-text-fill: #352E32
+    -fx-text-fill: #352E32;
     -fx-font-size: 100px;
 
 }
@@ -116,7 +116,7 @@
 
 .signupTextfield, .signinTextfield{
 
-    -fx-text-fill black;
+    -fx-text-fill: black;
     -fx-font-size: 25px;
     -fx-pref-width: 600px;
     -fx-height: 50px;
@@ -141,7 +141,7 @@
     -fx-font-family: 'Roboto', arial, sans-serif;
     -fx-outline: transparent;
     -fx-padding: 0;
-    -fx-pref-width: 600.0px;
+    -fx-pref-width: 600px;
 }
 
 #signupGoogleButton, #signinGoogleButton{
