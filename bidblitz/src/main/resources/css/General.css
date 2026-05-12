@@ -1,5 +1,15 @@
 /* Universal Style Codes (Apply For Multiple Pages */
 
+.lightPageLayout{
+    -fx-background-color: #DBE2E9;
+}
+
+.darkPageLayout{
+
+    -fx-background-color: black;
+
+}
+
 .generalText{
 
     -fx-text-fill: black;
@@ -30,9 +40,6 @@
     -fx-effect: transparent;
 }
 
-/*.titled-pane.collapsibleContainer > .title > .arrow-button {
-    -fx-padding: 0 50;
-}*/
 
 .titled-pane.collapsibleContainer > .title > .text {
     -fx-translate-x: 5;
@@ -43,7 +50,7 @@
     -fx-background-color: white;
     -fx-text-fill: black;
     -fx-font-weight: 500;
-    -fx-font-size: 14px;
+    -fx-font-size: 16px;
     -fx-background-insets: 0;
     -fx-border-width: 2px;
     -fx-border-style: solid;
@@ -54,7 +61,7 @@
 /* Navigation Bar Style Codes */
 
 .navigationBar {
-    -fx-background-color: #57A0D2;
+    -fx-background-color: #DBE2E9;
     -fx-spacing: 52px;
 }
 
@@ -70,8 +77,8 @@
 }
 
 .navigationButton:hover, .navigationButton:focused{
-    -fx-background-color: #E4CD05;
-    -fx-text-fill: #00674F;
+    -fx-background-color: #1E90FF;
+    -fx-text-fill: #FFBF00;
 }
 
 
@@ -87,7 +94,7 @@
 
 .homeButton{
 
-    -fx-text-fill: #FF7F50;
+    -fx-text-fill: linear-gradient(to right, #5170ff, #ff66c4);
 
 }
 
@@ -104,12 +111,6 @@
     -fx-font-size: 100px;
 
 }
-
-.lightPageLayout{
-    -fx-background-color: #DBE2E9;
-}
-
-
 
 /* Sign Up and Sign In Pages Style Codes */
 
@@ -150,12 +151,6 @@
     -fx-text-fill: black;
     -fx-graphic-text-gap: 20px;
     -fx-alignment: CENTER;
-    /*
-      overflow: hidden;
-      position: relative;
-      text-align: center;
-      -webkit-transition: background-color .218s, border-color .218s, box-shadow .218s;
-      transition: background-color .218s, border-color .218s, box-shadow .218s;*/
 }
 
 .actionButton:hover, .actionButton:focused,
@@ -199,4 +194,26 @@ Hyperlink:focused{
 
 }
 
+/* About Us Page Style Codes */
 
+.scroll-bar:vertical .track {
+    -fx-background-color: black;
+    -fx-background-radius: 15;
+}
+
+.scroll-bar:vertical .thumb {
+    -fx-background-color: #4A90E2;
+    -fx-background-radius: 10;
+}
+
+.scroll-bar .increment-button,
+.scroll-bar .decrement-button {
+    -fx-padding: 10;
+    -fx-text-fill: white;
+}
+
+.scroll-bar .increment-arrow,
+.scroll-bar .decrement-arrow {
+    -fx-scale-x: 2;
+    -fx-scale-y: 2;
+}
