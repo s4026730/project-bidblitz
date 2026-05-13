@@ -6,6 +6,7 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.ListView;
 import javafx.scene.control.TextField;
@@ -21,7 +22,11 @@ public class MainController {
     private TextField searchBar;
     @FXML
     private ListView<String> listView;
+    @FXML
+    private Button auctionSelections;
 
+    // Navigation Functionality Codes:
+    @FXML
     public void switchToGuestHome(ActionEvent event) throws IOException{
         try{
             FXMLLoader fxmlLoader = new FXMLLoader(Main.class.getResource("guest-main-view.fxml"));
@@ -38,6 +43,7 @@ public class MainController {
         }
     } //[1] [2] [3]
 
+    @FXML
     public void switchToGuestAuction(ActionEvent event) throws IOException{
         try{
             FXMLLoader fxmlLoader = new FXMLLoader(Main.class.getResource("guest-auction-view.fxml"));
@@ -54,6 +60,7 @@ public class MainController {
         }
     }//[1] [2] [3]
 
+    @FXML
     public void switchToGuestCategory(ActionEvent event) throws IOException{
         try{
             FXMLLoader fxmlLoader = new FXMLLoader(Main.class.getResource("guest-category-view.fxml"));
@@ -70,6 +77,7 @@ public class MainController {
         }
     }//[1] [2] [3]
 
+    @FXML
     public void switchToGuestHelp(ActionEvent event) throws IOException{
         try{
             FXMLLoader fxmlLoader = new FXMLLoader(Main.class.getResource("guest-help-view.fxml"));
@@ -86,6 +94,7 @@ public class MainController {
         }
     }//[1] [2] [3]
 
+    @FXML
     public void switchToGuestAboutUs(ActionEvent event) throws IOException{
         try{
             FXMLLoader fxmlLoader = new FXMLLoader(Main.class.getResource("guest-about-us-view.fxml"));
@@ -102,6 +111,7 @@ public class MainController {
         }
     }//[1] [2] [3]
 
+    @FXML
     public void switchToSignIn(ActionEvent event) throws IOException{
         try{
             FXMLLoader fxmlLoader = new FXMLLoader(Main.class.getResource("sign-in-view.fxml"));
@@ -118,6 +128,7 @@ public class MainController {
         }
     }//[1] [2] [3]
 
+    @FXML
     public void switchToSignUp(ActionEvent event) throws IOException{
         try{
             FXMLLoader fxmlLoader = new FXMLLoader(Main.class.getResource("sign-up-view.fxml"));
@@ -134,6 +145,7 @@ public class MainController {
         }
     }//[1] [2] [3]
 
+    @FXML
     public void switchToForgotUsername(ActionEvent event) throws IOException{
         try{
             FXMLLoader fxmlLoader = new FXMLLoader(Main.class.getResource("forgot-username-view.fxml"));
@@ -150,6 +162,7 @@ public class MainController {
         }
     }//[1] [2] [3]
 
+    @FXML
     public void switchToForgotPassword(ActionEvent event) throws IOException{
         try{
             FXMLLoader fxmlLoader = new FXMLLoader(Main.class.getResource("forgot-password-view.fxml"));
@@ -166,5 +179,12 @@ public class MainController {
         }
     }//[1] [2] [3]
 
+    // Auction Functionality Codes:
+    public void handleAuctionSelection (ActionEvent event) throws IOException{
+
+        auctionSelections.getStyleClass().remove("underlinedText");
+        Button clickedButton = (Button) event.getSource();
+        clickedButton.getStyleClass().add("underlinedText");
+    }
 }
 

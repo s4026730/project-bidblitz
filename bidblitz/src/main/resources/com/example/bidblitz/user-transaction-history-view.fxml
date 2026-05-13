@@ -19,15 +19,15 @@
 
         <ToolBar prefHeight="40.0" prefWidth="200.0" styleClass="navigationBar">
             <items>
-                <Button mnemonicParsing="false" onAction="#switchToGuestHome" styleClass="navigationButton, homeButton" text="BIDBLITZ"/>
-                <Button layoutX="10.0" layoutY="12.0" mnemonicParsing="false" onAction="#switchToGuestAuction" styleClass="navigationButton" text="AUCTION"/>
-                <Button layoutX="66.0" layoutY="12.0" mnemonicParsing="false" onAction="#switchToGuestCategory" styleClass="navigationButton" text="CATEGORY"/>
+                <Button mnemonicParsing="false" onAction="#switchToGuestHome" styleClass="navigationBarButton, homeButton" text="BIDBLITZ"/>
+                <Button layoutX="10.0" layoutY="12.0" mnemonicParsing="false" onAction="#switchToGuestAuction" styleClass="navigationBarButton" text="AUCTION"/>
+                <Button layoutX="66.0" layoutY="12.0" mnemonicParsing="false" onAction="#switchToGuestCategory" styleClass="navigationBarButton" text="CATEGORY"/>
                 <TextField promptText="Search Bar" styleClass="searchBar"/>
-                <Button layoutX="122.0" layoutY="12.0" mnemonicParsing="false" styleClass="navigationButton" text="Button"/>
-                <Button layoutX="195.0" layoutY="12.0" mnemonicParsing="false" onAction="#switchToGuestHelp" styleClass="navigationButton" text="HELP"/>
-                <Button layoutX="251.0" layoutY="12.0" mnemonicParsing="false" onAction="#switchToGuestAboutUs" styleClass="navigationButton" text="ABOUT US"/>
-                <Button layoutX="473.0" layoutY="10.0" mnemonicParsing="false" onAction="#switchToSignIn" styleClass="navigationButton" text="SIGN IN"/>
-                <Button layoutX="587.0" layoutY="10.0" mnemonicParsing="false" onAction="#switchToSignUp" styleClass="navigationButton" text="SIGN UP"/>
+                <Button layoutX="122.0" layoutY="12.0" mnemonicParsing="false" styleClass="navigationBarButton" text="Button"/>
+                <Button layoutX="195.0" layoutY="12.0" mnemonicParsing="false" onAction="#switchToGuestHelp" styleClass="navigationBarButton" text="HELP"/>
+                <Button layoutX="251.0" layoutY="12.0" mnemonicParsing="false" onAction="#switchToGuestAboutUs" styleClass="navigationBarButton" text="ABOUT US"/>
+                <Button layoutX="473.0" layoutY="10.0" mnemonicParsing="false" onAction="#switchToSignIn" styleClass="navigationBarButton" text="SIGN IN"/>
+                <Button layoutX="587.0" layoutY="10.0" mnemonicParsing="false" onAction="#switchToSignUp" styleClass="navigationBarButton" text="SIGN UP"/>
             </items>
             <padding>
                 <Insets top="-1.0" />

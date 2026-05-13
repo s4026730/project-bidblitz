@@ -13,6 +13,7 @@
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.text.Text?>
 
+<?import javafx.scene.control.ScrollPane?>
 <BorderPane prefHeight="1000" prefWidth="1710" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1"
             fx:controller="com.example.bidblitz.MainController">
     <Button styleClass="navigationButton"/>
@@ -43,9 +44,11 @@
     </top>
 
     <center>
-
-        <Label layoutX="610.0" layoutY="7.0" styleClass="importantText" text="CATEGORY" />
-
+        <ScrollPane fitToWidth="true" hbarPolicy="NEVER" vbarPolicy="ALWAYS" pannable="true">
+            <AnchorPane>
+                <Label layoutX="800" styleClass="importantText" text="CATEGORY"/>
+            </AnchorPane>
+        </ScrollPane>
     </center>
 
     <bottom>

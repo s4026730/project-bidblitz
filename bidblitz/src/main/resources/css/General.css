@@ -1,4 +1,4 @@
-/* Universal Style Codes (Apply For Multiple Pages */
+/* Universal Style Codes (Apply For Multiple Pages) */
 
 .lightPageLayout{
     -fx-background-color: #DBE2E9;
@@ -24,133 +24,48 @@
     -fx-font-size: 40px;
 
 }
+.actionButton, .textButton{
 
-
-.titled-pane.collapsibleContainer > .title{
-
-    -fx-alignment: CENTER;
-    -fx-background-color: lightgreen;
-    -fx-text-fill: black;
-    -fx-font-weight: 900;
-    -fx-font-size: 20px;
-    -fx-background-insets: 0;
-    -fx-border-width: 2px;
-    -fx-border-style: solid;
-    -fx-border-color: black;
-    -fx-effect: transparent;
-}
-
-
-.titled-pane.collapsibleContainer > .title > .text {
-    -fx-translate-x: 5;
-}
-
-.titled-pane.collapsibleContainer > .content{
-
-    -fx-background-color: white;
-    -fx-text-fill: black;
-    -fx-font-weight: 500;
-    -fx-font-size: 16px;
-    -fx-background-insets: 0;
-    -fx-border-width: 2px;
-    -fx-border-style: solid;
-    -fx-border-color: black;
-
-}
-
-/* Navigation Bar Style Codes */
-
-.navigationBar {
-    -fx-background-color: #DBE2E9;
-    -fx-spacing: 52px;
-}
-
-.navigationButton {
     -fx-cursor: hand;
-    -fx-background-color: transparent;
-    -fx-text-fill: black;
     -fx-background-insets: 0;
     -fx-background-radius: 0;
-    -fx-padding: 5 15 5 15;
-    -fx-font-size: 21px;
-    -fx-font-weight: 900;
-}
-
-.navigationButton:hover, .navigationButton:focused{
-    -fx-background-color: #1E90FF;
-    -fx-text-fill: #FFBF00;
-}
-
-
-.navigationButton:pressed {
-    -fx-background-color: #FF7F50, transparent;
-    -fx-text-fill: darkblue;
-    -fx-underline: true;
-    -fx-font-weight: 900;
-    -fx-scale-x: 1.0;
-    -fx-scale-y: 1.0;
-}
-
-
-.homeButton{
-
-    -fx-text-fill: linear-gradient(to right, #5170ff, #ff66c4);
-
-}
-
-.searchBar{
-
-    -fx-pref-width: 360px;
-    -fx-min-width: 200px;
-    -fx-font-size: 21px;
-
-}
-
-#usernameSignUpLabel{
-    -fx-text-fill: #352E32;
-    -fx-font-size: 100px;
-
-}
-
-/* Sign Up and Sign In Pages Style Codes */
-
-.signupTextfield, .signinTextfield{
-
     -fx-text-fill: black;
-    -fx-font-size: 25px;
-    -fx-pref-width: 600px;
-    -fx-height: 50px;
-
-}
-
-.actionButton{
-    -fx-cursor: hand;
-    -fx-background-color: #57A0D2;
-    -fx-background-insets: 0;
-    -fx-background-radius: 0;
-    -fx-text-fill: white;
-    -fx-font-size: 40px;
-    -fx-font-weight: 900;
     -fx-background-image: transparent;
-    -fx-border-width: 2px;
-    -fx-border-style: solid;
-    -fx-border-color: black;
     -fx-border-radius: 20px;
     -fx-background-radius: 20px;
     -fx-box-size: border-box;
     -fx-font-family: 'Roboto', arial, sans-serif;
     -fx-outline: transparent;
+
+}
+
+.actionButton{
+    -fx-background-color: white;
+    -fx-text-fill: black;
+    -fx-font-size: 40px;
+    -fx-font-weight: 900;
+    -fx-border-width: 2px;
+    -fx-border-style: solid;
+    -fx-border-color: black;
     -fx-padding: 0;
     -fx-pref-width: 600px;
 }
 
-#signupGoogleButton, #signinGoogleButton{
+.textButton{
 
-    -fx-underline: false;
-    -fx-background-color: white;
-    -fx-text-fill: black;
-    -fx-graphic-text-gap: 20px;
-    -fx-alignment: CENTER;
+    -fx-pref-width: -1;
+    -fx-font-size: 25px;
+    -fx-font-weight: 600;
+    -fx-border-width: 0;
+
+}
+
+.underlinedText{
+
+    -fx-border-color: transparent transparent lightblue transparent;
+    -fx-border-width: 0 0 2 0;
+    -fx-border-insets: 0 0 -2 0;
+
 }
 
 .actionButton:hover, .actionButton:focused,
@@ -194,26 +109,140 @@ Hyperlink:focused{
 
 }
 
+.titled-pane.collapsibleContainer > .title{
+
+    -fx-alignment: CENTER;
+    -fx-background-color: lightgreen;
+    -fx-text-fill: black;
+    -fx-font-weight: 900;
+    -fx-font-size: 20px;
+    -fx-background-insets: 0;
+    -fx-border-color: black;
+    -fx-border-width: 2px;
+    -fx-border-style: solid;
+    -fx-effect: transparent;
+
+}
+
+
+.titled-pane.collapsibleContainer > .title > .text {
+    -fx-translate-x: 5;
+}
+
+.titled-pane.collapsibleContainer > .content{
+
+    -fx-background-color: white;
+    -fx-text-fill: black;
+    -fx-font-weight: 500;
+    -fx-font-size: 16px;
+    -fx-background-insets: 0;
+    -fx-border-width: 2px;
+    -fx-border-style: solid;
+    -fx-border-color: black;
+
+}
+
+/* Navigation Bar Style Codes */
+
+.navigationBar {
+    -fx-background-color: #DBE2E9;
+    -fx-spacing: 52px;
+}
+
+.navigationBarButton {
+    -fx-cursor: hand;
+    -fx-background-color: transparent;
+    -fx-text-fill: black;
+    -fx-background-insets: 0;
+    -fx-background-radius: 0;
+    -fx-padding: 5 15 5 15;
+    -fx-font-size: 21px;
+    -fx-font-weight: 900;
+}
+
+.navigationBarButton:hover, .navigationBarButton:focused{
+    -fx-background-color: #1E90FF;
+    -fx-text-fill: #FFBF00;
+}
+
+
+.navigationBarButton:pressed {
+    -fx-background-color: #FF7F50, transparent;
+    -fx-text-fill: darkblue;
+    -fx-underline: true;
+    -fx-font-weight: 900;
+    -fx-scale-x: 1.0;
+    -fx-scale-y: 1.0;
+}
+
+
+.homeButton{
+
+    -fx-text-fill: linear-gradient(to right, #5170ff, #ff66c4);
+
+}
+
+.searchBar{
+
+    -fx-pref-width: 360px;
+    -fx-min-width: 200px;
+    -fx-font-size: 21px;
+
+}
+
+#usernameSignUpLabel{
+    -fx-text-fill: #352E32;
+    -fx-font-size: 100px;
+
+}
+
+/* Sign Up and Sign In Pages Style Codes */
+
+.signupTextfield, .signinTextfield{
+
+    -fx-text-fill: black;
+    -fx-font-size: 25px;
+    -fx-pref-width: 600px;
+    -fx-height: 50px;
+
+}
+
+
+#signupGoogleButton, #signinGoogleButton{
+
+    -fx-underline: false;
+    -fx-graphic-text-gap: 20px;
+    -fx-alignment: CENTER;
+}
+
 /* About Us Page Style Codes */
 
 .scroll-bar:vertical .track {
+
     -fx-background-color: black;
     -fx-background-radius: 15;
+
 }
 
 .scroll-bar:vertical .thumb {
+
     -fx-background-color: #4A90E2;
     -fx-background-radius: 10;
+
 }
 
 .scroll-bar .increment-button,
 .scroll-bar .decrement-button {
+
     -fx-padding: 10;
     -fx-text-fill: white;
+
 }
 
 .scroll-bar .increment-arrow,
 .scroll-bar .decrement-arrow {
+
     -fx-scale-x: 2;
     -fx-scale-y: 2;
+
 }
