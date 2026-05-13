@@ -149,15 +149,38 @@ Hyperlink:focused{
     -fx-spacing: 52px;
 }
 
-.navigationBarButton {
+.hamburgerMenu{
+
+    -fx-background-color: #B6D0E2;
+
+}
+
+
+.navigationBarButton, .hamburgerButton {
+
     -fx-cursor: hand;
     -fx-background-color: transparent;
     -fx-text-fill: black;
     -fx-background-insets: 0;
     -fx-background-radius: 0;
+
+}
+
+.hamburgerButton{
+
+    -fx-padding: 5 15 5 15;
+    -fx-font-size: 20px;
+    -fx-font-weight: 900;
+    -fx-pref-width: 300;
+
+}
+
+.navigationBarButton{
+
     -fx-padding: 5 15 5 15;
     -fx-font-size: 21px;
     -fx-font-weight: 900;
+
 }
 
 .navigationBarButton:hover, .navigationBarButton:focused{
