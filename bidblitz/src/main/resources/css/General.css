@@ -82,10 +82,10 @@ Hyperlink:focused{
 
 }
 
-.actionButton:armed, #signinGoogleButton:armed, #signupGoogleButton:armed{
+.actionButton:pressed, #signinGoogleButton:pressed, #signupGoogleButton:pressed{
 
-    -fx-background-color: #FF7F50, transparent;
-    -fx-text-fill: darkblue;
+    -fx-background-color: #FDAA48, transparent;
+    -fx-text-fill: #067FFF;
     -fx-font-weight: 900;
     -fx-background-insets: 0, 1;
     -fx-scale-x: 1.0;
@@ -101,9 +101,9 @@ Hyperlink:focused{
     -fx-padding: 0;
 }
 
-.actionHyperLink:focused, .actionHyperLink:visited, .actionHyperLink:armed{
+.actionHyperLink:focused,.actionHyperLink:pressed{
 
-    -fx-text-fill: #FF7F50;
+    -fx-text-fill: #FDAA48;
     -fx-focus-color: transparent;
     -fx-border-color: transparent;
 
@@ -149,14 +149,14 @@ Hyperlink:focused{
     -fx-spacing: 52px;
 }
 
-.hamburgerMenu{
+.sideBarMenu{
 
     -fx-background-color: #B6D0E2;
 
 }
 
 
-.navigationBarButton, .hamburgerButton {
+.navigationBarButton, .sideBarButton {
 
     -fx-cursor: hand;
     -fx-background-color: transparent;
@@ -166,7 +166,7 @@ Hyperlink:focused{
 
 }
 
-.hamburgerButton{
+.sideBarButton{
 
     -fx-padding: 5 15 5 15;
     -fx-font-size: 20px;
@@ -190,8 +190,8 @@ Hyperlink:focused{
 
 
 .navigationBarButton:pressed {
-    -fx-background-color: #FF7F50, transparent;
-    -fx-text-fill: darkblue;
+    -fx-background-color: #FDAA48, transparent;
+    -fx-text-fill: #067FFF;
     -fx-underline: true;
     -fx-font-weight: 900;
     -fx-scale-x: 1.0;

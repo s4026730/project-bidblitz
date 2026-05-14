@@ -45,25 +45,7 @@
     </top>
 
     <left>
-        <VBox maxHeight="1000.0" maxWidth="300.0" prefHeight="1000.0" prefWidth="300.0" styleClass="hamburgerMenu" BorderPane.alignment="CENTER">
-            <AnchorPane maxHeight="1000.0" maxWidth="300.0" prefHeight="1000.0" prefWidth="300.0">
-                <children>
-                    <Button alignment="CENTER" layoutY="206.0" maxHeight="100.0" maxWidth="300.0" mnemonicParsing="false" onAction="#switchToGuestAuction" prefHeight="100.0" prefWidth="300.0" styleClass="hamburgerButton" text="AUCTION" />
-                    <Button alignment="CENTER" layoutY="306.0" maxHeight="100.0" maxWidth="300.0" mnemonicParsing="false" onAction="#switchToGuestCategory" prefHeight="100.0" prefWidth="300.0" styleClass="hamburgerButton" text="CATEGORY" />
-                    <Button alignment="CENTER" layoutY="406.0" maxHeight="100.0" maxWidth="300.0" mnemonicParsing="false" onAction="#switchToGuestHelp" prefHeight="100.0" prefWidth="300.0" styleClass="hamburgerButton" text="HELP" />
-                    <Button alignment="CENTER" layoutY="506.0" maxHeight="100.0" maxWidth="300.0" mnemonicParsing="false" onAction="#switchToGuestAboutUs" prefHeight="100.0" prefWidth="300.0" styleClass="hamburgerButton" text="ABOUT US" />
-                    <Button alignment="CENTER" layoutY="606.0" maxHeight="100.0" maxWidth="300.0" mnemonicParsing="false" prefHeight="100.0" prefWidth="300.0" styleClass="hamburgerButton" text="SETTINGS" />
-                    <Button alignment="CENTER" layoutY="806.0" maxHeight="100.0" maxWidth="300.0" mnemonicParsing="false" onAction="#switchToSignUp" prefHeight="100.0" prefWidth="300.0" styleClass="hamburgerButton" text="SIGN UP" />
-                    <Button alignment="CENTER" layoutY="706.0" maxHeight="100.0" maxWidth="300.0" mnemonicParsing="false" onAction="#switchToSignIn" prefHeight="100.0" prefWidth="300.0" styleClass="hamburgerButton" text="SIGN IN" />
-                    <Button alignment="CENTER" layoutY="106.0" maxHeight="100.0" maxWidth="300.0" mnemonicParsing="false" onAction="#switchToGuestHome" prefHeight="100.0" prefWidth="300.0" text="BIDBLITZ">
-                        <styleClass>
-                            <String fx:value="hamburgerButton" />
-                            <String fx:value="homeButton" />
-                        </styleClass>
-                    </Button>
-                </children>
-            </AnchorPane>
-        </VBox>
+
     </left>
 
     <center>

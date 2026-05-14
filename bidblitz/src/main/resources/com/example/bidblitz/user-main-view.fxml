@@ -1,38 +1,51 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import java.lang.String?>
 <?import java.net.URL?>
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Button?>
-<?import javafx.scene.control.Hyperlink?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
 <?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.TitledPane?>
 <?import javafx.scene.control.ToolBar?>
-<?import javafx.scene.image.Image?>
-<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.BorderPane?>
-<?import javafx.scene.text.Text?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.ScrollPane?>
 
 <BorderPane prefHeight="1000" prefWidth="1710" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1"
             fx:controller="com.example.bidblitz.MainController">
     <top>
+        <VBox maxHeight="1000.0" maxWidth="200.0" prefHeight="1000.0" prefWidth="200.0" style="-fx-background-color: #B6D0E2;" BorderPane.alignment="TOP_LEFT">
+            <AnchorPane maxHeight="1000.0" maxWidth="200.0" prefHeight="1000.0" prefWidth="200.0">
+                <children>
+                    <Button alignment="CENTER" layoutY="355.0" maxHeight="150.0" maxWidth="200.0" mnemonicParsing="false" onAction="#switchToGuestHelp" prefHeight="150.0" prefWidth="200.0" styleClass="hamburgerButton" text="HELP" />
+                    <Button alignment="CENTER" layoutY="505.0" maxHeight="150.0" maxWidth="200.0" mnemonicParsing="false" onAction="#switchToGuestAboutUs" prefHeight="150.0" prefWidth="200.0" styleClass="hamburgerButton" text="ABOUT US" />
+                    <Button alignment="CENTER" layoutY="805.0" maxHeight="150.0" maxWidth="200.0" mnemonicParsing="false" onAction="#switchToSignUp" prefHeight="150.0" prefWidth="200.0" styleClass="hamburgerButton" text="SIGN UP" />
+                    <Button alignment="CENTER" layoutY="655.0" maxHeight="150.0" maxWidth="200.0" mnemonicParsing="false" onAction="#switchToSignIn" prefHeight="150.0" prefWidth="200.0" styleClass="hamburgerButton" text="SIGN IN" />
+                    <Button maxHeight="150.0" maxWidth="200.0" mnemonicParsing="false" onAction="#switchToGuestHome" prefHeight="150.0" prefWidth="200.0" text="BIDBLITZ">
+                        <styleClass>
+                            <String fx:value="hamburgerButton" />
+                            <String fx:value="homeButton" />
+                        </styleClass>
+                    </Button>
+                </children>
+            </AnchorPane>
+            <!--<AnchorPane maxWidth="1311.0" prefHeight="49.0" prefWidth="1000.0">
+                <Button layoutX="223.0" layoutY="4.0" mnemonicParsing="false" onAction="#switchToGuestAuction" styleClass="navigationBarButton" text="AUCTION" />
+                <TextField layoutX="368.0" layoutY="4.0" promptText="Search Bar" styleClass="searchBar" />
+                <Button layoutX="765.0" layoutY="6.0" mnemonicParsing="false" styleClass="navigationBarButton" text="SEARCH" />
+                <Button layoutX="1029.0" layoutY="4.0" mnemonicParsing="false" onAction="#switchToGuestCategory" styleClass="navigationBarButton" text="CATEGORY" />
+                <Button layoutX="877.0" layoutY="6.0" mnemonicParsing="false" onAction="#switchToGuestAboutUs" styleClass="navigationBarButton" text="ABOUT US" />
+                <Button layoutX="1411.0" layoutY="4.0" mnemonicParsing="false" onAction="#switchToSignIn" styleClass="navigationBarButton" text="SIGN IN" />
+                <Button layoutX="1194.0" layoutY="4.0" mnemonicParsing="false" onAction="#switchToSignUp" styleClass="navigationBarButton" text="SIGN UP" />
+                <padding>
+                    <Insets top="-1.0" />
+                </padding>
+            </AnchorPane>-->
+        </VBox>
 
-        <ToolBar prefHeight="40.0" prefWidth="200.0" styleClass="navigationBar">
-            <items>
-                <Button mnemonicParsing="false" onAction="#switchToGuestHome" styleClass="navigationBarButton, homeButton" text="BIDBLITZ"/>
-                <Button layoutX="10.0" layoutY="12.0" mnemonicParsing="false" onAction="#switchToGuestAuction" styleClass="navigationBarButton" text="AUCTION"/>
-                <Button layoutX="66.0" layoutY="12.0" mnemonicParsing="false" onAction="#switchToGuestCategory" styleClass="navigationBarButton" text="CATEGORY"/>
-                <TextField promptText="Search Bar" styleClass="searchBar"/>
-                <Button layoutX="122.0" layoutY="12.0" mnemonicParsing="false" styleClass="navigationBarButton" text="Button"/>
-                <Button layoutX="195.0" layoutY="12.0" mnemonicParsing="false" onAction="#switchToGuestHelp" styleClass="navigationBarButton" text="HELP"/>
-                <Button layoutX="251.0" layoutY="12.0" mnemonicParsing="false" onAction="#switchToGuestAboutUs" styleClass="navigationBarButton" text="ABOUT US"/>
-                <Button layoutX="473.0" layoutY="10.0" mnemonicParsing="false" onAction="#switchToSignIn" styleClass="navigationBarButton" text="SIGN IN"/>
-                <Button layoutX="587.0" layoutY="10.0" mnemonicParsing="false" onAction="#switchToSignUp" styleClass="navigationBarButton" text="SIGN UP"/>
-            </items>
-            <padding>
-                <Insets top="-1.0" />
-            </padding>
-        </ToolBar>
     </top>
 
     <center>
