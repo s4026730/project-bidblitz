@@ -39,13 +39,17 @@
         <AnchorPane>
 
             <Label styleClass="importantText" layoutX="610.0" layoutY="7.0" text="Forgot Your Username?" />
-            <Text styleClass="generalText" layoutX="527.0" layoutY="97.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Please enter the email address you'd like your username reset information to sent to." wrappingWidth="831.3749389648438" />
-            <Label fx:id="forgotUsernameMailInput" styleClass="importantText" layoutX="527.0" layoutY="144.0" text="Enter Email Address:" />
+            <Text styleClass="generalText" layoutX="527.0" layoutY="97.0" strokeType="OUTSIDE" strokeWidth="0.0"
+                  text="Please enter the email address you'd like your username reset information to sent to." wrappingWidth="831.3749389648438" />
+            <Label fx:id="forgotUsernameMailInput" styleClass="importantText" layoutX="527.0" layoutY="144.0"
+                   text="Enter Email Address:" />
             <TextField layoutX="527.0" layoutY="202.0" styleClass="signinTextfield" />
-            <Button fx:id="forgotUsernameNextButton" styleClass="actionButton" layoutX="527.0" layoutY="310.0" mnemonicParsing="false" text="Next ➡" />
-            <Button styleClass="actionButton" layoutX="527.0" layoutY="435.0" onAction="#switchToSignIn" text="⬅ Go back" />
-            <Hyperlink fx:id="forgotPassword" styleClass="actionHyperLink" layoutX="675.0" layoutY="560.0" onAction="#switchToForgotPassword"
-                       text="Forgot your password? Click Here." />
+            <Button fx:id="forgotUsernameNextButton" styleClass="actionButton" layoutX="527.0" layoutY="310.0" prefWidth="600"
+                    mnemonicParsing="false" text="Next ➡" />
+            <Button styleClass="actionButton" layoutX="527.0" layoutY="435.0" prefWidth="600" onAction="#switchToSignIn"
+                    text="⬅ Go back" />
+            <Hyperlink fx:id="forgotPassword" styleClass="actionHyperLink" layoutX="675.0" layoutY="560.0"
+                       onAction="#switchToForgotPassword" text="Forgot your password? Click Here." />
         </AnchorPane>
     </center>
 

@@ -1,5 +1,8 @@
 package com.example.bidblitz;
 
+import javafx.animation.FadeTransition;
+import javafx.animation.KeyFrame;
+import javafx.animation.Timeline;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -10,7 +13,10 @@ import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.ListView;
 import javafx.scene.control.TextField;
+import javafx.scene.image.Image;
+import javafx.scene.image.ImageView;
 import javafx.stage.Stage;
+import javafx.util.Duration;
 
 import java.io.IOException;
 
@@ -25,12 +31,19 @@ public class MainController {
     @FXML
     private Button auctionSelections;
 
-    // Navigation Functionality Codes:
+    @FXML
+    private ImageView banner;
+    private Image[] bannerImages;
+    private int currentIndex = 0;
+
+    // Guest Pages Navigation & Other Features Codes:
     @FXML
     public void switchToGuestHome(ActionEvent event) throws IOException{
         try{
             FXMLLoader fxmlLoader = new FXMLLoader(Main.class.getResource("guest-main-view.fxml"));
             Parent root = fxmlLoader.load();
+            MainController controller = fxmlLoader.getController();
+            controller.slideshowSystem();
             stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
             demonstratedScene = new Scene(root, 1710, 1000);
             demonstratedScene.getStylesheets().add(getClass().getResource("/css/General.css").toExternalForm());
@@ -186,5 +199,64 @@ public class MainController {
         Button clickedButton = (Button) event.getSource();
         clickedButton.getStyleClass().add("underlinedText");
     }
+
+    // Slideshow Feature Codes:
+    @FXML
+    public void slideshowSystem() {
+
+        if (banner == null) {
+            return;
+        }
+
+        bannerImages = new Image[]{
+                new Image(getClass().getResource("/image/bidblitz-icon.png").toExternalForm()),
+                new Image(getClass().getResource("/image/google-round-icon.png").toExternalForm())
+        };
+        currentIndex = 0;
+
+        banner.setImage(bannerImages[currentIndex]);
+
+        Timeline timeline = new Timeline(
+                new KeyFrame(Duration.seconds(5), e -> nextImage())
+        );
+
+        timeline.setCycleCount(Timeline.INDEFINITE);
+        timeline.playFromStart();
+    }
+
+    private void nextImage() {
+
+        if (banner == null || bannerImages == null) {
+            return;
+        }
+
+        FadeTransition fadeOut =
+                new FadeTransition(Duration.millis(500), banner);
+
+        fadeOut.setFromValue(1);
+        fadeOut.setToValue(0);
+
+        fadeOut.setOnFinished(e -> {
+
+            currentIndex++;
+
+            if(currentIndex >= bannerImages.length){
+                currentIndex = 0;
+            }
+
+            banner.setImage(bannerImages[currentIndex]);
+
+            FadeTransition fadeIn =
+                    new FadeTransition(Duration.millis(500), banner);
+
+            fadeIn.setFromValue(0);
+            fadeIn.setToValue(1);
+
+            fadeIn.play();
+        });
+
+        fadeOut.play();
+    }
+
 }
 

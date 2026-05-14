@@ -44,9 +44,10 @@
             <TextField layoutX="527.0" layoutY="123.0" styleClass="signupTextfield" />
             <TextField layoutX="527.0" layoutY="233.0" styleClass="signupTextfield" />
             <TextField layoutX="527.0" layoutY="352.0" styleClass="signupTextfield" />
-            <Button fx:id="signupButton" styleClass="actionButton" layoutX="527.0" layoutY="446.0" mnemonicParsing="false" text="Sign Up" />
+            <Button fx:id="signupButton" styleClass="actionButton" layoutX="527.0" layoutY="446.0" prefWidth="600" mnemonicParsing="false" text="Sign Up" />
             <Text styleClass="OR" layoutX="799.0" layoutY="562.0" strokeType="OUTSIDE" strokeWidth="0.0" text="OR" />
-            <Button fx:id="signupGoogleButton" styleClass="actionButton" layoutX="527.0" layoutY="590.0" text="Sign Up With Google" textAlignment="CENTER">
+            <Button fx:id="signupGoogleButton" styleClass="actionButton" layoutX="527.0" layoutY="590.0" prefWidth="600"
+                    text="Sign Up With Google" textAlignment="CENTER">
                 <graphic>
                 <ImageView fitHeight="40.0" fitWidth="40.0" preserveRatio="true" smooth="true" styleClass="googleIcon">
                     <Image url="@../../../image/google-round-icon.png" />

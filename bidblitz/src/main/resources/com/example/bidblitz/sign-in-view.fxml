@@ -42,9 +42,11 @@
             <Label fx:id="signinPassword" styleClass="importantText" layoutX="526.0" layoutY="175.0" text="Password" />
             <TextField layoutX="527.0" layoutY="123.0" styleClass="signinTextfield" />
             <TextField layoutX="527.0" layoutY="233.0" styleClass="signinTextfield" />
-            <Button fx:id="signinButton" styleClass="actionButton" layoutX="527.0" layoutY="335.0" mnemonicParsing="false" text="Sign In" />
+            <Button fx:id="signinButton" styleClass="actionButton" layoutX="527.0" layoutY="335.0" prefWidth="600" mnemonicParsing="false"
+                    text="Sign In" />
             <Text styleClass="OR" layoutX="799.0" layoutY="447.0" strokeType="OUTSIDE" strokeWidth="0.0" text="OR" />
-            <Button fx:id="signinGoogleButton" styleClass="actionButton" layoutX="527.0" layoutY="469.0" text="Sign In With Google" textAlignment="CENTER">
+            <Button fx:id="signinGoogleButton" styleClass="actionButton" layoutX="527.0" layoutY="469.0" prefWidth="600"
+                    text="Sign In With Google" textAlignment="CENTER">
                 <graphic>
                     <ImageView fitHeight="40.0" fitWidth="40.0" preserveRatio="true" smooth="true" styleClass="googleIcon">
                         <Image url="@../../../image/google-round-icon.png" />

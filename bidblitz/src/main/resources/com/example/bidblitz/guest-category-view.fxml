@@ -17,26 +17,26 @@
 <?import javafx.scene.control.ScrollPane?>
 <BorderPane prefHeight="1000" prefWidth="1710" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1"
             fx:controller="com.example.bidblitz.MainController">
-    <Button styleClass="navigationButton"/>
+    <Button styleClass="navigationBarButton"/>
     <top>
         <ToolBar prefHeight="40.0" prefWidth="200.0" styleClass="navigationBar">
             <items>
                 <Button mnemonicParsing="false" onAction="#switchToGuestHome"
-                        styleClass="navigationButton, homeButton" text="BIDBLITZ" />
+                        styleClass="navigationBarButton, homeButton" text="BIDBLITZ" />
                 <Button layoutX="10.0" layoutY="12.0" mnemonicParsing="false" onAction="#switchToGuestAuction"
-                        styleClass="navigationButton" text="AUCTION" />
+                        styleClass="navigationBarButton" text="AUCTION" />
                 <Button layoutX="66.0" layoutY="12.0" mnemonicParsing="false" onAction="#switchToGuestCategory"
-                        styleClass="navigationButton" text="CATEGORY" />
+                        styleClass="navigationBarButton" text="CATEGORY" />
                 <TextField promptText="Search Bar" styleClass="searchBar" />
-                <Button layoutX="122.0" layoutY="12.0" mnemonicParsing="false" styleClass="navigationButton" text="Button" />
+                <Button layoutX="122.0" layoutY="12.0" mnemonicParsing="false" styleClass="navigationBarButton" text="Button" />
                 <Button layoutX="195.0" layoutY="12.0" mnemonicParsing="false" onAction="#switchToGuestHelp"
-                        styleClass="navigationButton" text="HELP" />
+                        styleClass="navigationBarButton" text="HELP" />
                 <Button layoutX="251.0" layoutY="12.0" mnemonicParsing="false" onAction="#switchToGuestAboutUs"
-                        styleClass="navigationButton" text="ABOUT US" />
+                        styleClass="navigationBarButton" text="ABOUT US" />
                 <Button layoutX="473.0" layoutY="10.0" mnemonicParsing="false" onAction="#switchToSignIn"
-                        styleClass="navigationButton" text="SIGN IN" />
+                        styleClass="navigationBarButton" text="SIGN IN" />
                 <Button layoutX="587.0" layoutY="10.0" mnemonicParsing="false" onAction="#switchToSignUp"
-                        styleClass="navigationButton" text="SIGN UP" />
+                        styleClass="navigationBarButton" text="SIGN UP" />
             </items>
             <padding>
                 <Insets top="-1.0" />
