@@ -192,6 +192,155 @@ public class MainController {
         }
     }//[1] [2] [3]
 
+    // User Pages Navigation & Other Features Codes:
+    @FXML
+    public void switchToUserHome (ActionEvent event) throws IOException{
+        try{
+            FXMLLoader fxmlLoader = new FXMLLoader(Main.class.getResource("user-main-view.fxml"));
+            Parent root = fxmlLoader.load();
+            MainController controller = fxmlLoader.getController();
+            controller.slideshowSystem();
+            stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+            demonstratedScene = new Scene(root, 1710, 1000);
+            demonstratedScene.getStylesheets().add(getClass().getResource("/css/General.css").toExternalForm());
+            stage.setScene(demonstratedScene);
+            stage.show();
+        }
+        catch(IOException e){
+            System.err.println("Could not find forgot-password-view.fxml. Check your folder structure!");
+            e.printStackTrace();
+        }
+    }//[1] [2] [3]
+
+    @FXML
+    public void switchToUserAuction (ActionEvent event) throws IOException{
+        try{
+            FXMLLoader fxmlLoader = new FXMLLoader(Main.class.getResource("user-auction-view.fxml"));
+            Parent root = fxmlLoader.load();
+            stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+            demonstratedScene = new Scene(root, 1710, 1000);
+            demonstratedScene.getStylesheets().add(getClass().getResource("/css/General.css").toExternalForm());
+            stage.setScene(demonstratedScene);
+            stage.show();
+        }
+        catch(IOException e){
+            System.err.println("Could not find forgot-password-view.fxml. Check your folder structure!");
+            e.printStackTrace();
+        }
+    }//[1] [2] [3]
+
+    public void switchToUserCategory (ActionEvent event) throws IOException{
+        try{
+            FXMLLoader fxmlLoader = new FXMLLoader(Main.class.getResource("user-category-view.fxml"));
+            Parent root = fxmlLoader.load();
+            stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+            demonstratedScene = new Scene(root, 1710, 1000);
+            demonstratedScene.getStylesheets().add(getClass().getResource("/css/General.css").toExternalForm());
+            stage.setScene(demonstratedScene);
+            stage.show();
+        }
+        catch(IOException e){
+            System.err.println("Could not find forgot-password-view.fxml. Check your folder structure!");
+            e.printStackTrace();
+        }
+    }//[1] [2] [3]
+
+    public void switchToUserHelp(ActionEvent event) throws IOException{
+        try{
+            FXMLLoader fxmlLoader = new FXMLLoader(Main.class.getResource("user-help-view.fxml"));
+            Parent root = fxmlLoader.load();
+            stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+            demonstratedScene = new Scene(root, 1710, 1000);
+            demonstratedScene.getStylesheets().add(getClass().getResource("/css/General.css").toExternalForm());
+            stage.setScene(demonstratedScene);
+            stage.show();
+        }
+        catch(IOException e){
+            System.err.println("Could not find guest-help-view.fxml. Check your folder structure!");
+            e.printStackTrace();
+        }
+    }//[1] [2] [3]
+
+    public void switchToUserAboutUs (ActionEvent event) throws IOException{
+        try{
+            FXMLLoader fxmlLoader = new FXMLLoader(Main.class.getResource("user-about-us-view.fxml"));
+            Parent root = fxmlLoader.load();
+            stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+            demonstratedScene = new Scene(root, 1710, 1000);
+            demonstratedScene.getStylesheets().add(getClass().getResource("/css/General.css").toExternalForm());
+            stage.setScene(demonstratedScene);
+            stage.show();
+        }
+        catch(IOException e){
+            System.err.println("Could not find forgot-password-view.fxml. Check your folder structure!");
+            e.printStackTrace();
+        }
+    }//[1] [2] [3]
+
+    public void switchToProfile (ActionEvent event) throws IOException{
+        try{
+            FXMLLoader fxmlLoader = new FXMLLoader(Main.class.getResource("profile-view.fxml"));
+            Parent root = fxmlLoader.load();
+            stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+            demonstratedScene = new Scene(root, 1710, 1000);
+            demonstratedScene.getStylesheets().add(getClass().getResource("/css/General.css").toExternalForm());
+            stage.setScene(demonstratedScene);
+            stage.show();
+        }
+        catch(IOException e){
+            System.err.println("Could not find forgot-password-view.fxml. Check your folder structure!");
+            e.printStackTrace();
+        }
+    }//[1] [2] [3]
+
+    public void switchToInventory (ActionEvent event) throws IOException{
+        try{
+            FXMLLoader fxmlLoader = new FXMLLoader(Main.class.getResource("inventory-view.fxml"));
+            Parent root = fxmlLoader.load();
+            stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+            demonstratedScene = new Scene(root, 1710, 1000);
+            demonstratedScene.getStylesheets().add(getClass().getResource("/css/General.css").toExternalForm());
+            stage.setScene(demonstratedScene);
+            stage.show();
+        }
+        catch(IOException e){
+            System.err.println("Could not find forgot-password-view.fxml. Check your folder structure!");
+            e.printStackTrace();
+        }
+    }//[1] [2] [3]
+
+    public void switchToTransactionHistory (ActionEvent event) throws IOException{
+        try{
+            FXMLLoader fxmlLoader = new FXMLLoader(Main.class.getResource("transaction-history-view.fxml"));
+            Parent root = fxmlLoader.load();
+            stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+            demonstratedScene = new Scene(root, 1710, 1000);
+            demonstratedScene.getStylesheets().add(getClass().getResource("/css/General.css").toExternalForm());
+            stage.setScene(demonstratedScene);
+            stage.show();
+        }
+        catch(IOException e){
+            System.err.println("Could not find forgot-password-view.fxml. Check your folder structure!");
+            e.printStackTrace();
+        }
+    }//[1] [2] [3]
+
+    public void switchToSettings (ActionEvent event) throws IOException{
+        try{
+            FXMLLoader fxmlLoader = new FXMLLoader(Main.class.getResource("settings-view.fxml"));
+            Parent root = fxmlLoader.load();
+            stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+            demonstratedScene = new Scene(root, 1710, 1000);
+            demonstratedScene.getStylesheets().add(getClass().getResource("/css/General.css").toExternalForm());
+            stage.setScene(demonstratedScene);
+            stage.show();
+        }
+        catch(IOException e){
+            System.err.println("Could not find forgot-password-view.fxml. Check your folder structure!");
+            e.printStackTrace();
+        }
+    }//[1] [2] [3]
+
     // Auction Functionality Codes:
     public void handleAuctionSelection (ActionEvent event) throws IOException{
 
