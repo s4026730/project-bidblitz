@@ -16,7 +16,7 @@
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.VBox?>
 
-<BorderPane prefHeight="1000" prefWidth="1710" styleClass="lightPageLayout" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.bidblitz.MainController">
+<BorderPane fx:id="rootPane" prefHeight="1000" prefWidth="1710" styleClass="lightPageLayout" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.bidblitz.MainController">
     <top>
         <AnchorPane maxHeight="50.0" maxWidth="1710.0" prefHeight="50.0" prefWidth="1710.0">
             <Button layoutY="-41.0" styleClass="navigationButton" />
