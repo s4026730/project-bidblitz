@@ -25,7 +25,7 @@
                     <String fx:value="homeButton" />
                 </styleClass>
             </Button>
-            <MenuButton layoutX="230.0" maxHeight="50.0" maxWidth="200.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="200.0" styleClass="textButton" text="CATEGORY" textAlignment="CENTER">
+            <MenuButton layoutX="230.0" maxHeight="50.0" maxWidth="200.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="200.0" styleClass="textButton" text="CATEGORY  ▼" textAlignment="CENTER">
                 <items>
                     <MenuItem mnemonicParsing="false" text="Action 1" />
                     <MenuItem mnemonicParsing="false" text="Action 2" />
