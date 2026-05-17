@@ -18,15 +18,12 @@
 }
 
 .OR, .AND, .importantText{
-
     -fx-text-fill: black;
     -fx-font-weight: 900;
     -fx-font-size: 40px;
-
 }
 
 .submitButton, #searchButton, #advanceSearchButton, .actionButton, .textButton{
-
     -fx-cursor: hand;
     -fx-background-image: transparent;
     -fx-background-insets: 0;
@@ -36,53 +33,42 @@
     -fx-padding: 0;
     -fx-box-size: border-box;
     -fx-outline: transparent;
-
+    -fx-graphic-text-gap: 20px;
 }
 
 .submitButton, #searchButton, #advanceSearchButton{
-
     -fx-text-fill: white;
     -fx-font-weight: 900;
-
 }
 
 #searchButton, #advanceSearchButton{
-
     -fx-font-size: 20px;
-
 }
 
-.actionButton, .submitButton {
 
-    -fx-font-weight: 900;
-
-}
-
-.actionButton{
-
-    -fx-background-color: white;
+.actionButton, .submitButton{
     -fx-font-size: 40px;
-    -fx-text-fill: black;
     -fx-border-width: 2px;
     -fx-border-style: solid;
     -fx-border-color: black;
+    -fx-font-weight: 900;
+    -fx-text-fill: black;
     -fx-underline: false;
-    -fx-graphic-text-gap: 20px;
     -fx-alignment: CENTER;
+}
 
+.actionButton{
+    -fx-background-color: white;
+    -fx-text-fill: black;
 }
 
 .submitButton{
-
-    -fx-font-size: 40px;
     -fx-background-color: #1877F2;
-
+    -fx-text-fill: white;
 }
 
 #searchButton{
-
     -fx-background-color: #1877F2;
-
 }
 
 #advanceSearchButton{
@@ -92,36 +78,31 @@
 }
 
 .textButton {
-
     -fx-text-fill: black;
     -fx-pref-width: -1;
     -fx-font-size: 20px;
     -fx-font-weight: 900;
     -fx-border-width: 0;
+    -fx-background-radius: 0;
+    -fx-border-radius: 0;
     -fx-padding:0;
     -fx-background-color: #DBE2E9;
-
 }
 
 .underlinedText{
-
     -fx-border-color: transparent transparent lightblue transparent;
     -fx-border-width: 0 0 2 0;
     -fx-border-insets: 0 0 -2 0;
-
 }
 
 .actionHyperLink{
-
     -fx-font-size: 20px;
     -fx-background-image: transparent;
     -fx-outline: transparent;
     -fx-padding: 0;
-
 }
 
 .titled-pane.collapsibleContainer > .title{
-
     -fx-alignment: CENTER;
     -fx-background-color: lightgreen;
     -fx-text-fill: black;
@@ -132,18 +113,14 @@
     -fx-border-width: 2px;
     -fx-border-style: solid;
     -fx-effect: transparent;
-
 }
 
 
 .titled-pane.collapsibleContainer > .title > .text {
-
     -fx-translate-x: 5;
-
 }
 
 .titled-pane.collapsibleContainer > .content{
-
     -fx-background-color: white;
     -fx-text-fill: black;
     -fx-font-weight: 500;
@@ -152,45 +129,43 @@
     -fx-border-width: 2px;
     -fx-border-style: solid;
     -fx-border-color: black;
-
 }
+
+.menu-button .arrow {
+    -fx-padding:0;
+    -fx-shape:"";
+    -fx-background-color: transparent;
+}
+
+.menu-button .arrow-button{
+    -fx-padding:0;
+}
+
 
 /* Navigation Bar Style Codes */
 
 .sidebarMenu {
-
     -fx-background-color: #B6D0E2;
-
 }
 
 
-.navigationButton {
-
+.navigationButton{
     -fx-cursor: hand;
     -fx-background-color: transparent;
     -fx-text-fill: black;
     -fx-background-insets: 0;
     -fx-background-radius: 0;
-
-}
-
-.navigationButton{
-
-    -fx-padding: 5 15 5 15;
+    -fx-padding: 0;
     -fx-font-size: 20px;
     -fx-font-weight: 900;
     -fx-pref-width: 300;
-
 }
 
 .homeButton{
-
     -fx-text-fill: linear-gradient(to right, #5170ff, #ff66c4);
-
 }
 
 .searchBar{
-
     -fx-font-size: 20px;
     -fx-text-fill: black;
     -fx-prompt-text-fill: #898989;
@@ -199,7 +174,6 @@
     -fx-border-width: 2px;
     -fx-border-style: solid;
     -fx-border-color: black;
-
 }
 
 
@@ -209,75 +183,61 @@
 
 }
 
+.navigationButton:hover, .navigationButton:focused,
 .actionButton:hover, .actionButton:focused,
 .submitButton:hover, .submitButton:focused,
+.textButton:hover, .textButton:focused,
 #searchButton:hover, #searchButton:focused,
-#advanceSearchButton:hover, #advanceSearchButton:focused,
-.navigationButton:hover, .navigationButton:focused{
-
+#advanceSearchButton:hover, #advanceSearchButton:focused{
     -fx-background-color: #E4CD05;
     -fx-text-fill: #00674F;
-
 }
 
-.actionButton:pressed, .submitButton:pressed, #searchButton:pressed, #advanceSearchButton:pressed, .navigationButton:pressed{
-
+.navigationButton:pressed, .actionButton:pressed, .submitButton:pressed, .textButton:pressed,
+#searchButton:pressed, #advanceSearchButton:pressed{
     -fx-background-color: #FDAA48, transparent;
     -fx-text-fill: #067FFF;
     -fx-font-weight: 900;
     -fx-background-insets: 0, 1;
     -fx-scale-x: 1.0;
     -fx-scale-y: 1.0;
-
 }
 
 .actionHyperLink:focused,.actionHyperLink:pressed{
-
     -fx-text-fill: #FDAA48;
     -fx-focus-color: transparent;
     -fx-border-color: transparent;
-
 }
 
 /* Sign Up and Sign In Pages Style Codes */
 
 .signupTextfield, .signinTextfield{
-
     -fx-text-fill: black;
     -fx-font-size: 25px;
     -fx-pref-width: 600px;
     -fx-height: 50px;
-
 }
 
 /* About Us Page Style Codes */
 
 .scroll-bar:vertical .track {
-
     -fx-background-color: black;
     -fx-background-radius: 15;
-
 }
 
 .scroll-bar:vertical .thumb {
-
     -fx-background-color: #4A90E2;
     -fx-background-radius: 10;
-
 }
 
 .scroll-bar .increment-button,
 .scroll-bar .decrement-button {
-
     -fx-padding: 10;
     -fx-text-fill: white;
-
 }
 
 .scroll-bar .increment-arrow,
 .scroll-bar .decrement-arrow {
-
     -fx-scale-x: 2;
     -fx-scale-y: 2;
-
 }

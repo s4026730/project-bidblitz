@@ -87,7 +87,7 @@
     </left>
     <center>
         <AnchorPane maxHeight="950.0" maxWidth="1510.0" prefHeight="950.0" prefWidth="1510.0">
-            <Label layoutX="680.0" layoutY="25.0" styleClass="importantText" text="HELP" />
+            <Label layoutX="680.0" layoutY="25.0" styleClass="importantText" text="BALANCE" />
         </AnchorPane>
     </center>
     <stylesheets>
