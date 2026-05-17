@@ -136,9 +136,19 @@
     -fx-shape:"";
     -fx-background-color: transparent;
 }
+.collapsibleMenu .context-menu {
+    -fx-pref-width: 300px;
+}
 
-.menu-button .arrow-button{
-    -fx-padding:0;
+.collapsibleMenu .menu-item {
+    -fx-pref-width: 300px;
+    -fx-pref-height: 50px;
+}
+
+.collapsibleMenu .menu-item > .label {
+    -fx-pref-width: 300px;
+    -fx-alignment: CENTER;
+    -fx-text-alignment: CENTER;
 }
 
 

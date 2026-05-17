@@ -45,26 +45,31 @@
                     </ContextMenu>
                 </contextMenu>
             </Button>
-            <MenuButton fx:id="userAccountButton" layoutX="1410.0" maxHeight="50.0" maxWidth="300.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="300.0" styleClass="textButton" textAlignment="CENTER">
+            <MenuButton layoutX="1410.0" maxHeight="50.0" maxWidth="300.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="300.0" textAlignment="CENTER">
                 <graphic>
                     <HBox alignment="CENTER_LEFT" maxHeight="50.0" maxWidth="300.0" prefHeight="50.0" prefWidth="300.0" spacing="10">
-                        <ImageView fx:id="avatar" fitHeight="30" fitWidth="30" preserveRatio="false">
+                        <ImageView fx:id="accountAvatar" fitHeight="30" fitWidth="30" preserveRatio="false">
                             <image>
                                 <Image url="@../../../image/default-avatar.png" />
                             </image>
                         </ImageView>
-                        <Label fx:id="usernameLabel" styleClass="steamName" text="PROFILE" />
-                        <Label styleClass="customArrow" text="▼" />
-                        <Label fx:id="walletLabel" styleClass="steamMoney" text="0$" />
+                        <Label fx:id="accountName" text="PROFILE" />
+                        <Label text="▼" />
+                        <Label fx:id="accountBalance" text="0$" />
                     </HBox>
                 </graphic>
                 <items>
                     <MenuItem onAction="#switchToProfile" text="View Profile" />
+                    <MenuItem onAction="#switchToBalance" text="View My Balance" />
                     <MenuItem onAction="#switchToInventory" text="Inventory" />
                     <MenuItem onAction="#switchToSettings" text="Settings" />
                     <SeparatorMenuItem />
                     <MenuItem text="Log Out" />
                 </items>
+                <styleClass>
+                    <String fx:value="textButton" />
+                    <String fx:value="collapsibleMenu" />
+                </styleClass>
             </MenuButton>
         </AnchorPane>
     </top>
