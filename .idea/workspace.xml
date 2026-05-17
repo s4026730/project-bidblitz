@@ -4,12 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="02ae6a1a-35c8-472c-8de6-6c67efd03109" name="Changes" comment="Setting the Main.java back to guest pages (Forgot to change it back)">
-      <change beforePath="$PROJECT_DIR$/bidblitz/src/main/resources/com/example/bidblitz/user-about-us-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/bidblitz/src/main/resources/com/example/bidblitz/user-about-us-view.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bidblitz/src/main/resources/com/example/bidblitz/user-auction-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/bidblitz/src/main/resources/com/example/bidblitz/user-auction-view.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bidblitz/src/main/resources/com/example/bidblitz/user-category-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/bidblitz/src/main/resources/com/example/bidblitz/user-category-view.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bidblitz/src/main/resources/com/example/bidblitz/user-help-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/bidblitz/src/main/resources/com/example/bidblitz/user-help-view.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bidblitz/src/main/resources/com/example/bidblitz/user-main-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/bidblitz/src/main/resources/com/example/bidblitz/user-main-view.fxml" afterDir="false" />
+    <list default="true" id="02ae6a1a-35c8-472c-8de6-6c67efd03109" name="Changes" comment="Update the category layout position in all pages.">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bidblitz/src/main/java/com/example/bidblitz/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/bidblitz/src/main/java/com/example/bidblitz/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bidblitz/src/main/resources/com/example/bidblitz/guest-main-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/bidblitz/src/main/resources/com/example/bidblitz/guest-main-view.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -197,7 +195,15 @@
       <option name="project" value="LOCAL" />
       <updated>1779023848824</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Update the category layout position in all pages.">
+      <option name="closed" value="true" />
+      <created>1779026098167</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1779026098167</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -229,6 +235,7 @@
     <MESSAGE value="Remove empty styleclass to avoid confusion." />
     <MESSAGE value="Adding layout and currently available for all User pages. Refining every non database function features into every page. Rebuild the MainController.java file in order to make both MenuItem and Button works perfect fine and made the coding structure progress faster and fewer possibilities of causing errors." />
     <MESSAGE value="Setting the Main.java back to guest pages (Forgot to change it back)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Setting the Main.java back to guest pages (Forgot to change it back)" />
+    <MESSAGE value="Update the category layout position in all pages." />
+    <option name="LAST_COMMIT_MESSAGE" value="Update the category layout position in all pages." />
   </component>
 </project>
