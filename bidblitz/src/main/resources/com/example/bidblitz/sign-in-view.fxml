@@ -63,7 +63,7 @@
             <Text layoutX="670.0" layoutY="570.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="OR" text="OR" />
             <Button fx:id="signinGoogleButton" layoutX="400.0" layoutY="600.0" prefWidth="600" styleClass="actionButton" text="Sign In With Google" textAlignment="CENTER">
                 <graphic>
-                    <ImageView fitHeight="40.0" fitWidth="40.0" preserveRatio="true" smooth="true" styleClass="googleIcon">
+                    <ImageView fitHeight="40.0" fitWidth="40.0" preserveRatio="true" smooth="true">
                         <Image url="@../../../image/google-round-icon.png" />
                     </ImageView>
                 </graphic>
