@@ -4,32 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="02ae6a1a-35c8-472c-8de6-6c67efd03109" name="Changes" comment="Remove empty styleclass to avoid confusion.">
-      <change afterPath="$PROJECT_DIR$/bidblitz/src/main/resources/com/example/bidblitz/balance-view.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bidblitz/src/main/resources/image/default-avatar.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bidblitz/src/main/java/com/example/bidblitz/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/bidblitz/src/main/java/com/example/bidblitz/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bidblitz/src/main/java/com/example/bidblitz/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/bidblitz/src/main/java/com/example/bidblitz/MainController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bidblitz/src/main/resources/com/example/bidblitz/forgot-password-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/bidblitz/src/main/resources/com/example/bidblitz/forgot-password-view.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bidblitz/src/main/resources/com/example/bidblitz/forgot-username-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/bidblitz/src/main/resources/com/example/bidblitz/forgot-username-view.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bidblitz/src/main/resources/com/example/bidblitz/guest-about-us-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/bidblitz/src/main/resources/com/example/bidblitz/guest-about-us-view.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bidblitz/src/main/resources/com/example/bidblitz/guest-auction-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/bidblitz/src/main/resources/com/example/bidblitz/guest-auction-view.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bidblitz/src/main/resources/com/example/bidblitz/guest-category-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/bidblitz/src/main/resources/com/example/bidblitz/guest-category-view.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bidblitz/src/main/resources/com/example/bidblitz/guest-help-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/bidblitz/src/main/resources/com/example/bidblitz/guest-help-view.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bidblitz/src/main/resources/com/example/bidblitz/guest-main-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/bidblitz/src/main/resources/com/example/bidblitz/guest-main-view.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bidblitz/src/main/resources/com/example/bidblitz/inventory-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/bidblitz/src/main/resources/com/example/bidblitz/inventory-view.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bidblitz/src/main/resources/com/example/bidblitz/profile-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/bidblitz/src/main/resources/com/example/bidblitz/profile-view.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bidblitz/src/main/resources/com/example/bidblitz/settings-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/bidblitz/src/main/resources/com/example/bidblitz/settings-view.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bidblitz/src/main/resources/com/example/bidblitz/sign-in-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/bidblitz/src/main/resources/com/example/bidblitz/sign-in-view.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bidblitz/src/main/resources/com/example/bidblitz/sign-up-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/bidblitz/src/main/resources/com/example/bidblitz/sign-up-view.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bidblitz/src/main/resources/com/example/bidblitz/transaction-history-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/bidblitz/src/main/resources/com/example/bidblitz/transaction-history-view.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bidblitz/src/main/resources/com/example/bidblitz/user-about-us-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/bidblitz/src/main/resources/com/example/bidblitz/user-about-us-view.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bidblitz/src/main/resources/com/example/bidblitz/user-auction-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/bidblitz/src/main/resources/com/example/bidblitz/user-auction-view.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bidblitz/src/main/resources/com/example/bidblitz/user-category-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/bidblitz/src/main/resources/com/example/bidblitz/user-category-view.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bidblitz/src/main/resources/com/example/bidblitz/user-help-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/bidblitz/src/main/resources/com/example/bidblitz/user-help-view.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bidblitz/src/main/resources/com/example/bidblitz/user-main-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/bidblitz/src/main/resources/com/example/bidblitz/user-main-view.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bidblitz/src/main/resources/css/General.css" beforeDir="false" afterPath="$PROJECT_DIR$/bidblitz/src/main/resources/css/General.css" afterDir="false" />
-    </list>
+    <list default="true" id="02ae6a1a-35c8-472c-8de6-6c67efd03109" name="Changes" comment="Adding layout and currently available for all User pages. Refining every non database function features into every page. Rebuild the MainController.java file in order to make both MenuItem and Button works perfect fine and made the coding structure progress faster and fewer possibilities of causing errors." />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -200,7 +175,15 @@
       <option name="project" value="LOCAL" />
       <updated>1778986811269</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Adding layout and currently available for all User pages. Refining every non database function features into every page. Rebuild the MainController.java file in order to make both MenuItem and Button works perfect fine and made the coding structure progress faster and fewer possibilities of causing errors.">
+      <option name="closed" value="true" />
+      <created>1779023701212</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1779023701212</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -219,6 +202,7 @@
     <MESSAGE value="Refine the layout design due to massive logical errors occurred." />
     <MESSAGE value="Add navigation layout for all User Pages, still WIP on Notification, User Account features." />
     <MESSAGE value="Remove empty styleclass to avoid confusion." />
-    <option name="LAST_COMMIT_MESSAGE" value="Remove empty styleclass to avoid confusion." />
+    <MESSAGE value="Adding layout and currently available for all User pages. Refining every non database function features into every page. Rebuild the MainController.java file in order to make both MenuItem and Button works perfect fine and made the coding structure progress faster and fewer possibilities of causing errors." />
+    <option name="LAST_COMMIT_MESSAGE" value="Adding layout and currently available for all User pages. Refining every non database function features into every page. Rebuild the MainController.java file in order to make both MenuItem and Button works perfect fine and made the coding structure progress faster and fewer possibilities of causing errors." />
   </component>
 </project>
