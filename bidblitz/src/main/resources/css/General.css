@@ -1,5 +1,4 @@
 /* Universal Style Codes (Apply For Multiple Pages) */
-
 .lightPageLayout{
     -fx-background-color: #DBE2E9;
 }
@@ -136,21 +135,36 @@
     -fx-shape:"";
     -fx-background-color: transparent;
 }
-.collapsibleMenu .context-menu {
+#accountMenuButton .context-menu {
     -fx-pref-width: 300px;
 }
 
-.collapsibleMenu .menu-item {
+#accountMenuButton .menu-item {
     -fx-pref-width: 300px;
     -fx-pref-height: 50px;
 }
 
-.collapsibleMenu .menu-item > .label {
+#accountMenuButton .menu-item > .label {
     -fx-pref-width: 300px;
     -fx-alignment: CENTER;
     -fx-text-alignment: CENTER;
 }
 
+#categoryMenuButton > .context-menu {
+    -fx-pref-width:1000;
+}
+
+#categoryMenuButton .menu-item {
+    -fx-pref-width:1000;
+    -fx-pref-height:50;
+}
+
+.separator:horizontal .line {
+    -fx-border-color: transparent transparent black;
+    -fx-border-width: 0 0 5;
+    -fx-border-insets: 0;
+    -fx-background-insets: 0;
+}
 
 /* Navigation Bar Style Codes */
 

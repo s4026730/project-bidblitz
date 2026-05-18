@@ -26,26 +26,54 @@
                     <String fx:value="homeButton" />
                 </styleClass>
             </Button>
-            <MenuButton layoutX="230.0" maxHeight="50.0" maxWidth="200.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="200.0" styleClass="textButton" text="CATEGORY  ▼" textAlignment="CENTER">
+            <MenuButton fx:id="categoryMenuButton" id="categoryMenuButton" layoutX="230.0" maxHeight="50.0" maxWidth="200.0" mnemonicParsing="false"
+                        prefHeight="50.0" prefWidth="200.0" styleClass="textButton" text="CATEGORY  ▼" textAlignment="CENTER">
                 <items>
-                    <MenuItem mnemonicParsing="false" text="Action 1" />
-                    <MenuItem mnemonicParsing="false" text="Action 2" />
-                    <MenuItem mnemonicParsing="false" text="Unspecified Action" />
+                    <MenuItem text="Sub Categories:"/>
+                    <MenuItem fx:id="smartTelevisions" mnemonicParsing="false" text="Smart Televisions"/>
+                    <MenuItem fx:id="wearables" mnemonicParsing="false" text="Wearables"/>
+                    <MenuItem fx:id="networkingProducts" mnemonicParsing="false" text="Networking Products"/>
+                    <MenuItem fx:id="digitalStorage" mnemonicParsing="false" text="Digital Storage"/>
+                    <MenuItem fx:id="electronicCircuits" mnemonicParsing="false" text="Electronic Circuits"/>
+                    <MenuItem fx:id="repairManuals" mnemonicParsing="false" text="Repair Manuals"/>
+                    <SeparatorMenuItem/>
+                    <MenuItem fx:id="computers" mnemonicParsing="false" text="Computers"/>
+                    <MenuItem fx:id="mobilephones" mnemonicParsing="false" text="Mobile Phones"/>
+                    <MenuItem fx:id="tablets" mnemonicParsing="false" text="Tablets"/>
+                    <MenuItem fx:id="computerParts" mnemonicParsing="false" text="Computer Parts"/>
+                    <MenuItem fx:id="mobilePhoneParts" mnemonicParsing="false" text="Mobile Phone Parts"/>
+                    <MenuItem fx:id="tabletPart" mnemonicParsing="false" text="Tablet Parts"/>
+                    <SeparatorMenuItem/>
+                    <MenuItem fx:id="meats" mnemonicParsing="false" text="Meats" />
+                    <MenuItem fx:id="vegetables" mnemonicParsing="false" text="Vegetables" />
+                    <MenuItem fx:id="ingredients" mnemonicParsing="false" text="Ingredients" />
+                    <MenuItem fx:id="kitchenTools" mnemonicParsing="false" text="Kitchen Tools" />
+                    <MenuItem fx:id="cookwares" mnemonicParsing="false" text="Cookwares" />
+                    <MenuItem fx:id="cookingBooks" mnemonicParsing="false" text="Cooking Books" />
+                    <SeparatorMenuItem/>
+                    <MenuItem fx:id="maleTops" text="Male Tops" />
+                    <MenuItem fx:id="femaleTops" text="Female Tops" />
+                    <MenuItem fx:id="pants" text="Pants" />
+                    <MenuItem fx:id="skirt" text="Skirts" />
+                    <MenuItem fx:id="clothingAccessories" text="Clothing Accessories" />
+                    <MenuItem fx:id="shoes" text="Shoes" />
                 </items>
             </MenuButton>
             <TextField layoutX="420.0" maxHeight="50.0" maxWidth="450.0" prefHeight="50.0" prefWidth="450.0" promptText="🔍 Search For Anything" styleClass="searchBar" />
             <Button id="searchButton" layoutX="900.0" maxHeight="50.0" maxWidth="100.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="100.0" text="SEARCH" textAlignment="CENTER" />
             <Button id="advanceSearchButton" layoutX="1030.0" maxHeight="50.0" maxWidth="200.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="200.0" text="ADVANCE SEARCH" textAlignment="CENTER" />
-             <Button fx:id="notificationButton" alignment="CENTER" layoutX="1270.0" maxHeight="50.0" maxWidth="100.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="100.0" styleClass="navigationButton" text="🔔" textAlignment="CENTER">
+             <Button fx:id="notificationButton" id="notificationButton" alignment="CENTER" layoutX="1270.0" maxHeight="50.0" maxWidth="100.0"
+                     mnemonicParsing="false" prefHeight="50.0" prefWidth="100.0" styleClass="navigationButton" text="🔔" textAlignment="CENTER">
                 <contextMenu>
                    <ContextMenu>
-                     <items>
-                       <MenuItem mnemonicParsing="false" text="Unspecified Action" />
-                     </items>
+                       <items>
+                            <MenuItem mnemonicParsing="false" text="Unspecified Action" />
+                       </items>
                    </ContextMenu>
                 </contextMenu>
              </Button>
-            <MenuButton layoutX="1410.0" maxHeight="50.0" maxWidth="300.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="300.0" textAlignment="CENTER">
+            <MenuButton fx:id="accountMenuButton" id="accountMenuButton" layoutX="1410.0" maxHeight="50.0" maxWidth="300.0"
+                        mnemonicParsing="false" prefHeight="50.0" prefWidth="300.0" styleClass="textButton" textAlignment="CENTER">
                 <graphic>
                     <HBox alignment="CENTER_LEFT" maxHeight="50.0" maxWidth="300.0" prefHeight="50.0" prefWidth="300.0" spacing="10">
                         <ImageView fx:id="accountAvatar" fitHeight="30" fitWidth="30" preserveRatio="false">
@@ -53,7 +81,7 @@
                                 <Image url="@../../../image/default-avatar.png" />
                             </image>
                         </ImageView>
-                        <Label fx:id="accountName" text="PROFILE" />
+                        <Label fx:id="accountUsername" text="PROFILE" />
                         <Label text="▼" />
                         <Label fx:id="accountBalance" text="0$" />
                     </HBox>
@@ -66,10 +94,6 @@
                     <SeparatorMenuItem />
                     <MenuItem text="Log Out" />
                 </items>
-                <styleClass>
-                    <String fx:value="textButton" />
-                    <String fx:value="collapsibleMenu" />
-                </styleClass>
             </MenuButton>
         </AnchorPane>
     </top>
