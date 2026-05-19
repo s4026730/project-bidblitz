@@ -4,6 +4,8 @@ import java.util.Locale;
 import java.io.IOException;
 import java.math.BigDecimal;
 import java.text.NumberFormat;
+
+import com.example.bidblitz.auction.Auction;
 import javafx.animation.FadeTransition;
 import javafx.animation.KeyFrame;
 import javafx.animation.Timeline;
@@ -51,6 +53,62 @@ public class MainController {
     private Label accountUsername;
     @FXML
     private Label accountBalance;
+    @FXML
+    private Label titleLabel;
+    @FXML
+    private Label sellerLabel;
+    @FXML
+    private Label categoryLabel;
+    @FXML
+    private Label priceLabel;
+    @FXML
+    private Label statusLabel;
+    @FXML
+    private Label highestBidLabel;
+    @FXML
+    private Label descriptionLabel;
+
+    public void displayAuctionDetails(Auction auction){
+        if(auction == null){
+            return;
+        }
+
+        titleLabel.setText(
+                auction.getItem().getTitle()
+        );
+        sellerLabel.setText(
+                auction.getItem()
+                        .getSeller()
+                        .getFullName()
+        );
+        categoryLabel.setText(
+                auction.getItem()
+                        .getCategory()
+                        .getName()
+        );
+        priceLabel.setText(
+                "$" + auction.getItem()
+                        .getStartingPrice()
+        );
+        statusLabel.setText(
+                auction.getStatus().toString()
+        );
+        descriptionLabel.setText(
+                auction.getItem()
+                        .getDescription()
+        );
+
+        if(auction.getHighestBid() != null){
+            highestBidLabel.setText(
+                    "$" + auction.getHighestBid()
+                            .getAmount()
+            );
+        } else {
+            highestBidLabel.setText(
+                    "No bids yet"
+            );
+        }
+    }
 
     // Guest Pages Navigation & Other Features Codes:
     @FXML
@@ -226,6 +284,10 @@ public class MainController {
         try{
             FXMLLoader fxmlLoader = new FXMLLoader(Main.class.getResource(fxmlFile));
             root = fxmlLoader.load();
+            MainController controller = fxmlLoader.getController();
+            controller.displayAuctionDetails(
+                    DummyData.createTestAuction()
+            );
             stage = (Stage) rootPane.getScene().getWindow();
             demonstratedScene = new Scene(root, 1710, 1000);
             demonstratedScene.getStylesheets().add(getClass().getResource("/css/General.css").toExternalForm());
