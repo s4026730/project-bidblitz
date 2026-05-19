@@ -124,6 +124,29 @@
                 </HBox>
             </VBox>
             <Label layoutX="680.0" layoutY="25.0" styleClass="importantText" text="AUCTION" />
+
+            <VBox layoutX="250.0"
+                  layoutY="150.0"
+                  spacing="15">
+                <Label text="AUCTION DETAILS"
+                       styleClass="importantText"/>
+                <Label fx:id="titleLabel"
+                       text="Product Title"
+                       styleClass="subimportantText"/>
+                <Label fx:id="sellerLabel"
+                       text="Seller Name"/>
+                <Label fx:id="categoryLabel"
+                       text="Category"/>
+                <Label fx:id="priceLabel"
+                       text="Price"/>
+                <Label fx:id="statusLabel"
+                       text="ACTIVE"/>
+                <Label fx:id="highestBidLabel"
+                       text="No bids yet"/>
+                <Label fx:id="descriptionLabel"
+                       text="Description here"
+                       wrapText="true"/>
+            </VBox>
         </AnchorPane>
     </center>
     <stylesheets>
