@@ -4,33 +4,31 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="02ae6a1a-35c8-472c-8de6-6c67efd03109" name="Changes" comment="Adding fx:id=&quot;rootPane&quot; into the user main page in order for navigation features to work.">
-      <change afterPath="$PROJECT_DIR$/bidblitz/src/main/java/com/example/bidblitz/SampleDataLoader.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bidblitz/src/main/java/com/example/bidblitz/model/ActivityLog.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bidblitz/src/main/java/com/example/bidblitz/model/Auction.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bidblitz/src/main/java/com/example/bidblitz/model/Bid.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bidblitz/src/main/java/com/example/bidblitz/model/Category.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bidblitz/src/main/java/com/example/bidblitz/model/Item.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bidblitz/src/main/java/com/example/bidblitz/model/Payment.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bidblitz/src/main/java/com/example/bidblitz/model/Person.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bidblitz/src/main/java/com/example/bidblitz/model/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bidblitz/src/main/java/com/example/bidblitz/repository/ActivityLogRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bidblitz/src/main/java/com/example/bidblitz/repository/AuctionRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bidblitz/src/main/java/com/example/bidblitz/repository/BidRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bidblitz/src/main/java/com/example/bidblitz/repository/CategoryRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bidblitz/src/main/java/com/example/bidblitz/repository/ItemRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bidblitz/src/main/java/com/example/bidblitz/repository/PaymentRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bidblitz/src/main/java/com/example/bidblitz/repository/UserRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bidblitz/src/main/java/com/example/bidblitz/service/AuctionService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bidblitz/src/main/java/com/example/bidblitz/service/UserService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bidblitz/src/main/java/com/example/bidblitz/util/DatabaseUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bidblitz/src/main/resources/META-INF/persistence.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bidblitz/src/test/java/com/example/bidblitz/AuctionServiceTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bidblitz/src/test/java/com/example/bidblitz/UserServiceTest.java" afterDir="false" />
+    <list default="true" id="02ae6a1a-35c8-472c-8de6-6c67efd03109" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/bidblitz/src/main/java/com/example/bidblitz/Session.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bidblitz/src/main/java/com/example/bidblitz/UserEntity.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bidblitz/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/bidblitz/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bidblitz/src/main/java/com/example/bidblitz/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/bidblitz/src/main/java/com/example/bidblitz/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bidblitz/src/main/java/module-info.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bidblitz/src/main/java/com/example/bidblitz/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/bidblitz/src/main/java/com/example/bidblitz/MainController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bidblitz/src/main/resources/com/example/bidblitz/balance-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/bidblitz/src/main/resources/com/example/bidblitz/balance-view.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bidblitz/src/main/resources/com/example/bidblitz/forgot-password-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/bidblitz/src/main/resources/com/example/bidblitz/forgot-password-view.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bidblitz/src/main/resources/com/example/bidblitz/forgot-username-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/bidblitz/src/main/resources/com/example/bidblitz/forgot-username-view.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bidblitz/src/main/resources/com/example/bidblitz/guest-about-us-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/bidblitz/src/main/resources/com/example/bidblitz/guest-about-us-view.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bidblitz/src/main/resources/com/example/bidblitz/guest-auction-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/bidblitz/src/main/resources/com/example/bidblitz/guest-auction-view.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bidblitz/src/main/resources/com/example/bidblitz/guest-category-view.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bidblitz/src/main/resources/com/example/bidblitz/guest-help-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/bidblitz/src/main/resources/com/example/bidblitz/guest-help-view.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bidblitz/src/main/resources/com/example/bidblitz/guest-main-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/bidblitz/src/main/resources/com/example/bidblitz/guest-main-view.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bidblitz/src/main/resources/com/example/bidblitz/inventory-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/bidblitz/src/main/resources/com/example/bidblitz/inventory-view.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bidblitz/src/main/resources/com/example/bidblitz/profile-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/bidblitz/src/main/resources/com/example/bidblitz/profile-view.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bidblitz/src/main/resources/com/example/bidblitz/settings-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/bidblitz/src/main/resources/com/example/bidblitz/settings-view.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bidblitz/src/main/resources/com/example/bidblitz/sign-in-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/bidblitz/src/main/resources/com/example/bidblitz/sign-in-view.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bidblitz/src/main/resources/com/example/bidblitz/sign-up-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/bidblitz/src/main/resources/com/example/bidblitz/sign-up-view.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bidblitz/src/main/resources/com/example/bidblitz/transaction-history-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/bidblitz/src/main/resources/com/example/bidblitz/transaction-history-view.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bidblitz/src/main/resources/com/example/bidblitz/user-about-us-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/bidblitz/src/main/resources/com/example/bidblitz/user-about-us-view.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bidblitz/src/main/resources/com/example/bidblitz/user-auction-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/bidblitz/src/main/resources/com/example/bidblitz/user-auction-view.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bidblitz/src/main/resources/com/example/bidblitz/user-category-view.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bidblitz/src/main/resources/com/example/bidblitz/user-help-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/bidblitz/src/main/resources/com/example/bidblitz/user-help-view.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bidblitz/src/main/resources/com/example/bidblitz/user-main-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/bidblitz/src/main/resources/com/example/bidblitz/user-main-view.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bidblitz/src/main/resources/css/General.css" beforeDir="false" afterPath="$PROJECT_DIR$/bidblitz/src/main/resources/css/General.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,6 +39,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="FxmlFile" />
+        <option value="JavaFXApplication" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -53,12 +53,12 @@
     &quot;assignee&quot;: &quot;s4026730&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/s4026730/project-bidblitz.git",
-    "accountId": "466090cb-f2ab-49d8-bef2-c332fff97f79"
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/s4026730/project-bidblitz.git&quot;,
+    &quot;accountId&quot;: &quot;96a6f75a-2600-421e-98a6-5b2b6ab5e228&quot;
   }
-}]]></component>
+}</component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
@@ -87,88 +87,29 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Application.Main.executor": "Run",
-    "JUnit.UserServiceTest.executor": "Run",
-    "JUnit.com.example.bidblitz in bidblitz.executor": "Run",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.MCP Project settings loaded": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
     "RunOnceActivity.git.unshallow": "true",
     "RunOnceActivity.typescript.service.memoryLimit.init": "true",
-    "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
-    "git-widget-placeholder": "Khoa",
+    "git-widget-placeholder": "Merging Khoa",
     "ignore.virus.scanning.warn.message": "true",
-    "junie.onboarding.icon.badge.shown": "true",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "D:/project-bidblitz-group/bidblitz/src",
-    "node.js.detected.package.eslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "to.speed.mode.migration.done": "true",
-    "vue.rearranger.settings.migration": "true"
-  },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "postgresql"
-    ]
+    "last_opened_file_path": "C:/Users/Le Huy Hoang/OneDrive/Documents/further-programming-intellij-idea-project/assignment-works/project-bidblitz/bidblitz/src/main/resources/image",
+    "nodejs_package_manager_path": "npm"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\project-bidblitz-group\bidblitz\src" />
-      <recent name="D:\project-bidblitz-group\bidblitz\src\main\resources" />
       <recent name="C:\Users\Le Huy Hoang\OneDrive\Documents\further-programming-intellij-idea-project\assignment-works\project-bidblitz\bidblitz\src\main\resources\image" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\project-bidblitz-group\bidblitz\src" />
-      <recent name="D:\project-bidblitz-group\bidblitz\src\main\java\com\example\bidblitz" />
-      <recent name="D:\project-bidblitz-group\bidblitz\src\main\resources\com\example\bidblitz" />
       <recent name="C:\Users\Le Huy Hoang\OneDrive\Documents\further-programming-intellij-idea-project\assignment-works\project-bidblitz\bidblitz\src\main\resources\com\example\bidblitz" />
     </key>
-  </component>
-  <component name="RunManager" selected="JUnit.com.example.bidblitz in bidblitz">
-    <configuration name="UserServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="bidblitz" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.example.bidblitz.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.example.bidblitz" />
-      <option name="MAIN_CLASS_NAME" value="com.example.bidblitz.UserServiceTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="com.example.bidblitz in bidblitz" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="bidblitz" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.example.bidblitz.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.example.bidblitz" />
-      <option name="TEST_OBJECT" value="package" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <recent_temporary>
-      <list>
-        <item itemvalue="JUnit.com.example.bidblitz in bidblitz" />
-        <item itemvalue="JUnit.UserServiceTest" />
-      </list>
-    </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
         <option value="bundled-jdk-30f59d01ecdd-2fc7cc6b9a17-intellij.indexing.shared.core-IU-253.31033.145" />
-        <option value="bundled-js-predefined-d6986cc7102b-9b0f141eb926-JavaScript-IU-253.31033.145" />
       </set>
     </attachedChunks>
   </component>
@@ -179,7 +120,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1778423573842</updated>
-      <workItem from="1779121572741" duration="6780000" />
     </task>
     <task id="LOCAL-00001" summary="Adding experimenting scroll functionalities and their styles (Currently still WIP in Guest About US Page).">
       <option name="closed" value="true" />
@@ -309,7 +249,31 @@
       <option name="project" value="LOCAL" />
       <updated>1779027517627</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="Adding more style and complete the layout and function for Account Dropdown Menu Container for every User Page. WIP Database Filter &amp; Category.">
+      <option name="closed" value="true" />
+      <created>1779034367135</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1779034367135</updated>
+    </task>
+    <task id="LOCAL-00018" summary="Adding WIP Account Information Database Search &amp; Getters Features and somewhat fixing the layout of Category (still need more work).">
+      <option name="closed" value="true" />
+      <created>1779125137242</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1779125137242</updated>
+    </task>
+    <task id="LOCAL-00019" summary="Updating the code features and layout of User pages. Removing both User and Guest Category pages.">
+      <option name="closed" value="true" />
+      <created>1779160468110</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1779160468110</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -344,6 +308,9 @@
     <MESSAGE value="Update the category layout position in all pages." />
     <MESSAGE value="Fix the code structure placement of guest-main file." />
     <MESSAGE value="Adding fx:id=&quot;rootPane&quot; into the user main page in order for navigation features to work." />
-    <option name="LAST_COMMIT_MESSAGE" value="Adding fx:id=&quot;rootPane&quot; into the user main page in order for navigation features to work." />
+    <MESSAGE value="Adding more style and complete the layout and function for Account Dropdown Menu Container for every User Page. WIP Database Filter &amp; Category." />
+    <MESSAGE value="Adding WIP Account Information Database Search &amp; Getters Features and somewhat fixing the layout of Category (still need more work)." />
+    <MESSAGE value="Updating the code features and layout of User pages. Removing both User and Guest Category pages." />
+    <option name="LAST_COMMIT_MESSAGE" value="Updating the code features and layout of User pages. Removing both User and Guest Category pages." />
   </component>
 </project>

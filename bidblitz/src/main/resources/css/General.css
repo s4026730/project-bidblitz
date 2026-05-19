@@ -1,5 +1,4 @@
 /* Universal Style Codes (Apply For Multiple Pages) */
-
 .lightPageLayout{
     -fx-background-color: #DBE2E9;
 }
@@ -17,10 +16,14 @@
 
 }
 
-.OR, .AND, .importantText{
+.OR, .AND, .importantText, .subimportantText{
     -fx-text-fill: black;
     -fx-font-weight: 900;
     -fx-font-size: 40px;
+}
+
+.subimportantText{
+    -fx-font-size: 25px;
 }
 
 .submitButton, #searchButton, #advanceSearchButton, .actionButton, .textButton{
@@ -136,21 +139,36 @@
     -fx-shape:"";
     -fx-background-color: transparent;
 }
-.collapsibleMenu .context-menu {
+#accountMenuButton .context-menu {
     -fx-pref-width: 300px;
 }
 
-.collapsibleMenu .menu-item {
+#accountMenuButton .menu-item {
     -fx-pref-width: 300px;
     -fx-pref-height: 50px;
 }
 
-.collapsibleMenu .menu-item > .label {
+#accountMenuButton .menu-item > .label {
     -fx-pref-width: 300px;
     -fx-alignment: CENTER;
     -fx-text-alignment: CENTER;
 }
 
+.categoryPanel {
+    -fx-background-color:#E8DCC4;
+    -fx-alignment: CENTER;
+}
+
+.categoryRow .textButton{
+    -fx-background-color: #E8DCC4;
+}
+
+.separator:horizontal .line {
+    -fx-border-color: transparent transparent black;
+    -fx-border-width: 0 0 5;
+    -fx-border-insets: 0;
+    -fx-background-insets: 0;
+}
 
 /* Navigation Bar Style Codes */
 
@@ -197,6 +215,7 @@
 .actionButton:hover, .actionButton:focused,
 .submitButton:hover, .submitButton:focused,
 .textButton:hover, .textButton:focused,
+.categoryRow .textButton:hover, .categoryRow .textButton:focused,
 #searchButton:hover, #searchButton:focused,
 #advanceSearchButton:hover, #advanceSearchButton:focused{
     -fx-background-color: #E4CD05;
@@ -204,7 +223,7 @@
 }
 
 .navigationButton:pressed, .actionButton:pressed, .submitButton:pressed, .textButton:pressed,
-#searchButton:pressed, #advanceSearchButton:pressed{
+.categoryRow .textButton:pressed, #searchButton:pressed, #advanceSearchButton:pressed{
     -fx-background-color: #FDAA48, transparent;
     -fx-text-fill: #067FFF;
     -fx-font-weight: 900;
