@@ -23,6 +23,10 @@ import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
 import javafx.util.Duration;
+import com.example.bidblitz.model.User;
+import com.example.bidblitz.service.UserService;
+import java.math.BigDecimal;
+import javafx.scene.control.PasswordField;
 
 public class MainController {
     private Parent root;
@@ -51,6 +55,12 @@ public class MainController {
     private Label accountUsername;
     @FXML
     private Label accountBalance;
+    @FXML
+    private TextField signinUsername;
+    @FXML
+    private PasswordField signinPassword;
+    @FXML
+    private Button signinButton;
 
     // Guest Pages Navigation & Other Features Codes:
     @FXML
@@ -462,6 +472,38 @@ public class MainController {
         if(!isVisible){
             categoryPanel.toFront();
         }
+    }
+    @FXML
+    protected void handleSignIn() throws IOException {
+        String username = signinUsername.getText().trim();
+        String password = signinPassword.getText().trim();
+
+        if (username.isEmpty() || password.isEmpty()) {
+            System.out.println("Please enter username and password.");
+            return;
+        }
+
+        UserService userService = new UserService();
+        User user = userService.login(username, password);
+
+        if (user == null) {
+            System.out.println("Invalid username or password.");
+            // show error to user
+            signinUsername.setStyle("-fx-border-color: red;");
+            signinPassword.setStyle("-fx-border-color: red;");
+            return;
+        }
+
+        // convert User to UserEntity and store in Session
+        UserEntity userEntity = new UserEntity(
+                user.getUsername(),
+                BigDecimal.valueOf(user.getAccountBalance()),
+                "/image/default-avatar.png"
+        );
+        Session.setCurrentUser(userEntity);
+
+        // navigate to user home
+        switchToUserHome();
     }
 
 }

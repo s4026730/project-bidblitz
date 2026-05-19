@@ -4,11 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="02ae6a1a-35c8-472c-8de6-6c67efd03109" name="Changes" comment="Fixing module-info to work with eclipseLink">
+    <list default="true" id="02ae6a1a-35c8-472c-8de6-6c67efd03109" name="Changes" comment="Fixed UserServiceTest. Edit module-info.java and SampleDataLoader to fit with main branch. Everything worked correctly, data is correct on the neon database tables">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bidblitz/src/main/java/com/example/bidblitz/SampleDataLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/bidblitz/src/main/java/com/example/bidblitz/SampleDataLoader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bidblitz/src/main/java/com/example/bidblitz/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/bidblitz/src/main/java/module-info.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bidblitz/src/test/java/com/example/bidblitz/UserServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/bidblitz/src/test/java/com/example/bidblitz/UserServiceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bidblitz/src/main/java/com/example/bidblitz/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/bidblitz/src/main/java/com/example/bidblitz/MainController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bidblitz/src/main/resources/com/example/bidblitz/sign-in-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/bidblitz/src/main/resources/com/example/bidblitz/sign-in-view.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -185,7 +184,7 @@
       <updated>1778423573842</updated>
       <workItem from="1779180736521" duration="2031000" />
       <workItem from="1779198284917" duration="632000" />
-      <workItem from="1779198943830" duration="2107000" />
+      <workItem from="1779198943830" duration="3474000" />
     </task>
     <task id="LOCAL-00001" summary="Adding experimenting scroll functionalities and their styles (Currently still WIP in Guest About US Page).">
       <option name="closed" value="true" />
@@ -355,7 +354,15 @@
       <option name="project" value="LOCAL" />
       <updated>1779199090939</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="Fixed UserServiceTest. Edit module-info.java and SampleDataLoader to fit with main branch. Everything worked correctly, data is correct on the neon database tables">
+      <option name="closed" value="true" />
+      <created>1779201312645</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1779201312645</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -406,6 +413,7 @@
     <MESSAGE value="Adding WIP Account Information Database Search &amp; Getters Features and somewhat fixing the layout of Category (still need more work)." />
     <MESSAGE value="Updating the code features and layout of User pages. Removing both User and Guest Category pages." />
     <MESSAGE value="Fixing module-info to work with eclipseLink" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixing module-info to work with eclipseLink" />
+    <MESSAGE value="Fixed UserServiceTest. Edit module-info.java and SampleDataLoader to fit with main branch. Everything worked correctly, data is correct on the neon database tables" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed UserServiceTest. Edit module-info.java and SampleDataLoader to fit with main branch. Everything worked correctly, data is correct on the neon database tables" />
   </component>
 </project>
