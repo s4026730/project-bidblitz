@@ -61,6 +61,16 @@ public class MainController {
     private PasswordField signinPassword;
     @FXML
     private Button signinButton;
+    @FXML
+    private TextField signupUsername;
+    @FXML
+    private TextField signupEmail;
+    @FXML
+    private PasswordField signupPassword;
+    @FXML
+    private Button signupButton;
+    @FXML
+    private Label signupErrorLabel;
 
     // Guest Pages Navigation & Other Features Codes:
     @FXML
@@ -488,7 +498,6 @@ public class MainController {
 
         if (user == null) {
             System.out.println("Invalid username or password.");
-            // show error to user
             signinUsername.setStyle("-fx-border-color: red;");
             signinPassword.setStyle("-fx-border-color: red;");
             return;
@@ -502,8 +511,89 @@ public class MainController {
         );
         Session.setCurrentUser(userEntity);
 
-        // navigate to user home
-        switchToUserHome();
+        // load user home and set account info
+        fxmlFile = "user-main-view.fxml";
+        FXMLLoader fxmlLoader = new FXMLLoader(Main.class.getResource(fxmlFile));
+        root = fxmlLoader.load();
+        MainController controller = fxmlLoader.getController();
+        controller.slideshowSystem();
+        controller.setAccountInfo();
+        stage = (Stage) rootPane.getScene().getWindow();
+        demonstratedScene = new Scene(root, 1710, 1000);
+        demonstratedScene.getStylesheets().add(getClass().getResource("/css/General.css").toExternalForm());
+        stage.setScene(demonstratedScene);
+        stage.show();
+    }
+    @FXML
+    protected void handleLogOut() throws IOException {
+        Session.setCurrentUser(null);
+        switchToGuestHome();
+    }
+    @FXML
+    protected void handleSignUp() throws IOException {
+        String username = signupUsername.getText().trim();
+        String email = signupEmail.getText().trim();
+        String password = signupPassword.getText().trim();
+
+        // reset styles
+        signupUsername.setStyle("");
+        signupEmail.setStyle("");
+        signupErrorLabel.setVisible(false);
+
+        if (username.isEmpty() || email.isEmpty() || password.isEmpty()) {
+            signupErrorLabel.setText("Please fill in all fields.");
+            signupErrorLabel.setVisible(true);
+            return;
+        }
+
+        if (password.length() < 8) {
+            signupPassword.setStyle("-fx-border-color: red;");
+            signupErrorLabel.setText("Password must be at least 8 characters.");
+            signupErrorLabel.setVisible(true);
+            return;
+        }
+        if (!email.contains("@") || !email.contains(".")) {
+            signupEmail.setStyle("-fx-border-color: red;");
+            signupErrorLabel.setText("Invalid email format. Please use example@domain.com");
+            signupErrorLabel.setVisible(true);
+            return;
+        }
+
+        UserService userService = new UserService();
+
+        if (userService.isUsernameTaken(username)) {
+            signupUsername.setStyle("-fx-border-color: red;");
+            signupErrorLabel.setText("Username already taken. Please choose another.");
+            signupErrorLabel.setVisible(true);
+            return;
+        }
+
+        if (userService.isEmailTaken(email)) {
+            signupEmail.setStyle("-fx-border-color: red;");
+            signupErrorLabel.setText("Email already in use. Please use another email.");
+            signupErrorLabel.setVisible(true);
+            return;
+        }
+
+        User newUser = new User(
+                username,
+                java.time.LocalDateTime.now(),
+                email,
+                "",
+                username,
+                password,
+                User.ROLE_USER,
+                0.0
+        );
+
+        boolean added = userService.addUser(newUser);
+        if (added) {
+            System.out.println("Account created successfully!");
+            switchToSignIn();
+        } else {
+            signupErrorLabel.setText("Failed to create account. Please try again.");
+            signupErrorLabel.setVisible(true);
+        }
     }
 
 }
