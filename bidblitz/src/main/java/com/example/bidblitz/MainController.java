@@ -20,6 +20,7 @@ import javafx.scene.control.TextField;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.layout.BorderPane;
+import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
 import javafx.util.Duration;
 
@@ -34,6 +35,8 @@ public class MainController {
 
     @FXML
     private BorderPane rootPane;
+    @FXML
+    private VBox categoryPanel;
     @FXML
     private TextField searchBar;
     @FXML
@@ -51,7 +54,7 @@ public class MainController {
 
     // Guest Pages Navigation & Other Features Codes:
     @FXML
-    public void switchToGuestHome() throws IOException{
+    protected void switchToGuestHome() throws IOException{
         fxmlFile="guest-main-view.fxml";
         try{
             FXMLLoader fxmlLoader = new FXMLLoader(Main.class.getResource(fxmlFile));
@@ -71,7 +74,7 @@ public class MainController {
     } //[1] [2] [3]
 
     @FXML
-    public void switchToGuestAuction() throws IOException{
+    protected void switchToGuestAuction() throws IOException{
         fxmlFile="guest-auction-view.fxml";
         try{
             FXMLLoader fxmlLoader = new FXMLLoader(Main.class.getResource(fxmlFile));
@@ -89,7 +92,7 @@ public class MainController {
     }//[1] [2] [3]
 
     @FXML
-    public void switchToGuestHelp() throws IOException{
+    protected void switchToGuestHelp() throws IOException{
         fxmlFile="guest-help-view.fxml";
         try{
             FXMLLoader fxmlLoader = new FXMLLoader(Main.class.getResource(fxmlFile));
@@ -107,7 +110,7 @@ public class MainController {
     }//[1] [2] [3]
 
     @FXML
-    public void switchToGuestAboutUs() throws IOException{
+    protected void switchToGuestAboutUs() throws IOException{
         fxmlFile="guest-about-us-view.fxml";
         try{
             FXMLLoader fxmlLoader = new FXMLLoader(Main.class.getResource(fxmlFile));
@@ -125,7 +128,7 @@ public class MainController {
     }//[1] [2] [3]
 
     @FXML
-    public void switchToSignIn() throws IOException{
+    protected void switchToSignIn() throws IOException{
         fxmlFile="sign-in-view.fxml";
         try{
             FXMLLoader fxmlLoader = new FXMLLoader(Main.class.getResource(fxmlFile));
@@ -143,7 +146,7 @@ public class MainController {
     }//[1] [2] [3]
 
     @FXML
-    public void switchToSignUp() throws IOException{
+    protected void switchToSignUp() throws IOException{
         fxmlFile="sign-up-view.fxml";
         try{
             FXMLLoader fxmlLoader = new FXMLLoader(Main.class.getResource(fxmlFile));
@@ -161,7 +164,7 @@ public class MainController {
     }//[1] [2] [3]
 
     @FXML
-    public void switchToForgotUsername() throws IOException{
+    protected void switchToForgotUsername() throws IOException{
         fxmlFile="forgot-username-view.fxml";
         try{
             FXMLLoader fxmlLoader = new FXMLLoader(Main.class.getResource(fxmlFile));
@@ -179,7 +182,7 @@ public class MainController {
     }//[1] [2] [3]
 
     @FXML
-    public void switchToForgotPassword() throws IOException{
+    protected void switchToForgotPassword() throws IOException{
         fxmlFile="forgot-password-view.fxml";
         try{
             FXMLLoader fxmlLoader = new FXMLLoader(Main.class.getResource(fxmlFile));
@@ -198,7 +201,7 @@ public class MainController {
 
     // User Pages Navigation & Other Features Codes:
     @FXML
-    public void switchToUserHome () throws IOException{
+    protected void switchToUserHome () throws IOException{
         fxmlFile="user-main-view.fxml";
         try{
             FXMLLoader fxmlLoader = new FXMLLoader(Main.class.getResource(fxmlFile));
@@ -218,7 +221,7 @@ public class MainController {
     }//[1] [2] [3]
 
     @FXML
-    public void switchToUserAuction () throws IOException{
+    protected void switchToUserAuction () throws IOException{
         fxmlFile="user-auction-view.fxml";
         try{
             FXMLLoader fxmlLoader = new FXMLLoader(Main.class.getResource(fxmlFile));
@@ -235,18 +238,9 @@ public class MainController {
         }
     }//[1] [2] [3]
 
-    /*
-    @FXML
-    public void switchToUserCategory () throws IOException {
-        fxmlFile = "user-category-view.fxml";
-        try {
-        } catch (IOException e) {
-        }
-    }
-     */
 
     @FXML
-    public void switchToUserHelp() throws IOException{
+    protected void switchToUserHelp() throws IOException{
         fxmlFile ="user-help-view.fxml";
         try{
             FXMLLoader fxmlLoader = new FXMLLoader(Main.class.getResource(fxmlFile));
@@ -264,7 +258,7 @@ public class MainController {
     }//[1] [2] [3]
 
     @FXML
-    public void switchToUserAboutUs () throws IOException{
+    protected void switchToUserAboutUs () throws IOException{
         fxmlFile ="user-about-us-view.fxml";
         try{
             FXMLLoader fxmlLoader = new FXMLLoader(Main.class.getResource(fxmlFile));
@@ -282,7 +276,7 @@ public class MainController {
     }//[1] [2] [3]
 
     @FXML
-    public void switchToProfile () throws IOException{
+    protected void switchToProfile () throws IOException{
         fxmlFile ="profile-view.fxml";
         try{
             FXMLLoader fxmlLoader = new FXMLLoader(Main.class.getResource(fxmlFile));
@@ -300,7 +294,7 @@ public class MainController {
     }//[1] [2] [3]
 
     @FXML
-    public void switchToInventory () throws IOException{
+    protected void switchToInventory () throws IOException{
         fxmlFile ="inventory-view.fxml";
         try{
             FXMLLoader fxmlLoader = new FXMLLoader(Main.class.getResource(fxmlFile));
@@ -318,7 +312,7 @@ public class MainController {
     }//[1] [2] [3]
 
     @FXML
-    public void switchToBalance () throws IOException{
+    protected void switchToBalance () throws IOException{
         fxmlFile ="balance-view.fxml";
         try{
             FXMLLoader fxmlLoader = new FXMLLoader(Main.class.getResource(fxmlFile));
@@ -336,7 +330,7 @@ public class MainController {
     }//[1] [2] [3]
 
     @FXML
-    public void switchToTransactionHistory () throws IOException{
+    protected void switchToTransactionHistory () throws IOException{
         fxmlFile ="transaction-history-view.fxml";
         try{
             FXMLLoader fxmlLoader = new FXMLLoader(Main.class.getResource(fxmlFile));
@@ -354,7 +348,7 @@ public class MainController {
     }//[1] [2] [3]
 
     @FXML
-    public void switchToSettings () throws IOException{
+    protected void switchToSettings () throws IOException{
         fxmlFile ="settings-view.fxml";
         try{
             FXMLLoader fxmlLoader = new FXMLLoader(Main.class.getResource(fxmlFile));
@@ -372,7 +366,7 @@ public class MainController {
     }//[1] [2] [3]
 
     // Auction Functionality Codes (WIP):
-    public void handleAuctionSelection (ActionEvent event) throws IOException{
+    protected void handleAuctionSelection (ActionEvent event) throws IOException{
 
         auctionSelections.getStyleClass().remove("underlinedText");
         Button clickedButton = (Button) event.getSource();
@@ -380,7 +374,7 @@ public class MainController {
     }
 
     // Slideshow Feature Codes:
-    public void slideshowSystem() {
+    protected void slideshowSystem() {
 
         if (banner == null) {
             return;
@@ -436,27 +430,38 @@ public class MainController {
         fadeOut.play();
     }
 
-    public void setAccountInfo(){
+    protected void setAccountInfo(){
         setAccountAvatar();
         setAccountUsername();
         setAccountBalance();
     }
 
-    public void setAccountAvatar(){
+    private void setAccountAvatar(){
         if(currentUser == null){return;}
         Image avatarImage = new Image(getClass().getResourceAsStream(currentUser.getAvatarPath()));
         accountAvatar.setImage(avatarImage);
     }
-    public void setAccountUsername(){
+    private void setAccountUsername(){
         if(currentUser == null){return;}
         accountUsername.setText(currentUser.getUsername());
     }
 
-    public void setAccountBalance(){
+    private void setAccountBalance(){
         if(currentUser == null){return;}
         BigDecimal userBalance = currentUser.getBalance();
         NumberFormat balanceFormatter = NumberFormat.getNumberInstance(Locale.US);
         accountBalance.setText(balanceFormatter.format(userBalance));
+    }
+
+    @FXML
+    private void toggleCategoryPanel() {
+        boolean isVisible = categoryPanel.isVisible();
+
+        categoryPanel.setVisible(!isVisible);
+        categoryPanel.setManaged(!isVisible);
+        if(!isVisible){
+            categoryPanel.toFront();
+        }
     }
 
 }
