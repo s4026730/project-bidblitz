@@ -7,8 +7,11 @@
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.MenuButton?>
 <?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Separator?>
 <?import javafx.scene.control.SeparatorMenuItem?>
 <?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.TitledPane?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
@@ -123,7 +126,115 @@
                     <Button fx:id="shoes" maxHeight="30" maxWidth="225" minHeight="30" minWidth="225" mnemonicParsing="false" prefHeight="30.0" prefWidth="225" styleClass="textButton" text="Shoes" />
                 </HBox>
             </VBox>
-            <Label layoutX="680.0" layoutY="25.0" styleClass="importantText" text="ABOUT US" />
+
+            <Label layoutX="630.0" layoutY="25.0" styleClass="importantText" text="ABOUT US" />
+
+            <!-- What and Why -->
+            <TitledPane expanded="false" layoutX="55.0" layoutY="80.0" maxWidth="440.0" prefWidth="440.0" styleClass="collapsibleContainer" text="What and Why?">
+                <content>
+                    <ScrollPane fitToWidth="true" prefHeight="750.0" hbarPolicy="NEVER"
+                                style="-fx-background: white; -fx-background-color: white; -fx-control-inner-background: white;">
+                        <content>
+                            <VBox spacing="8" style="-fx-padding: 12; -fx-background-color: white;">
+                                <Label prefWidth="400" wrapText="true" text="What is BidBlitz?"
+                                       style="-fx-font-weight: bold; -fx-font-style: italic; -fx-font-size: 15px;" />
+                                <Label prefWidth="400" wrapText="true" text="BidBlitz is an online auction platform that recreates the excitement of in-person auctions in a fully digital environment. It provides a safe, fair and engaging marketplace for buyers and sellers across four main categories: Electronics, Technologies, Foods and Kitchen Tools, and Fashions." />
+                                <Separator visible="false" maxWidth="400"/>
+                                <Label prefWidth="400" wrapText="true" text="Why BidBlitz?"
+                                       style="-fx-font-weight: bold; -fx-font-style: italic; -fx-font-size: 15px;" />
+                                <Label prefWidth="400" wrapText="true" text="Unlike fixed-price platforms, BidBlitz brings back the thrill of competitive bidding. Sellers earn maximum value through open competition, while buyers have the chance to win great deals below market price. Our platform is built on fairness, security and full transaction transparency." />
+                                <Separator visible="false" maxWidth="400"/>
+                                <Label prefWidth="400" wrapText="true" text="Who is it for?"
+                                       style="-fx-font-weight: bold; -fx-font-style: italic; -fx-font-size: 15px;" />
+                                <Label prefWidth="400" wrapText="true" text="BidBlitz is for everyone — casual sellers clearing out unwanted items, professional merchants seeking a wider audience, and bargain hunters looking for great deals. A single account lets you act as both a buyer and a seller." />
+                                <Separator visible="false" maxWidth="400"/>
+                                <Label prefWidth="400" wrapText="true" text="How does it work?"
+                                       style="-fx-font-weight: bold; -fx-font-style: italic; -fx-font-size: 15px;" />
+                                <Label prefWidth="400" wrapText="true" text="Sellers create listings with a starting price and an optional reserve price. Buyers place bids that must exceed the current highest bid by a minimum increment. When the auction ends, the highest qualifying bidder wins and payment is processed automatically through our secure internal balance system." />
+                            </VBox>
+                        </content>
+                    </ScrollPane>
+                </content>
+            </TitledPane>
+
+            <!-- Rules -->
+            <TitledPane expanded="false" layoutX="520.0" layoutY="80.0" maxWidth="440.0" prefWidth="440.0" styleClass="collapsibleContainer" text="Rules">
+                <content>
+                    <ScrollPane fitToWidth="true" prefHeight="750.0" hbarPolicy="NEVER"
+                                style="-fx-background: white; -fx-background-color: white; -fx-control-inner-background: white;">
+                        <content>
+                            <VBox spacing="10" style="-fx-padding: 12; -fx-background-color: white;">
+                                <Label prefWidth="400" wrapText="true" text="1) Users must communicate respectfully and may not engage in harassment, threats or abusive behavior toward other users, sellers or administrators." />
+                                <Separator visible="false" maxWidth="400"/>
+                                <Label prefWidth="400" wrapText="true" text="2) Users must provide accurate and truthful account information during registration, including a valid email address and correct contact details." />
+                                <Separator visible="false" maxWidth="400"/>
+                                <Label prefWidth="400" wrapText="true" text="3) Users are responsible for maintaining the security of their account credentials. Any suspicious activity must be reported to administrators immediately." />
+                                <Separator visible="false" maxWidth="400"/>
+                                <Label prefWidth="400" wrapText="true" text="4) All bids placed are considered final and legally binding once submitted. Users may not retract or cancel a bid after it has been placed." />
+                                <Separator visible="false" maxWidth="400"/>
+                                <Label prefWidth="400" wrapText="true" text="5) Sellers must auction only legal, authentic items with accurate descriptions, relevant images and clear condition details. Misrepresentation is strictly prohibited." />
+                                <Separator visible="false" maxWidth="400"/>
+                                <Label prefWidth="400" wrapText="true" text="6) Sellers are strictly prohibited from bidding on their own listings, directly or through another account. Shill bidding is a serious violation." />
+                                <Separator visible="false" maxWidth="400"/>
+                                <Label prefWidth="400" wrapText="true" text="7) Winning bidders must complete payment within the specified period using their account balance. Failure to pay may result in account suspension." />
+                                <Separator visible="false" maxWidth="400"/>
+                                <Label prefWidth="400" wrapText="true" text="8) Fraudulent activities, fake bids, scams and price manipulation are strictly prohibited and may result in account termination and legal action." />
+                                <Separator visible="false" maxWidth="400"/>
+                                <Label prefWidth="400" wrapText="true" text="9) The platform reserves the right to suspend or permanently ban accounts that violate policies, without prior notice." />
+                                <Separator visible="false" maxWidth="400"/>
+                                <Label prefWidth="400" wrapText="true" text="10) All transactions, bidding activities and user interactions are securely monitored and recorded for platform security and transparency." />
+                                <Separator visible="false" maxWidth="400"/>
+                                <Label prefWidth="400" wrapText="true" text="11) Users may not create multiple accounts to gain unfair bidding advantages. Each user is permitted one active account." />
+                                <Separator visible="false" maxWidth="400"/>
+                                <Label prefWidth="400" wrapText="true" text="12) Top-up requests must be between $5.00 and $10,000.00 per transaction and require administrator approval before the balance is updated." />
+                            </VBox>
+                        </content>
+                    </ScrollPane>
+                </content>
+            </TitledPane>
+
+            <!-- Further Development -->
+            <TitledPane expanded="false" layoutX="985.0" layoutY="80.0" maxWidth="440.0" prefWidth="440.0" styleClass="collapsibleContainer" text="Further Development">
+                <content>
+                    <ScrollPane fitToWidth="true" prefHeight="750.0" hbarPolicy="NEVER"
+                                style="-fx-background: white; -fx-background-color: white; -fx-control-inner-background: white;">
+                        <content>
+                            <VBox spacing="8" style="-fx-padding: 12; -fx-background-color: white;">
+                                <Label prefWidth="400" wrapText="true" text="BidBlitz is actively developed and continuously improved. Here is what we plan to deliver next:" />
+                                <Separator visible="false" maxWidth="400"/>
+                                <Label prefWidth="400" wrapText="true" text="• GUI Enhancements"
+                                       style="-fx-font-weight: bold; -fx-font-size: 15px;" />
+                                <Label prefWidth="400" wrapText="true" text="A more polished JavaFX interface with smoother animations, improved color schemes and a more intuitive navigation experience." />
+                                <Separator visible="false" maxWidth="400"/>
+                                <Label prefWidth="400" wrapText="true" text="• Real-Time Auction Updates"
+                                       style="-fx-font-weight: bold; -fx-font-size: 15px;" />
+                                <Label prefWidth="400" wrapText="true" text="Background threads will push instant bid notifications so users are alerted the moment they are outbid or an auction is ending soon." />
+                                <Separator visible="false" maxWidth="400"/>
+                                <Label prefWidth="400" wrapText="true" text="• Advanced Search and Filtering"
+                                       style="-fx-font-weight: bold; -fx-font-size: 15px;" />
+                                <Label prefWidth="400" wrapText="true" text="Filters for price range, condition, auction end date, seller rating and category so buyers can find items faster and more precisely." />
+                                <Separator visible="false" maxWidth="400"/>
+                                <Label prefWidth="400" wrapText="true" text="• Seller Analytics Dashboard"
+                                       style="-fx-font-weight: bold; -fx-font-size: 15px;" />
+                                <Label prefWidth="400" wrapText="true" text="Revenue trends, sold vs unsold ratios, average sale prices by category, commission fees and listing performance all in one panel." />
+                                <Separator visible="false" maxWidth="400"/>
+                                <Label prefWidth="400" wrapText="true" text="• Mobile Application"
+                                       style="-fx-font-weight: bold; -fx-font-size: 15px;" />
+                                <Label prefWidth="400" wrapText="true" text="A companion app allowing users to browse auctions, place bids and manage accounts from their smartphones." />
+                                <Separator visible="false" maxWidth="400"/>
+                                <Label prefWidth="400" wrapText="true" text="• Payment Gateway Integration"
+                                       style="-fx-font-weight: bold; -fx-font-size: 15px;" />
+                                <Label prefWidth="400" wrapText="true" text="Real payment support including credit cards, bank transfers and digital wallets to replace the current simulated balance system." />
+                                <Separator visible="false" maxWidth="400"/>
+                                <Label prefWidth="400" wrapText="true" text="• AI-Powered Recommendations"
+                                       style="-fx-font-weight: bold; -fx-font-size: 15px;" />
+                                <Label prefWidth="400" wrapText="true" text="Machine learning algorithms suggesting relevant auctions based on browsing history, past bids and watchlist items for a personalized experience." />
+                            </VBox>
+                        </content>
+                    </ScrollPane>
+                </content>
+            </TitledPane>
+
         </AnchorPane>
     </center>
     <stylesheets>
