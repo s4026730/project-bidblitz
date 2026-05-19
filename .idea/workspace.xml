@@ -4,11 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="02ae6a1a-35c8-472c-8de6-6c67efd03109" name="Changes" comment="Added reusable auction backend logic from A1">
-      <change afterPath="$PROJECT_DIR$/bidblitz/src/main/java/com/example/bidblitz/DummyData.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bidblitz/src/main/java/com/example/bidblitz/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/bidblitz/src/main/java/com/example/bidblitz/MainController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bidblitz/src/main/resources/com/example/bidblitz/user-auction-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/bidblitz/src/main/resources/com/example/bidblitz/user-auction-view.fxml" afterDir="false" />
-    </list>
+    <list default="true" id="02ae6a1a-35c8-472c-8de6-6c67efd03109" name="Changes" comment="Implement auction details section in user auction view and Add dummy auction data for testing." />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -181,7 +177,15 @@
       <option name="project" value="LOCAL" />
       <updated>1778782195514</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Implement auction details section in user auction view and Add dummy auction data for testing.">
+      <option name="closed" value="true" />
+      <created>1779219803776</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1779219803776</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -208,6 +212,7 @@
     <MESSAGE value="Removing Hamburger Navigation Menu Concept and Replace it with Side Bar. Removing Sidebar from guest pages due to unnecessarily needed" />
     <MESSAGE value="Adding WIP (Work In Progress) slideshow system and diplay. Retrofit Main.java file to make the page being launched more reliable and moving most of pref-width and pref-height to directly." />
     <MESSAGE value="Added reusable auction backend logic from A1" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added reusable auction backend logic from A1" />
+    <MESSAGE value="Implement auction details section in user auction view and Add dummy auction data for testing." />
+    <option name="LAST_COMMIT_MESSAGE" value="Implement auction details section in user auction view and Add dummy auction data for testing." />
   </component>
 </project>
