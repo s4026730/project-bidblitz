@@ -1,5 +1,9 @@
 package com.example.bidblitz;
 
+import java.util.Locale;
+import java.io.IOException;
+import java.math.BigDecimal;
+import java.text.NumberFormat;
 import javafx.animation.FadeTransition;
 import javafx.animation.KeyFrame;
 import javafx.animation.Timeline;
@@ -15,334 +19,354 @@ import javafx.scene.control.ListView;
 import javafx.scene.control.TextField;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
+import javafx.scene.layout.BorderPane;
+import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
 import javafx.util.Duration;
 
-import java.io.IOException;
-
 public class MainController {
-    private Stage stage;
     private Parent root;
+    private Stage stage;
     private Scene demonstratedScene;
+    private String fxmlFile;
+    private Image[] bannerImages;
+    private int currentIndex = 0;
+    private UserEntity currentUser = Session.getCurrentUser();
+
+    @FXML
+    private BorderPane rootPane;
+    @FXML
+    private VBox categoryPanel;
     @FXML
     private TextField searchBar;
     @FXML
     private ListView<String> listView;
     @FXML
     private Button auctionSelections;
-
     @FXML
     private ImageView banner;
-    private Image[] bannerImages;
-    private int currentIndex = 0;
+    @FXML
+    ImageView accountAvatar;
+    @FXML
+    private Label accountUsername;
+    @FXML
+    private Label accountBalance;
 
     // Guest Pages Navigation & Other Features Codes:
     @FXML
-    public void switchToGuestHome(ActionEvent event) throws IOException{
+    protected void switchToGuestHome() throws IOException{
+        fxmlFile="guest-main-view.fxml";
         try{
-            FXMLLoader fxmlLoader = new FXMLLoader(Main.class.getResource("guest-main-view.fxml"));
-            Parent root = fxmlLoader.load();
+            FXMLLoader fxmlLoader = new FXMLLoader(Main.class.getResource(fxmlFile));
+            root = fxmlLoader.load();
             MainController controller = fxmlLoader.getController();
             controller.slideshowSystem();
-            stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+            stage = (Stage) rootPane.getScene().getWindow();
             demonstratedScene = new Scene(root, 1710, 1000);
             demonstratedScene.getStylesheets().add(getClass().getResource("/css/General.css").toExternalForm());
             stage.setScene(demonstratedScene);
             stage.show();
         }
         catch(IOException e){
-            System.err.println("Could not find guest-main-view.fxml. Check your folder structure!");
+            System.err.println("Could not find "+ fxmlFile +". Check your folder structure!");
             e.printStackTrace();
         }
     } //[1] [2] [3]
 
     @FXML
-    public void switchToGuestAuction(ActionEvent event) throws IOException{
+    protected void switchToGuestAuction() throws IOException{
+        fxmlFile="guest-auction-view.fxml";
         try{
-            FXMLLoader fxmlLoader = new FXMLLoader(Main.class.getResource("guest-auction-view.fxml"));
-            Parent root = fxmlLoader.load();
-            stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+            FXMLLoader fxmlLoader = new FXMLLoader(Main.class.getResource(fxmlFile));
+            root = fxmlLoader.load();
+            stage = (Stage) rootPane.getScene().getWindow();
             demonstratedScene = new Scene(root, 1710, 1000);
             demonstratedScene.getStylesheets().add(getClass().getResource("/css/General.css").toExternalForm());
             stage.setScene(demonstratedScene);
             stage.show();
         }
         catch(IOException e){
-            System.err.println("Could not find guest-auction-view.fxml. Check your folder structure!");
+            System.err.println("Could not find "+ fxmlFile +". Check your folder structure!");
             e.printStackTrace();
         }
     }//[1] [2] [3]
 
     @FXML
-    public void switchToGuestCategory(ActionEvent event) throws IOException{
+    protected void switchToGuestHelp() throws IOException{
+        fxmlFile="guest-help-view.fxml";
         try{
-            FXMLLoader fxmlLoader = new FXMLLoader(Main.class.getResource("guest-category-view.fxml"));
-            Parent root = fxmlLoader.load();
-            stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+            FXMLLoader fxmlLoader = new FXMLLoader(Main.class.getResource(fxmlFile));
+            root = fxmlLoader.load();
+            stage = (Stage) rootPane.getScene().getWindow();
             demonstratedScene = new Scene(root, 1710, 1000);
             demonstratedScene.getStylesheets().add(getClass().getResource("/css/General.css").toExternalForm());
             stage.setScene(demonstratedScene);
             stage.show();
         }
         catch(IOException e){
-            System.err.println("Could not find guest-category-view.fxml. Check your folder structure!");
+            System.err.println("Could not find "+ fxmlFile +". Check your folder structure!");
             e.printStackTrace();
         }
     }//[1] [2] [3]
 
     @FXML
-    public void switchToGuestHelp(ActionEvent event) throws IOException{
+    protected void switchToGuestAboutUs() throws IOException{
+        fxmlFile="guest-about-us-view.fxml";
         try{
-            FXMLLoader fxmlLoader = new FXMLLoader(Main.class.getResource("guest-help-view.fxml"));
-            Parent root = fxmlLoader.load();
-            stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+            FXMLLoader fxmlLoader = new FXMLLoader(Main.class.getResource(fxmlFile));
+            root = fxmlLoader.load();
+            stage = (Stage) rootPane.getScene().getWindow();
             demonstratedScene = new Scene(root, 1710, 1000);
             demonstratedScene.getStylesheets().add(getClass().getResource("/css/General.css").toExternalForm());
             stage.setScene(demonstratedScene);
             stage.show();
         }
         catch(IOException e){
-            System.err.println("Could not find guest-help-view.fxml. Check your folder structure!");
+            System.err.println("Could not find "+ fxmlFile +". Check your folder structure!");
             e.printStackTrace();
         }
     }//[1] [2] [3]
 
     @FXML
-    public void switchToGuestAboutUs(ActionEvent event) throws IOException{
+    protected void switchToSignIn() throws IOException{
+        fxmlFile="sign-in-view.fxml";
         try{
-            FXMLLoader fxmlLoader = new FXMLLoader(Main.class.getResource("guest-about-us-view.fxml"));
-            Parent root = fxmlLoader.load();
-            stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+            FXMLLoader fxmlLoader = new FXMLLoader(Main.class.getResource(fxmlFile));
+            root = fxmlLoader.load();
+            stage = (Stage) rootPane.getScene().getWindow();
             demonstratedScene = new Scene(root, 1710, 1000);
             demonstratedScene.getStylesheets().add(getClass().getResource("/css/General.css").toExternalForm());
             stage.setScene(demonstratedScene);
             stage.show();
         }
         catch(IOException e){
-            System.err.println("Could not find guest-about-us-view.fxml. Check your folder structure!");
+            System.err.println("Could not find "+ fxmlFile +". Check your folder structure!");
             e.printStackTrace();
         }
     }//[1] [2] [3]
 
     @FXML
-    public void switchToSignIn(ActionEvent event) throws IOException{
+    protected void switchToSignUp() throws IOException{
+        fxmlFile="sign-up-view.fxml";
         try{
-            FXMLLoader fxmlLoader = new FXMLLoader(Main.class.getResource("sign-in-view.fxml"));
-            Parent root = fxmlLoader.load();
-            stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+            FXMLLoader fxmlLoader = new FXMLLoader(Main.class.getResource(fxmlFile));
+            root = fxmlLoader.load();
+            stage = (Stage) rootPane.getScene().getWindow();
             demonstratedScene = new Scene(root, 1710, 1000);
             demonstratedScene.getStylesheets().add(getClass().getResource("/css/General.css").toExternalForm());
             stage.setScene(demonstratedScene);
             stage.show();
         }
         catch(IOException e){
-            System.err.println("Could not find sign-in-view.fxml. Check your folder structure!");
+            System.err.println("Could not find "+ fxmlFile +". Check your folder structure!");
             e.printStackTrace();
         }
     }//[1] [2] [3]
 
     @FXML
-    public void switchToSignUp(ActionEvent event) throws IOException{
+    protected void switchToForgotUsername() throws IOException{
+        fxmlFile="forgot-username-view.fxml";
         try{
-            FXMLLoader fxmlLoader = new FXMLLoader(Main.class.getResource("sign-up-view.fxml"));
-            Parent root = fxmlLoader.load();
-            stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+            FXMLLoader fxmlLoader = new FXMLLoader(Main.class.getResource(fxmlFile));
+            root = fxmlLoader.load();
+            stage = (Stage) rootPane.getScene().getWindow();
             demonstratedScene = new Scene(root, 1710, 1000);
             demonstratedScene.getStylesheets().add(getClass().getResource("/css/General.css").toExternalForm());
             stage.setScene(demonstratedScene);
             stage.show();
         }
         catch(IOException e){
-            System.err.println("Could not find sign-up-view.fxml. Check your folder structure!");
+            System.err.println("Could not find "+ fxmlFile +". Check your folder structure!");
             e.printStackTrace();
         }
     }//[1] [2] [3]
 
     @FXML
-    public void switchToForgotUsername(ActionEvent event) throws IOException{
+    protected void switchToForgotPassword() throws IOException{
+        fxmlFile="forgot-password-view.fxml";
         try{
-            FXMLLoader fxmlLoader = new FXMLLoader(Main.class.getResource("forgot-username-view.fxml"));
-            Parent root = fxmlLoader.load();
-            stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+            FXMLLoader fxmlLoader = new FXMLLoader(Main.class.getResource(fxmlFile));
+            root = fxmlLoader.load();
+            stage = (Stage) rootPane.getScene().getWindow();
             demonstratedScene = new Scene(root, 1710, 1000);
             demonstratedScene.getStylesheets().add(getClass().getResource("/css/General.css").toExternalForm());
             stage.setScene(demonstratedScene);
             stage.show();
         }
         catch(IOException e){
-            System.err.println("Could not find forgot-username-view.fxml. Check your folder structure!");
-            e.printStackTrace();
-        }
-    }//[1] [2] [3]
-
-    @FXML
-    public void switchToForgotPassword(ActionEvent event) throws IOException{
-        try{
-            FXMLLoader fxmlLoader = new FXMLLoader(Main.class.getResource("forgot-password-view.fxml"));
-            Parent root = fxmlLoader.load();
-            stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
-            demonstratedScene = new Scene(root, 1710, 1000);
-            demonstratedScene.getStylesheets().add(getClass().getResource("/css/General.css").toExternalForm());
-            stage.setScene(demonstratedScene);
-            stage.show();
-        }
-        catch(IOException e){
-            System.err.println("Could not find forgot-password-view.fxml. Check your folder structure!");
+            System.err.println("Could not find "+ fxmlFile +". Check your folder structure!");
             e.printStackTrace();
         }
     }//[1] [2] [3]
 
     // User Pages Navigation & Other Features Codes:
     @FXML
-    public void switchToUserHome (ActionEvent event) throws IOException{
+    protected void switchToUserHome () throws IOException{
+        fxmlFile="user-main-view.fxml";
         try{
-            FXMLLoader fxmlLoader = new FXMLLoader(Main.class.getResource("user-main-view.fxml"));
-            Parent root = fxmlLoader.load();
+            FXMLLoader fxmlLoader = new FXMLLoader(Main.class.getResource(fxmlFile));
+            root = fxmlLoader.load();
             MainController controller = fxmlLoader.getController();
             controller.slideshowSystem();
-            stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+            stage = (Stage) rootPane.getScene().getWindow();
             demonstratedScene = new Scene(root, 1710, 1000);
             demonstratedScene.getStylesheets().add(getClass().getResource("/css/General.css").toExternalForm());
             stage.setScene(demonstratedScene);
             stage.show();
         }
         catch(IOException e){
-            System.err.println("Could not find forgot-password-view.fxml. Check your folder structure!");
+            System.err.println("Could not find "+ fxmlFile +". Check your folder structure!");
             e.printStackTrace();
         }
     }//[1] [2] [3]
 
     @FXML
-    public void switchToUserAuction (ActionEvent event) throws IOException{
+    protected void switchToUserAuction () throws IOException{
+        fxmlFile="user-auction-view.fxml";
         try{
-            FXMLLoader fxmlLoader = new FXMLLoader(Main.class.getResource("user-auction-view.fxml"));
-            Parent root = fxmlLoader.load();
-            stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+            FXMLLoader fxmlLoader = new FXMLLoader(Main.class.getResource(fxmlFile));
+            root = fxmlLoader.load();
+            stage = (Stage) rootPane.getScene().getWindow();
             demonstratedScene = new Scene(root, 1710, 1000);
             demonstratedScene.getStylesheets().add(getClass().getResource("/css/General.css").toExternalForm());
             stage.setScene(demonstratedScene);
             stage.show();
         }
         catch(IOException e){
-            System.err.println("Could not find forgot-password-view.fxml. Check your folder structure!");
+            System.err.println("Could not find "+ fxmlFile +". Check your folder structure!");
             e.printStackTrace();
         }
     }//[1] [2] [3]
 
-    public void switchToUserCategory (ActionEvent event) throws IOException{
+
+    @FXML
+    protected void switchToUserHelp() throws IOException{
+        fxmlFile ="user-help-view.fxml";
         try{
-            FXMLLoader fxmlLoader = new FXMLLoader(Main.class.getResource("user-category-view.fxml"));
-            Parent root = fxmlLoader.load();
-            stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+            FXMLLoader fxmlLoader = new FXMLLoader(Main.class.getResource(fxmlFile));
+            root = fxmlLoader.load();
+            stage = (Stage) rootPane.getScene().getWindow();
             demonstratedScene = new Scene(root, 1710, 1000);
             demonstratedScene.getStylesheets().add(getClass().getResource("/css/General.css").toExternalForm());
             stage.setScene(demonstratedScene);
             stage.show();
         }
         catch(IOException e){
-            System.err.println("Could not find forgot-password-view.fxml. Check your folder structure!");
+            System.err.println("Could not find "+ fxmlFile +". Check your folder structure!");
             e.printStackTrace();
         }
     }//[1] [2] [3]
 
-    public void switchToUserHelp(ActionEvent event) throws IOException{
+    @FXML
+    protected void switchToUserAboutUs () throws IOException{
+        fxmlFile ="user-about-us-view.fxml";
         try{
-            FXMLLoader fxmlLoader = new FXMLLoader(Main.class.getResource("user-help-view.fxml"));
-            Parent root = fxmlLoader.load();
-            stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+            FXMLLoader fxmlLoader = new FXMLLoader(Main.class.getResource(fxmlFile));
+            root = fxmlLoader.load();
+            stage = (Stage) rootPane.getScene().getWindow();
             demonstratedScene = new Scene(root, 1710, 1000);
             demonstratedScene.getStylesheets().add(getClass().getResource("/css/General.css").toExternalForm());
             stage.setScene(demonstratedScene);
             stage.show();
         }
         catch(IOException e){
-            System.err.println("Could not find guest-help-view.fxml. Check your folder structure!");
+            System.err.println("Could not find "+ fxmlFile +". Check your folder structure!");
             e.printStackTrace();
         }
     }//[1] [2] [3]
 
-    public void switchToUserAboutUs (ActionEvent event) throws IOException{
+    @FXML
+    protected void switchToProfile () throws IOException{
+        fxmlFile ="profile-view.fxml";
         try{
-            FXMLLoader fxmlLoader = new FXMLLoader(Main.class.getResource("user-about-us-view.fxml"));
-            Parent root = fxmlLoader.load();
-            stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+            FXMLLoader fxmlLoader = new FXMLLoader(Main.class.getResource(fxmlFile));
+            root = fxmlLoader.load();
+            stage = (Stage) rootPane.getScene().getWindow();
             demonstratedScene = new Scene(root, 1710, 1000);
             demonstratedScene.getStylesheets().add(getClass().getResource("/css/General.css").toExternalForm());
             stage.setScene(demonstratedScene);
             stage.show();
         }
         catch(IOException e){
-            System.err.println("Could not find forgot-password-view.fxml. Check your folder structure!");
+            System.err.println("Could not find "+ fxmlFile +". Check your folder structure!");
             e.printStackTrace();
         }
     }//[1] [2] [3]
 
-    public void switchToProfile (ActionEvent event) throws IOException{
+    @FXML
+    protected void switchToInventory () throws IOException{
+        fxmlFile ="inventory-view.fxml";
         try{
-            FXMLLoader fxmlLoader = new FXMLLoader(Main.class.getResource("profile-view.fxml"));
-            Parent root = fxmlLoader.load();
-            stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+            FXMLLoader fxmlLoader = new FXMLLoader(Main.class.getResource(fxmlFile));
+            root = fxmlLoader.load();
+            stage = (Stage) rootPane.getScene().getWindow();
             demonstratedScene = new Scene(root, 1710, 1000);
             demonstratedScene.getStylesheets().add(getClass().getResource("/css/General.css").toExternalForm());
             stage.setScene(demonstratedScene);
             stage.show();
         }
         catch(IOException e){
-            System.err.println("Could not find forgot-password-view.fxml. Check your folder structure!");
+            System.err.println("Could not find "+ fxmlFile +". Check your folder structure!");
             e.printStackTrace();
         }
     }//[1] [2] [3]
 
-    public void switchToInventory (ActionEvent event) throws IOException{
+    @FXML
+    protected void switchToBalance () throws IOException{
+        fxmlFile ="balance-view.fxml";
         try{
-            FXMLLoader fxmlLoader = new FXMLLoader(Main.class.getResource("inventory-view.fxml"));
-            Parent root = fxmlLoader.load();
-            stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+            FXMLLoader fxmlLoader = new FXMLLoader(Main.class.getResource(fxmlFile));
+            root = fxmlLoader.load();
+            stage = (Stage) rootPane.getScene().getWindow();
             demonstratedScene = new Scene(root, 1710, 1000);
             demonstratedScene.getStylesheets().add(getClass().getResource("/css/General.css").toExternalForm());
             stage.setScene(demonstratedScene);
             stage.show();
         }
         catch(IOException e){
-            System.err.println("Could not find forgot-password-view.fxml. Check your folder structure!");
+            System.err.println("Could not find "+ fxmlFile +". Check your folder structure!");
             e.printStackTrace();
         }
     }//[1] [2] [3]
 
-    public void switchToTransactionHistory (ActionEvent event) throws IOException{
+    @FXML
+    protected void switchToTransactionHistory () throws IOException{
+        fxmlFile ="transaction-history-view.fxml";
         try{
-            FXMLLoader fxmlLoader = new FXMLLoader(Main.class.getResource("transaction-history-view.fxml"));
-            Parent root = fxmlLoader.load();
-            stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+            FXMLLoader fxmlLoader = new FXMLLoader(Main.class.getResource(fxmlFile));
+            root = fxmlLoader.load();
+            stage = (Stage) rootPane.getScene().getWindow();
             demonstratedScene = new Scene(root, 1710, 1000);
             demonstratedScene.getStylesheets().add(getClass().getResource("/css/General.css").toExternalForm());
             stage.setScene(demonstratedScene);
             stage.show();
         }
         catch(IOException e){
-            System.err.println("Could not find forgot-password-view.fxml. Check your folder structure!");
+            System.err.println("Could not find "+ fxmlFile +". Check your folder structure!");
             e.printStackTrace();
         }
     }//[1] [2] [3]
 
-    public void switchToSettings (ActionEvent event) throws IOException{
+    @FXML
+    protected void switchToSettings () throws IOException{
+        fxmlFile ="settings-view.fxml";
         try{
-            FXMLLoader fxmlLoader = new FXMLLoader(Main.class.getResource("settings-view.fxml"));
-            Parent root = fxmlLoader.load();
-            stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+            FXMLLoader fxmlLoader = new FXMLLoader(Main.class.getResource(fxmlFile));
+            root = fxmlLoader.load();
+            stage = (Stage) rootPane.getScene().getWindow();
             demonstratedScene = new Scene(root, 1710, 1000);
             demonstratedScene.getStylesheets().add(getClass().getResource("/css/General.css").toExternalForm());
             stage.setScene(demonstratedScene);
             stage.show();
         }
         catch(IOException e){
-            System.err.println("Could not find forgot-password-view.fxml. Check your folder structure!");
+            System.err.println("Could not find "+ fxmlFile +". Check your folder structure!");
             e.printStackTrace();
         }
     }//[1] [2] [3]
 
-    // Auction Functionality Codes:
-    public void handleAuctionSelection (ActionEvent event) throws IOException{
+    // Auction Functionality Codes (WIP):
+    protected void handleAuctionSelection (ActionEvent event) throws IOException{
 
         auctionSelections.getStyleClass().remove("underlinedText");
         Button clickedButton = (Button) event.getSource();
@@ -350,8 +374,7 @@ public class MainController {
     }
 
     // Slideshow Feature Codes:
-    @FXML
-    public void slideshowSystem() {
+    protected void slideshowSystem() {
 
         if (banner == null) {
             return;
@@ -405,6 +428,40 @@ public class MainController {
         });
 
         fadeOut.play();
+    }
+
+    protected void setAccountInfo(){
+        setAccountAvatar();
+        setAccountUsername();
+        setAccountBalance();
+    }
+
+    private void setAccountAvatar(){
+        if(currentUser == null){return;}
+        Image avatarImage = new Image(getClass().getResourceAsStream(currentUser.getAvatarPath()));
+        accountAvatar.setImage(avatarImage);
+    }
+    private void setAccountUsername(){
+        if(currentUser == null){return;}
+        accountUsername.setText(currentUser.getUsername());
+    }
+
+    private void setAccountBalance(){
+        if(currentUser == null){return;}
+        BigDecimal userBalance = currentUser.getBalance();
+        NumberFormat balanceFormatter = NumberFormat.getNumberInstance(Locale.US);
+        accountBalance.setText(balanceFormatter.format(userBalance));
+    }
+
+    @FXML
+    private void toggleCategoryPanel() {
+        boolean isVisible = categoryPanel.isVisible();
+
+        categoryPanel.setVisible(!isVisible);
+        categoryPanel.setManaged(!isVisible);
+        if(!isVisible){
+            categoryPanel.toFront();
+        }
     }
 
 }

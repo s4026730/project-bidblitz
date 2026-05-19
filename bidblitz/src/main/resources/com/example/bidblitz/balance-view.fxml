@@ -123,7 +123,7 @@
                     <Button fx:id="shoes" maxHeight="30" maxWidth="225" minHeight="30" minWidth="225" mnemonicParsing="false" prefHeight="30.0" prefWidth="225" styleClass="textButton" text="Shoes" />
                 </HBox>
             </VBox>
-            <Label layoutX="680.0" layoutY="25.0" styleClass="importantText" text="HELP" />
+            <Label layoutX="680.0" layoutY="25.0" styleClass="importantText" text="BALANCE" />
         </AnchorPane>
     </center>
     <stylesheets>

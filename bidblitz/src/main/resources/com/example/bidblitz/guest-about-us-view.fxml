@@ -2,149 +2,201 @@
 
 <?import java.lang.String?>
 <?import java.net.URL?>
-<?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
 <?import javafx.scene.control.Separator?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.control.TitledPane?>
-<?import javafx.scene.control.ToolBar?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.layout.VBox?>
-<?import javafx.scene.control.ScrollPane?>
 
-<BorderPane prefHeight="1000" prefWidth="1710" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.bidblitz.MainController">
-    <Button styleClass="navigationBarButton" />
+<?import javafx.scene.layout.HBox?>
+<BorderPane fx:id="rootPane" prefHeight="1000" prefWidth="1710" styleClass="lightPageLayout" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.bidblitz.MainController">
     <top>
-        <ToolBar prefHeight="40.0" prefWidth="200.0" styleClass="navigationBar">
-            <items>
-                <Button mnemonicParsing="false" onAction="#switchToGuestHome" styleClass="navigationBarButton, homeButton" text="BIDBLITZ" />
-                <Button layoutX="10.0" layoutY="12.0" mnemonicParsing="false" onAction="#switchToGuestAuction" styleClass="navigationBarButton" text="AUCTION" />
-                <Button layoutX="66.0" layoutY="12.0" mnemonicParsing="false" onAction="#switchToGuestCategory" styleClass="navigationBarButton" text="CATEGORY" />
-                <TextField promptText="Search Bar" styleClass="searchBar" />
-                <Button layoutX="122.0" layoutY="12.0" mnemonicParsing="false" styleClass="navigationBarButton" text="Button" />
-                <Button layoutX="195.0" layoutY="12.0" mnemonicParsing="false" onAction="#switchToGuestHelp" styleClass="navigationBarButton" text="HELP" />
-                <Button layoutX="251.0" layoutY="12.0" mnemonicParsing="false" onAction="#switchToGuestAboutUs" styleClass="navigationBarButton" text="ABOUT US" />
-                <Button layoutX="473.0" layoutY="10.0" mnemonicParsing="false" onAction="#switchToSignIn" styleClass="navigationBarButton" text="SIGN IN" />
-                <Button layoutX="587.0" layoutY="10.0" mnemonicParsing="false" onAction="#switchToSignUp" styleClass="navigationBarButton" text="SIGN UP" />
-            </items>
-            <padding>
-                <Insets top="-1.0" />
-            </padding>
-        </ToolBar>
+        <AnchorPane maxHeight="50.0" prefHeight="50.0">
+            <Button layoutY="-41.0" styleClass="sideBarButton" />
+            <Button alignment="CENTER" maxHeight="50.0" maxWidth="200.0" mnemonicParsing="false" onAction="#switchToGuestHome" prefHeight="50.0" prefWidth="200.0" text="BIDBLITZ" textAlignment="CENTER">
+                <styleClass>
+                    <String fx:value="navigationButton" />
+                    <String fx:value="homeButton" />
+                </styleClass>
+            </Button>
+            <Button id="categoryMenuButton" fx:id="categoryMenuButton" layoutX="245.0" maxHeight="50.0" maxWidth="200.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="200.0" styleClass="textButton" text="CATEGORY  ▼" textAlignment="CENTER" onAction="#toggleCategoryPanel"/>
+            <TextField layoutX="420.0" maxHeight="50.0" maxWidth="450.0" prefHeight="50.0" prefWidth="450.0" promptText="🔍 Search For Anything" styleClass="searchBar" />
+            <Button id="searchButton" layoutX="900.0" maxHeight="50.0" maxWidth="100.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="100.0" text="SEARCH" textAlignment="CENTER" />
+            <Button id="advanceSearchButton" layoutX="1030.0" maxHeight="50.0" maxWidth="200.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="200.0" text="ADVANCE SEARCH" textAlignment="CENTER" />
+            <Button alignment="CENTER" layoutX="1310.0" maxHeight="50.0" maxWidth="200.0" mnemonicParsing="false" onAction="#switchToSignIn" prefHeight="50.0" prefWidth="200.0" styleClass="navigationButton" text="SIGN IN" textAlignment="CENTER" />
+            <Button alignment="CENTER" layoutX="1510.0" maxHeight="50.0" maxWidth="200.0" mnemonicParsing="false" onAction="#switchToSignUp" prefHeight="50.0" prefWidth="200.0" styleClass="navigationButton" text="SIGN UP" textAlignment="CENTER" />
+        </AnchorPane>
     </top>
-
     <left>
-
-    </left>
-
-    <center>
-        <ScrollPane fitToWidth="true" hbarPolicy="NEVER" vbarPolicy="ALWAYS" pannable="true">
-            <AnchorPane>
-                <Label layoutX="800" styleClass="importantText" text="ABOUT US" />
-                <TitledPane maxHeight="900" maxWidth="300" expanded="false" layoutX="433.0" layoutY="84.0" styleClass="collapsibleContainer" text="What and Why?">
-                    <content>
-                        <VBox spacing="5">
-                            <Label maxWidth="300" wrapText="true">
-                                <text>
-                                    BidBlitz is an online auction and trading platform that recreates the experience of traditional
-                                    in person auctions in a digital space.
-                                </text>
-                            </Label>
-                            <Separator halignment="CENTER" maxWidth="200" visible="false" />
-                            <Label maxWidth="300" wrapText="true">
-                                <text>
-                                    It supports seamless user to user communication, maintains secure and detailed transaction tracking,
-                                    logging and delivers a simple, user-friendly interface.
-                                </text>
-                            </Label>
-                        </VBox>
-                    </content>
-                </TitledPane>
-                <TitledPane expanded="false" layoutX="787.0" layoutY="84.0" styleClass="collapsibleContainer" text="Rules">
-                    <content>
-                        <VBox spacing="5">
-                            <Label maxWidth="300" wrapText="true">
-                                <text>
-                                    1) Users must communicate respectfully and may not engage in harassment, threats or abusive behavior.
-                                </text>
-                            </Label>
-                            <Separator halignment="CENTER" maxWidth="200" visible="false" />
-                            <Label maxWidth="300" wrapText="true">
-                                <text>
-                                    2) Users must provide accurate and truthful account information during registration.
-                                </text>
-                            </Label>
-                            <Separator halignment="CENTER" maxWidth="200" visible="false" />
-                            <Label maxWidth="300" wrapText="true">
-                                <text>
-                                    3) Users must provide accurate and truthful account information during registration.
-                                </text>
-                            </Label>
-                            <Separator halignment="CENTER" maxWidth="200" visible="false" />
-                            <Label maxWidth="300" wrapText="true">
-                                <text>
-                                    4) All bids placed by users are considered final and legally binding once submitted.
-                                </text>
-                            </Label>
-                            <Separator halignment="CENTER" maxWidth="200" visible="false" />
-                            <Label maxWidth="300" wrapText="true">
-                                <text>
-                                    5) Sellers are required to auction only legal, authentic and permitted items,
-                                    accompanied by accurate descriptions, relevant images and clear condition details.
-                                </text>
-                            </Label>
-                            <Separator halignment="CENTER" maxWidth="200" visible="false" />
-                            <Label maxWidth="300" wrapText="true">
-                                <text>
-                                    6) Sellers are strictly prohibited from bidding on their own auction listings.
-                                </text>
-                            </Label>
-                            <Separator halignment="CENTER" maxWidth="200" visible="false" />
-                            <Label maxWidth="300" wrapText="true">
-                                <text>
-                                    7) Winning bidders must complete payment within the specified payment period.
-                                </text>
-                            </Label>
-                            <Separator halignment="CENTER" maxWidth="200" visible="false" />
-                            <Label maxWidth="300" wrapText="true">
-                                <text>
-                                    8) Fraudulent activities, fake bids, scams and price manipulation are strictly prohibited.
-                                </text>
-                            </Label>
-                            <Separator halignment="CENTER" maxWidth="200" visible="false" />
-                            <Label maxWidth="300" wrapText="true">
-                                <text>
-                                    9) The platform reserves the right to suspend or permanently ban accounts
-                                    that violate marketplace policies.
-                                </text>
-                            </Label>
-                            <Separator halignment="CENTER" maxWidth="200" visible="false" />
-                            <Label maxWidth="300" wrapText="true">
-                                <text>
-                                    10) All transactions, bidding activities and user interactions are securely monitored and recorded
-                                    to ensure platform security, transparency and fairness.
-                                </text>
-                            </Label>
-                        </VBox>
-                    </content>
-                </TitledPane>
-                <TitledPane expanded="false" layoutX="1146.0" layoutY="84.0" styleClass="collapsibleContainer" text="Further Development">
-                    <content>
-                        <VBox spacing="5">
-                            <Label maxWidth="300" text="As for now, we plan to refine the application core fundamental functionalities and developing effective quality measurement and assurance procedure to ensure the rights for the customers." wrapText="true" />
-                        </VBox>
-                    </content>
-                </TitledPane>
+        <VBox maxHeight="1000.0" maxWidth="200.0" prefHeight="1000.0" prefWidth="200.0" styleClass="sidebarMenu" BorderPane.alignment="TOP_LEFT">
+            <AnchorPane maxHeight="1000.0" maxWidth="200.0" prefHeight="1000.0" prefWidth="200.0">
+                <children>
+                    <Button alignment="CENTER" maxHeight="100.0" maxWidth="200.0" mnemonicParsing="false" onAction="#switchToGuestAuction" prefHeight="100.0" prefWidth="200.0" styleClass="navigationButton" text="AUCTION" textAlignment="CENTER" />
+                    <Button alignment="CENTER" layoutY="100.0" maxHeight="100.0" maxWidth="200.0" mnemonicParsing="false" onAction="#switchToGuestHelp" prefHeight="100.0" prefWidth="200.0" styleClass="navigationButton" text="HELP" textAlignment="CENTER" />
+                    <Button alignment="CENTER" layoutY="200.0" maxHeight="100.0" maxWidth="200.0" mnemonicParsing="false" onAction="#switchToGuestAboutUs" prefHeight="100.0" prefWidth="200.0" styleClass="navigationButton" text="ABOUT US" textAlignment="CENTER" />
+                    <Button alignment="CENTER" layoutY="300.0" maxHeight="100.0" maxWidth="200.0" mnemonicParsing="false" onAction="#switchToSignIn" prefHeight="100.0" prefWidth="200.0" styleClass="navigationButton" text="SIGN IN" textAlignment="CENTER" />
+                    <Button alignment="CENTER" layoutY="400.0" maxHeight="100.0" maxWidth="200.0" mnemonicParsing="false" onAction="#switchToSignUp" prefHeight="100.0" prefWidth="200.0" styleClass="navigationButton" text="SIGN UP" textAlignment="CENTER" />
+                </children>
             </AnchorPane>
-        </ScrollPane>
+        </VBox>
+    </left>
+    <center>
+        <AnchorPane maxHeight="950.0" maxWidth="1510.0" prefHeight="950.0" prefWidth="1510.0">
+            <VBox fx:id="categoryPanel" layoutX="40.0" maxHeight="300.0" maxWidth="1380" prefHeight="300.0" prefWidth="1380" spacing="10" styleClass="categoryPanel" visible="false" managed="false">
+                <Label styleClass="subimportantText" text="MAIN CATEGORIES:" />
+                <HBox maxHeight="50.0" maxWidth="1380" minHeight="50.0" minWidth="1380" prefHeight="50.0" prefWidth="1380" styleClass="categoryRow">
+                    <Button fx:id="electronics" maxHeight="50" maxWidth="337.5" minHeight="50" minWidth="337.5" mnemonicParsing="false" prefHeight="50.0" prefWidth="337.5" styleClass="textButton" text="Electronics" />
+                    <Button fx:id="technologies" maxHeight="50" maxWidth="337.5" minHeight="50" minWidth="337.5" mnemonicParsing="false" prefHeight="50.0" prefWidth="337.5" styleClass="textButton" text="Technologies" />
+                    <Button fx:id="foodsAndKitchenTools" maxHeight="50" maxWidth="337.5" minHeight="50" minWidth="337.5" mnemonicParsing="false" prefHeight="50.0" prefWidth="337.5" styleClass="textButton" text="Foods and Kitchen Tools" />
+                    <Button fx:id="fashions" maxHeight="50" maxWidth="337.5" minHeight="50" minWidth="337.5" mnemonicParsing="false" prefHeight="50.0" prefWidth="337.5" styleClass="textButton" text="Fashions" />
+                </HBox>
+                <Label styleClass="subimportantText" text="SUB CATEGORIES:" />
+                <HBox maxHeight="30.0" maxWidth="1380" minHeight="30.0" minWidth="1380" prefHeight="30.0" prefWidth="1380" styleClass="categoryRow">
+                    <Button fx:id="smartTelevisions" maxHeight="30" maxWidth="225" minHeight="30" minWidth="225" mnemonicParsing="false" prefHeight="30.0" prefWidth="225" styleClass="textButton" text="Smart Televisions" />
+                    <Button fx:id="wearables" maxHeight="30" maxWidth="225" minHeight="30" minWidth="225" mnemonicParsing="false" prefHeight="30.0" prefWidth="225" styleClass="textButton" text="Wearables" />
+                    <Button fx:id="networkingProducts" maxHeight="30" maxWidth="225" minHeight="30" minWidth="225" mnemonicParsing="false" prefHeight="30.0" prefWidth="225" styleClass="textButton" text="Networking Products" />
+                    <Button fx:id="digitalStorage" maxHeight="30" maxWidth="225" minHeight="30" minWidth="225" mnemonicParsing="false" prefHeight="30.0" prefWidth="225" styleClass="textButton" text="Digital Storage" />
+                    <Button fx:id="electronicCircuits" maxHeight="30" maxWidth="225" minHeight="30" minWidth="225" mnemonicParsing="false" prefHeight="30.0" prefWidth="225" styleClass="textButton" text="Electronic Circuits" />
+                    <Button fx:id="repairManuals" maxHeight="30" maxWidth="225" minHeight="30" minWidth="225" mnemonicParsing="false" prefHeight="30.0" prefWidth="225" styleClass="textButton" text="Repair Manuals" />
+                </HBox>
+                <HBox maxHeight="30.0" maxWidth="1380" minHeight="30.0" minWidth="1380" prefHeight="30.0" prefWidth="1380" styleClass="categoryRow">
+                    <Button fx:id="computers" maxHeight="30" maxWidth="225" minHeight="30" minWidth="225" mnemonicParsing="false" prefHeight="30.0" prefWidth="225" styleClass="textButton" text="Computers" />
+                    <Button fx:id="mobilephones" maxHeight="30" maxWidth="225" minHeight="30" minWidth="225" mnemonicParsing="false" prefHeight="30.0" prefWidth="225" styleClass="textButton" text="Mobile Phones" />
+                    <Button fx:id="tablets" maxHeight="30" maxWidth="225" minHeight="30" minWidth="225" mnemonicParsing="false" prefHeight="30.0" prefWidth="225" styleClass="textButton" text="Tablets" />
+                    <Button fx:id="computerParts" maxHeight="30" maxWidth="225" minHeight="30" minWidth="225" mnemonicParsing="false" prefHeight="30.0" prefWidth="225" styleClass="textButton" text="Computer Parts" />
+                    <Button fx:id="mobilePhoneParts" maxHeight="30" maxWidth="225" minHeight="30" minWidth="225" mnemonicParsing="false" prefHeight="30.0" prefWidth="225" styleClass="textButton" text="Mobile Phone Parts" />
+                    <Button fx:id="tabletPart" maxHeight="30" maxWidth="225" minHeight="30" minWidth="225" mnemonicParsing="false" prefHeight="30.0" prefWidth="225" styleClass="textButton" text="Tablet Parts" />
+                </HBox>
+                <HBox maxHeight="30.0" maxWidth="1380" minHeight="30.0" minWidth="1380" prefHeight="30.0" prefWidth="1380" styleClass="categoryRow">
+                    <Button fx:id="meats" maxHeight="30" maxWidth="225" minHeight="30" minWidth="225" mnemonicParsing="false" prefHeight="30.0" prefWidth="225" styleClass="textButton" text="Meats" />
+                    <Button fx:id="vegetables" maxHeight="30" maxWidth="225" minHeight="30" minWidth="225" mnemonicParsing="false" prefHeight="30.0" prefWidth="225" styleClass="textButton" text="Vegetables" />
+                    <Button fx:id="ingredients" maxHeight="30" maxWidth="225" minHeight="30" minWidth="225" mnemonicParsing="false" prefHeight="30.0" prefWidth="225" styleClass="textButton" text="Ingredients" />
+                    <Button fx:id="kitchenTools" maxHeight="30" maxWidth="225" minHeight="30" minWidth="225" mnemonicParsing="false" prefHeight="30.0" prefWidth="225" styleClass="textButton" text="Kitchen Tools" />
+                    <Button fx:id="cookwares" maxHeight="30" maxWidth="225" minHeight="30" minWidth="225" mnemonicParsing="false" prefHeight="30.0" prefWidth="225" styleClass="textButton" text="Cookwares" />
+                    <Button fx:id="cookingBooks" maxHeight="30" maxWidth="225" minHeight="30" minWidth="225" mnemonicParsing="false" prefHeight="30.0" prefWidth="225" styleClass="textButton" text="Cooking Books" />
+                </HBox>
+                <HBox maxHeight="30.0" maxWidth="1380" minHeight="30.0" minWidth="1380" prefHeight="30.0" prefWidth="1380" styleClass="categoryRow">
+                    <Button fx:id="maleTops" maxHeight="30" maxWidth="225" minHeight="30" minWidth="225" mnemonicParsing="false" prefHeight="30.0" prefWidth="225" styleClass="textButton" text="Male Tops" />
+                    <Button fx:id="femaleTops" maxHeight="30" maxWidth="225" minHeight="30" minWidth="225" mnemonicParsing="false" prefHeight="30.0" prefWidth="225" styleClass="textButton" text="Female Tops" />
+                    <Button fx:id="pants" maxHeight="30" maxWidth="225" minHeight="30" minWidth="225" mnemonicParsing="false" prefHeight="30.0" prefWidth="225" styleClass="textButton" text="Pants" />
+                    <Button fx:id="skirt" maxHeight="30" maxWidth="225" minHeight="30" minWidth="225" mnemonicParsing="false" prefHeight="30.0" prefWidth="225" styleClass="textButton" text="Skirts" />
+                    <Button fx:id="clothingAccessories" maxHeight="30" maxWidth="225" minHeight="30" minWidth="225" mnemonicParsing="false" prefHeight="30.0" prefWidth="225" styleClass="textButton" text="Clothing Accessories" />
+                    <Button fx:id="shoes" maxHeight="30" maxWidth="225" minHeight="30" minWidth="225" mnemonicParsing="false" prefHeight="30.0" prefWidth="225" styleClass="textButton" text="Shoes" />
+                </HBox>
+            </VBox>
+            <Label layoutX="680.0" layoutY="50.0" styleClass="importantText" text="ABOUT US" />
+            <TitledPane expanded="false" layoutX="80.0" layoutY="110.0" maxHeight="900" maxWidth="400.0"
+                        prefHeight="45.0" prefWidth="400.0" styleClass="collapsibleContainer" text="What and Why?">
+                <content>
+                    <VBox spacing="5" fillWidth="true">
+                        <Label prefWidth="300" wrapText="true">
+                            <text>
+                                BidBlitz is an online auction and trading platform that recreates the experience of traditional
+                                in person auctions in a digital space.
+                            </text>
+                        </Label>
+                        <Separator halignment="CENTER"
+                                   maxWidth="200"
+                                   visible="false"/>
+                        <Label prefWidth="300" wrapText="true">
+                            <text>
+                                It supports seamless user to user communication, maintains secure and detailed transaction tracking,
+                                logging and delivers a simple, user-friendly interface.
+                            </text>
+                        </Label>
+                    </VBox>
+                </content>
+            </TitledPane>
+
+            <TitledPane expanded="false" layoutX="550.0" layoutY="110.0" maxHeight="900.0" maxWidth="400.0"
+                        prefHeight="45.0" prefWidth="400.0" styleClass="collapsibleContainer" text="Rules">
+
+                <content>
+                    <VBox spacing="5" fillWidth="true">
+                        <Label prefWidth="300" wrapText="true">
+                            <text>
+                                1) Users must communicate respectfully and may not engage in harassment, threats or abusive behavior.
+                            </text>
+                        </Label>
+                        <Separator maxWidth="200" visible="false"/>
+                        <Label prefWidth="300" wrapText="true">
+                            <text>
+                                2) Users must provide accurate and truthful account information during registration.
+                            </text>
+                        </Label>
+                        <Separator maxWidth="200" visible="false"/>
+                        <Label prefWidth="300" wrapText="true">
+                            <text>
+                                3) Users must provide accurate and truthful account information during registration.
+                            </text>
+                        </Label>
+                        <Separator maxWidth="200" visible="false"/>
+                        <Label prefWidth="300" wrapText="true">
+                            <text>
+                                4) All bids placed by users are considered final and legally binding once submitted.
+                            </text>
+                        </Label>
+                        <Separator maxWidth="200" visible="false"/>
+                        <Label prefWidth="300" wrapText="true">
+                            <text>
+                                5) Sellers are required to auction only legal, authentic and permitted items,
+                                accompanied by accurate descriptions, relevant images and clear condition details.
+                            </text>
+                        </Label>
+                        <Separator maxWidth="200" visible="false"/>
+                        <Label prefWidth="300" wrapText="true">
+                            <text>
+                                6) Sellers are strictly prohibited from bidding on their own auction listings.
+                            </text>
+                        </Label>
+                        <Separator maxWidth="200" visible="false"/>
+                        <Label prefWidth="300" wrapText="true">
+                            <text>
+                                7) Winning bidders must complete payment within the specified payment period.
+                            </text>
+                        </Label>
+                        <Separator maxWidth="200" visible="false"/>
+                        <Label prefWidth="300" wrapText="true">
+                            <text>
+                                8) Fraudulent activities, fake bids, scams and price manipulation are strictly prohibited.
+                            </text>
+                        </Label>
+                        <Separator maxWidth="200" visible="false"/>
+                        <Label prefWidth="300" wrapText="true">
+                            <text>
+                                9) The platform reserves the right to suspend or permanently ban accounts
+                                that violate marketplace policies.
+                            </text>
+                        </Label>
+                        <Separator maxWidth="200" visible="false"/>
+                        <Label prefWidth="300" wrapText="true">
+                            <text>
+                                10) All transactions, bidding activities and user interactions are securely monitored and recorded
+                                to ensure platform security, transparency and fairness.
+                            </text>
+                        </Label>
+                    </VBox>
+                </content>
+            </TitledPane>
+
+            <TitledPane expanded="false" layoutX="1020.0" layoutY="110.0" maxHeight="900.0" maxWidth="400.0" prefHeight="45.0"
+                        prefWidth="400.0" styleClass="collapsibleContainer" text="Further Development">
+                <content>
+                    <VBox spacing="5" fillWidth="true">
+                        <Label prefWidth="300" wrapText="true"
+                               text="As for now, we plan to refine the application core fundamental functionalities and developing
+                               effective quality measurement and assurance procedure to ensure the rights for the customers."/>
+                    </VBox>
+                </content>
+            </TitledPane>
+
+        </AnchorPane>
     </center>
-
-    <bottom>
-
-
-    </bottom>
     <stylesheets>
         <URL value="@../../../css/General.css" />
     </stylesheets>
