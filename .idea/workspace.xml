@@ -4,22 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="02ae6a1a-35c8-472c-8de6-6c67efd03109" name="Changes" comment="Adding WIP Account Information Database Search &amp; Getters Features and somewhat fixing the layout of Category (still need more work).">
+    <list default="true" id="02ae6a1a-35c8-472c-8de6-6c67efd03109" name="Changes" comment="Updating the code features and layout of User pages. Removing both User and Guest Category pages.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bidblitz/src/main/java/com/example/bidblitz/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/bidblitz/src/main/java/com/example/bidblitz/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bidblitz/src/main/java/com/example/bidblitz/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/bidblitz/src/main/java/com/example/bidblitz/MainController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bidblitz/src/main/resources/com/example/bidblitz/balance-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/bidblitz/src/main/resources/com/example/bidblitz/balance-view.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bidblitz/src/main/resources/com/example/bidblitz/guest-category-view.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bidblitz/src/main/resources/com/example/bidblitz/inventory-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/bidblitz/src/main/resources/com/example/bidblitz/inventory-view.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bidblitz/src/main/resources/com/example/bidblitz/profile-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/bidblitz/src/main/resources/com/example/bidblitz/profile-view.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bidblitz/src/main/resources/com/example/bidblitz/settings-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/bidblitz/src/main/resources/com/example/bidblitz/settings-view.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bidblitz/src/main/resources/com/example/bidblitz/transaction-history-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/bidblitz/src/main/resources/com/example/bidblitz/transaction-history-view.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bidblitz/src/main/resources/com/example/bidblitz/user-about-us-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/bidblitz/src/main/resources/com/example/bidblitz/user-about-us-view.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bidblitz/src/main/resources/com/example/bidblitz/user-auction-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/bidblitz/src/main/resources/com/example/bidblitz/user-auction-view.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bidblitz/src/main/resources/com/example/bidblitz/user-category-view.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bidblitz/src/main/resources/com/example/bidblitz/user-help-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/bidblitz/src/main/resources/com/example/bidblitz/user-help-view.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bidblitz/src/main/resources/com/example/bidblitz/user-main-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/bidblitz/src/main/resources/com/example/bidblitz/user-main-view.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bidblitz/src/main/resources/css/General.css" beforeDir="false" afterPath="$PROJECT_DIR$/bidblitz/src/main/resources/css/General.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bidblitz/src/main/resources/com/example/bidblitz/forgot-password-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/bidblitz/src/main/resources/com/example/bidblitz/forgot-password-view.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bidblitz/src/main/resources/com/example/bidblitz/forgot-username-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/bidblitz/src/main/resources/com/example/bidblitz/forgot-username-view.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bidblitz/src/main/resources/com/example/bidblitz/guest-about-us-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/bidblitz/src/main/resources/com/example/bidblitz/guest-about-us-view.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bidblitz/src/main/resources/com/example/bidblitz/guest-auction-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/bidblitz/src/main/resources/com/example/bidblitz/guest-auction-view.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bidblitz/src/main/resources/com/example/bidblitz/guest-help-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/bidblitz/src/main/resources/com/example/bidblitz/guest-help-view.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bidblitz/src/main/resources/com/example/bidblitz/guest-main-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/bidblitz/src/main/resources/com/example/bidblitz/guest-main-view.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bidblitz/src/main/resources/com/example/bidblitz/sign-in-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/bidblitz/src/main/resources/com/example/bidblitz/sign-in-view.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bidblitz/src/main/resources/com/example/bidblitz/sign-up-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/bidblitz/src/main/resources/com/example/bidblitz/sign-up-view.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -249,7 +244,15 @@
       <option name="project" value="LOCAL" />
       <updated>1779125137242</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="Updating the code features and layout of User pages. Removing both User and Guest Category pages.">
+      <option name="closed" value="true" />
+      <created>1779160468110</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1779160468110</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -286,6 +289,7 @@
     <MESSAGE value="Adding fx:id=&quot;rootPane&quot; into the user main page in order for navigation features to work." />
     <MESSAGE value="Adding more style and complete the layout and function for Account Dropdown Menu Container for every User Page. WIP Database Filter &amp; Category." />
     <MESSAGE value="Adding WIP Account Information Database Search &amp; Getters Features and somewhat fixing the layout of Category (still need more work)." />
-    <option name="LAST_COMMIT_MESSAGE" value="Adding WIP Account Information Database Search &amp; Getters Features and somewhat fixing the layout of Category (still need more work)." />
+    <MESSAGE value="Updating the code features and layout of User pages. Removing both User and Guest Category pages." />
+    <option name="LAST_COMMIT_MESSAGE" value="Updating the code features and layout of User pages. Removing both User and Guest Category pages." />
   </component>
 </project>
