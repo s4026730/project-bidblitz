@@ -4,10 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="02ae6a1a-35c8-472c-8de6-6c67efd03109" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/bidblitz/src/main/java/com/example/bidblitz/module-info.java" afterDir="false" />
+    <list default="true" id="02ae6a1a-35c8-472c-8de6-6c67efd03109" name="Changes" comment="Fixing module-info to work with eclipseLink">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bidblitz/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/bidblitz/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bidblitz/src/main/java/com/example/bidblitz/SampleDataLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/bidblitz/src/main/java/com/example/bidblitz/SampleDataLoader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bidblitz/src/main/java/com/example/bidblitz/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/bidblitz/src/main/java/module-info.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bidblitz/src/test/java/com/example/bidblitz/UserServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/bidblitz/src/test/java/com/example/bidblitz/UserServiceTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,43 +64,47 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.Launcher.executor&quot;: &quot;Run&quot;,
-    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.MCP Project settings loaded&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
-    &quot;com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;Khoa&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/project-bidblitz-group/bidblitz/src/main/java/com/example/bidblitz&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;to.speed.mode.migration.done&quot;: &quot;true&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.Launcher.executor": "Run",
+    "Application.Main.executor": "Run",
+    "JUnit.AuctionServiceTest and 1 more.executor": "Run",
+    "JUnit.AuctionServiceTest.executor": "Run",
+    "JUnit.UserServiceTest.executor": "Run",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.MCP Project settings loaded": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
+    "git-widget-placeholder": "Khoa",
+    "ignore.virus.scanning.warn.message": "true",
+    "junie.onboarding.icon.badge.shown": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "D:/project-bidblitz-group/bidblitz/src/main/java/com/example/bidblitz",
+    "node.js.detected.package.eslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.0",
+    "to.speed.mode.migration.done": "true",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\project-bidblitz-group\bidblitz\src\main\java\com\example\bidblitz" />
       <recent name="C:\Users\Le Huy Hoang\OneDrive\Documents\further-programming-intellij-idea-project\assignment-works\project-bidblitz\bidblitz\src\main\resources\image" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\project-bidblitz-group\bidblitz\src\main\java" />
       <recent name="C:\Users\Le Huy Hoang\OneDrive\Documents\further-programming-intellij-idea-project\assignment-works\project-bidblitz\bidblitz\src\main\resources\com\example\bidblitz" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.Launcher">
     <configuration name="Launcher" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.example.bidblitz.Launcher" />
       <module name="bidblitz" />
@@ -113,9 +118,53 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="AuctionServiceTest and 1 more" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="bidblitz" />
+      <option name="TEST_OBJECT" value="pattern" />
+      <patterns>
+        <pattern testClass="com.example.bidblitz.AuctionServiceTest" />
+        <pattern testClass="com.example.bidblitz.UserServiceTest" />
+      </patterns>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AuctionServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="bidblitz" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.bidblitz.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.bidblitz" />
+      <option name="MAIN_CLASS_NAME" value="com.example.bidblitz.AuctionServiceTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="bidblitz" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.bidblitz.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.bidblitz" />
+      <option name="MAIN_CLASS_NAME" value="com.example.bidblitz.UserServiceTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Application.Launcher" />
+        <item itemvalue="JUnit.UserServiceTest" />
+        <item itemvalue="JUnit.AuctionServiceTest and 1 more" />
+        <item itemvalue="JUnit.AuctionServiceTest" />
       </list>
     </recent_temporary>
   </component>
@@ -136,6 +185,7 @@
       <updated>1778423573842</updated>
       <workItem from="1779180736521" duration="2031000" />
       <workItem from="1779198284917" duration="632000" />
+      <workItem from="1779198943830" duration="2107000" />
     </task>
     <task id="LOCAL-00001" summary="Adding experimenting scroll functionalities and their styles (Currently still WIP in Guest About US Page).">
       <option name="closed" value="true" />
@@ -297,7 +347,15 @@
       <option name="project" value="LOCAL" />
       <updated>1779172721272</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="Fixing module-info to work with eclipseLink">
+      <option name="closed" value="true" />
+      <created>1779199090939</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1779199090939</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -347,6 +405,7 @@
     <MESSAGE value="Adding more style and complete the layout and function for Account Dropdown Menu Container for every User Page. WIP Database Filter &amp; Category." />
     <MESSAGE value="Adding WIP Account Information Database Search &amp; Getters Features and somewhat fixing the layout of Category (still need more work)." />
     <MESSAGE value="Updating the code features and layout of User pages. Removing both User and Guest Category pages." />
-    <option name="LAST_COMMIT_MESSAGE" value="Updating the code features and layout of User pages. Removing both User and Guest Category pages." />
+    <MESSAGE value="Fixing module-info to work with eclipseLink" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixing module-info to work with eclipseLink" />
   </component>
 </project>

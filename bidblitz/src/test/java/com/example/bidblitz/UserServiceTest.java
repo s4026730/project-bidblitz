@@ -42,36 +42,21 @@ public class UserServiceTest {
     @Test
     @Order(2)
     void testAddDuplicateEmail() {
-        User duplicate = new User(
-                "Duplicate",
-                LocalDateTime.of(2000, 1, 1, 0, 0),
-                "testuser_unique@email.com",
-                "0901234000",
-                "differentusername",
-                "password123",
-                User.ROLE_USER,
-                500.0
-        );
-        boolean result = userService.addUser(duplicate);
-        assertFalse(result, "Should reject duplicate email");
+        User duplicate = new User("Duplicate", LocalDateTime.of(2000,1,1,0,0),
+                testUser.getEmail(), "0901234000",
+                "different_" + System.currentTimeMillis(), "password123", User.ROLE_USER, 500.0);
+        assertFalse(userService.addUser(duplicate), "Should reject duplicate email");
     }
 
     @Test
     @Order(3)
     void testAddDuplicateUsername() {
-        User duplicate = new User(
-                "Duplicate",
-                LocalDateTime.of(2000, 1, 1, 0, 0),
-                "different@email.com",
-                "0901234000",
-                "testuser_unique",
-                "password123",
-                User.ROLE_USER,
-                500.0
-        );
-        boolean result = userService.addUser(duplicate);
-        assertFalse(result, "Should reject duplicate username");
+        User duplicate = new User("Duplicate", LocalDateTime.of(2000,1,1,0,0),
+                "different_" + System.currentTimeMillis() + "@email.com", "0901234000",
+                testUser.getUsername(), "password123", User.ROLE_USER, 500.0);
+        assertFalse(userService.addUser(duplicate), "Should reject duplicate username");
     }
+
 
     @Test
     @Order(4)
@@ -83,15 +68,15 @@ public class UserServiceTest {
     @Test
     @Order(5)
     void testLoginValidCredentials() {
-        User loggedIn = userService.login("testuser_unique", "password123");
+        User loggedIn = userService.login(testUser.getUsername(), "password123");
         assertNotNull(loggedIn, "Should login with valid credentials");
-        assertEquals("testuser_unique", loggedIn.getUsername());
+        assertEquals(testUser.getUsername(), loggedIn.getUsername());
     }
 
     @Test
     @Order(6)
     void testLoginInvalidPassword() {
-        User loggedIn = userService.login("testuser_unique", "wrongpassword");
+        User loggedIn = userService.login(testUser.getUsername(), "wrongpassword");
         assertNull(loggedIn, "Should reject invalid password");
     }
 
@@ -105,9 +90,9 @@ public class UserServiceTest {
     @Test
     @Order(8)
     void testGetUserByUsername() {
-        User found = userService.getUserByUsername("testuser_unique");
+        User found = userService.getUserByUsername(testUser.getUsername());
         assertNotNull(found, "Should find user by username");
-        assertEquals("testuser_unique", found.getUsername());
+        assertEquals(testUser.getUsername(), found.getUsername());
     }
 
     @Test
@@ -131,7 +116,7 @@ public class UserServiceTest {
     @Test
     @Order(11)
     void testTopUpBelowMinimum() {
-        User user = userService.getUserByUsername("testuser_unique");
+        User user = userService.getUserByUsername(testUser.getUsername());
         assertNotNull(user);
         boolean result = userService.approveTopUp(user, 3.0, user);
         assertFalse(result, "Should reject top-up below $5");
@@ -140,7 +125,7 @@ public class UserServiceTest {
     @Test
     @Order(12)
     void testTopUpAboveMaximum() {
-        User user = userService.getUserByUsername("testuser_unique");
+        User user = userService.getUserByUsername(testUser.getUsername());
         assertNotNull(user);
         boolean result = userService.approveTopUp(user, 15000.0, user);
         assertFalse(result, "Should reject top-up above $10,000");
@@ -157,23 +142,23 @@ public class UserServiceTest {
     @Test
     @Order(14)
     void testUpdateUser() {
-        User user = userService.getUserByUsername("testuser_unique");
+        User user = userService.getUserByUsername(testUser.getUsername());
         assertNotNull(user);
         user.setFullName("Updated Name");
         boolean result = userService.updateUser(user);
         assertTrue(result, "Should update user successfully");
-        User updated = userService.getUserByUsername("testuser_unique");
+        User updated = userService.getUserByUsername(testUser.getUsername());
         assertEquals("Updated Name", updated.getFullName());
     }
 
     @Test
     @Order(15)
     void testDeleteUser() {
-        User user = userService.getUserByUsername("testuser_unique");
+        User user = userService.getUserByUsername(testUser.getUsername());
         assertNotNull(user);
         boolean result = userService.deleteUser(user.getId());
         assertTrue(result, "Should delete user successfully");
-        User deleted = userService.getUserByUsername("testuser_unique");
+        User deleted = userService.getUserByUsername(testUser.getUsername());
         assertNull(deleted, "Should return null after deletion");
     }
 }
