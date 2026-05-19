@@ -18,4 +18,6 @@ module com.example.bidblitz {
     opens com.example.bidblitz to javafx.fxml;
 
     exports com.example.bidblitz;
+    exports com.example.bidblitz.auction;
+    opens com.example.bidblitz.auction to javafx.fxml;
 }

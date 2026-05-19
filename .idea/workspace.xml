@@ -4,17 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="02ae6a1a-35c8-472c-8de6-6c67efd03109" name="Changes" comment="Updating the code features and layout of User pages. Removing both User and Guest Category pages.">
+    <list default="true" id="02ae6a1a-35c8-472c-8de6-6c67efd03109" name="Changes" comment="Added reusable auction backend logic from A1">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bidblitz/src/main/java/com/example/bidblitz/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/bidblitz/src/main/java/com/example/bidblitz/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bidblitz/src/main/resources/com/example/bidblitz/forgot-password-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/bidblitz/src/main/resources/com/example/bidblitz/forgot-password-view.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bidblitz/src/main/resources/com/example/bidblitz/forgot-username-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/bidblitz/src/main/resources/com/example/bidblitz/forgot-username-view.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bidblitz/src/main/resources/com/example/bidblitz/guest-about-us-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/bidblitz/src/main/resources/com/example/bidblitz/guest-about-us-view.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bidblitz/src/main/resources/com/example/bidblitz/guest-auction-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/bidblitz/src/main/resources/com/example/bidblitz/guest-auction-view.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bidblitz/src/main/resources/com/example/bidblitz/guest-help-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/bidblitz/src/main/resources/com/example/bidblitz/guest-help-view.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bidblitz/src/main/resources/com/example/bidblitz/guest-main-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/bidblitz/src/main/resources/com/example/bidblitz/guest-main-view.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bidblitz/src/main/resources/com/example/bidblitz/sign-in-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/bidblitz/src/main/resources/com/example/bidblitz/sign-in-view.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bidblitz/src/main/resources/com/example/bidblitz/sign-up-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/bidblitz/src/main/resources/com/example/bidblitz/sign-up-view.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bidblitz/src/main/java/com/example/bidblitz/auction/Auction.java" beforeDir="false" afterPath="$PROJECT_DIR$/bidblitz/src/main/java/com/example/bidblitz/auction/Auction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bidblitz/src/main/java/com/example/bidblitz/auction/Bid.java" beforeDir="false" afterPath="$PROJECT_DIR$/bidblitz/src/main/java/com/example/bidblitz/auction/Bid.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bidblitz/src/main/java/com/example/bidblitz/auction/Item.java" beforeDir="false" afterPath="$PROJECT_DIR$/bidblitz/src/main/java/com/example/bidblitz/auction/Item.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bidblitz/src/main/java/com/example/bidblitz/auction/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/bidblitz/src/main/java/com/example/bidblitz/auction/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bidblitz/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/bidblitz/src/main/java/module-info.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,12 +21,16 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="FxmlFile" />
-        <option value="JavaFXApplication" />
         <option value="Class" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
@@ -42,7 +42,7 @@
   <component name="GithubPullRequestsUISettings">{
   &quot;selectedUrlAndAccountId&quot;: {
     &quot;url&quot;: &quot;https://github.com/s4026730/project-bidblitz.git&quot;,
-    &quot;accountId&quot;: &quot;96a6f75a-2600-421e-98a6-5b2b6ab5e228&quot;
+    &quot;accountId&quot;: &quot;bc05c3ad-3294-44b7-927b-8fd7b1bf5ba4&quot;
   }
 }</component>
   <component name="MavenImportPreferences">
@@ -52,8 +52,9 @@
       </MavenGeneralSettings>
     </option>
   </component>
-  <component name="ProblemsViewState">
-    <option name="selectedTabId" value="CurrentFile" />
+  <component name="McpProjectServerCommands">
+    <commands />
+    <urls />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 6
@@ -63,27 +64,50 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.Main.executor": "Run",
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
-    "git-widget-placeholder": "main",
-    "ignore.virus.scanning.warn.message": "true",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/Le Huy Hoang/OneDrive/Documents/further-programming-intellij-idea-project/assignment-works/project-bidblitz/bidblitz/src/main/resources/image",
-    "nodejs_package_manager_path": "npm"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.Launcher.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.MCP Project settings loaded&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
+    &quot;com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1&quot;: &quot;true&quot;,
+    &quot;dart.analysis.tool.window.visible&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;Huy&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Admin/Downloads/Java/project-bidblitz&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;to.speed.mode.migration.done&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\Le Huy Hoang\OneDrive\Documents\further-programming-intellij-idea-project\assignment-works\project-bidblitz\bidblitz\src\main\resources\image" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Le Huy Hoang\OneDrive\Documents\further-programming-intellij-idea-project\assignment-works\project-bidblitz\bidblitz\src\main\resources\com\example\bidblitz" />
     </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="Launcher" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.example.bidblitz.Launcher" />
+      <module name="bidblitz" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.bidblitz.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Launcher" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
@@ -156,103 +180,7 @@
       <option name="project" value="LOCAL" />
       <updated>1778782195514</updated>
     </task>
-    <task id="LOCAL-00008" summary="Adding all user pages and the navigation mechanism for each of those new file. Refine the code for slideshow to make it much more stable and start right away.">
-      <option name="closed" value="true" />
-      <created>1778816423995</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1778816423995</updated>
-    </task>
-    <task id="LOCAL-00009" summary="Refine the layout design due to massive logical errors occurred.">
-      <option name="closed" value="true" />
-      <created>1778957335519</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1778957335519</updated>
-    </task>
-    <task id="LOCAL-00010" summary="Add navigation layout for all User Pages, still WIP on Notification, User Account features.">
-      <option name="closed" value="true" />
-      <created>1778959052045</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1778959052045</updated>
-    </task>
-    <task id="LOCAL-00011" summary="Remove empty styleclass to avoid confusion.">
-      <option name="closed" value="true" />
-      <created>1778986811269</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1778986811269</updated>
-    </task>
-    <task id="LOCAL-00012" summary="Adding layout and currently available for all User pages. Refining every non database function features into every page. Rebuild the MainController.java file in order to make both MenuItem and Button works perfect fine and made the coding structure progress faster and fewer possibilities of causing errors.">
-      <option name="closed" value="true" />
-      <created>1779023701212</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1779023701212</updated>
-    </task>
-    <task id="LOCAL-00013" summary="Setting the Main.java back to guest pages (Forgot to change it back)">
-      <option name="closed" value="true" />
-      <created>1779023848824</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1779023848824</updated>
-    </task>
-    <task id="LOCAL-00014" summary="Update the category layout position in all pages.">
-      <option name="closed" value="true" />
-      <created>1779026098167</created>
-      <option name="number" value="00014" />
-      <option name="presentableId" value="LOCAL-00014" />
-      <option name="project" value="LOCAL" />
-      <updated>1779026098167</updated>
-    </task>
-    <task id="LOCAL-00015" summary="Fix the code structure placement of guest-main file.">
-      <option name="closed" value="true" />
-      <created>1779026473748</created>
-      <option name="number" value="00015" />
-      <option name="presentableId" value="LOCAL-00015" />
-      <option name="project" value="LOCAL" />
-      <updated>1779026473748</updated>
-    </task>
-    <task id="LOCAL-00016" summary="Adding fx:id=&quot;rootPane&quot; into the user main page in order for navigation features to work.">
-      <option name="closed" value="true" />
-      <created>1779027517627</created>
-      <option name="number" value="00016" />
-      <option name="presentableId" value="LOCAL-00016" />
-      <option name="project" value="LOCAL" />
-      <updated>1779027517627</updated>
-    </task>
-    <task id="LOCAL-00017" summary="Adding more style and complete the layout and function for Account Dropdown Menu Container for every User Page. WIP Database Filter &amp; Category.">
-      <option name="closed" value="true" />
-      <created>1779034367135</created>
-      <option name="number" value="00017" />
-      <option name="presentableId" value="LOCAL-00017" />
-      <option name="project" value="LOCAL" />
-      <updated>1779034367135</updated>
-    </task>
-    <task id="LOCAL-00018" summary="Adding WIP Account Information Database Search &amp; Getters Features and somewhat fixing the layout of Category (still need more work).">
-      <option name="closed" value="true" />
-      <created>1779125137242</created>
-      <option name="number" value="00018" />
-      <option name="presentableId" value="LOCAL-00018" />
-      <option name="project" value="LOCAL" />
-      <updated>1779125137242</updated>
-    </task>
-    <task id="LOCAL-00019" summary="Updating the code features and layout of User pages. Removing both User and Guest Category pages.">
-      <option name="closed" value="true" />
-      <created>1779160468110</created>
-      <option name="number" value="00019" />
-      <option name="presentableId" value="LOCAL-00019" />
-      <option name="project" value="LOCAL" />
-      <updated>1779160468110</updated>
-    </task>
-    <option name="localTasksCounter" value="20" />
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -278,18 +206,7 @@
     <MESSAGE value="Adding WIP Side To Side Dragable and Collapsible Hamburger Menu Layout and Functionalities." />
     <MESSAGE value="Removing Hamburger Navigation Menu Concept and Replace it with Side Bar. Removing Sidebar from guest pages due to unnecessarily needed" />
     <MESSAGE value="Adding WIP (Work In Progress) slideshow system and diplay. Retrofit Main.java file to make the page being launched more reliable and moving most of pref-width and pref-height to directly." />
-    <MESSAGE value="Adding all user pages and the navigation mechanism for each of those new file. Refine the code for slideshow to make it much more stable and start right away." />
-    <MESSAGE value="Refine the layout design due to massive logical errors occurred." />
-    <MESSAGE value="Add navigation layout for all User Pages, still WIP on Notification, User Account features." />
-    <MESSAGE value="Remove empty styleclass to avoid confusion." />
-    <MESSAGE value="Adding layout and currently available for all User pages. Refining every non database function features into every page. Rebuild the MainController.java file in order to make both MenuItem and Button works perfect fine and made the coding structure progress faster and fewer possibilities of causing errors." />
-    <MESSAGE value="Setting the Main.java back to guest pages (Forgot to change it back)" />
-    <MESSAGE value="Update the category layout position in all pages." />
-    <MESSAGE value="Fix the code structure placement of guest-main file." />
-    <MESSAGE value="Adding fx:id=&quot;rootPane&quot; into the user main page in order for navigation features to work." />
-    <MESSAGE value="Adding more style and complete the layout and function for Account Dropdown Menu Container for every User Page. WIP Database Filter &amp; Category." />
-    <MESSAGE value="Adding WIP Account Information Database Search &amp; Getters Features and somewhat fixing the layout of Category (still need more work)." />
-    <MESSAGE value="Updating the code features and layout of User pages. Removing both User and Guest Category pages." />
-    <option name="LAST_COMMIT_MESSAGE" value="Updating the code features and layout of User pages. Removing both User and Guest Category pages." />
+    <MESSAGE value="Added reusable auction backend logic from A1" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added reusable auction backend logic from A1" />
   </component>
 </project>
