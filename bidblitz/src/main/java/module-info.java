@@ -15,7 +15,15 @@ module com.example.bidblitz {
     requires eu.hansolo.tilesfx;
     requires com.almasb.fxgl.all;
 
+    requires org.eclipse.persistence.jpa;
+    requires org.eclipse.persistence.core;
+    requires java.sql;
+
     opens com.example.bidblitz to javafx.fxml;
+    opens com.example.bidblitz.model to org.eclipse.persistence.core, org.eclipse.persistence.jpa;
+    opens com.example.bidblitz.service to org.eclipse.persistence.core;
+    opens com.example.bidblitz.util to org.eclipse.persistence.core;
+    opens com.example.bidblitz.repository to org.eclipse.persistence.core;
 
     exports com.example.bidblitz;
     exports com.example.bidblitz.auction;

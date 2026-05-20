@@ -7,6 +7,7 @@
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.MenuButton?>
 <?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.PasswordField?>
 <?import javafx.scene.control.SeparatorMenuItem?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.image.Image?>
@@ -58,7 +59,7 @@
                     <MenuItem onAction="#switchToInventory" text="Inventory" />
                     <MenuItem onAction="#switchToSettings" text="Settings" />
                     <SeparatorMenuItem />
-                    <MenuItem text="Log Out" />
+                    <MenuItem text="Log Out" onAction="#handleLogOut" />
                 </items>
             </MenuButton>
         </AnchorPane>
@@ -74,7 +75,7 @@
                     <Button alignment="CENTER" layoutY="400.0" maxHeight="100.0" maxWidth="200.0" mnemonicParsing="false" onAction="#switchToUserHelp" prefHeight="100.0" prefWidth="200.0" styleClass="navigationButton" text="HELP" textAlignment="CENTER" />
                     <Button alignment="CENTER" layoutY="500.0" maxHeight="100.0" maxWidth="200.0" mnemonicParsing="false" onAction="#switchToUserAboutUs" prefHeight="100.0" prefWidth="200.0" styleClass="navigationButton" text="ABOUT US" textAlignment="CENTER" />
                     <Button alignment="CENTER" layoutY="600.0" maxHeight="100.0" maxWidth="200.0" mnemonicParsing="false" onAction="#switchToSettings" prefHeight="100.0" prefWidth="200.0" styleClass="navigationButton" text="SETTINGS" textAlignment="CENTER" />
-                    <Button alignment="CENTER" layoutY="700.0" maxHeight="100.0" maxWidth="200.0" mnemonicParsing="false" prefHeight="100.0" prefWidth="200.0" styleClass="navigationButton" text="LOG OUT" textAlignment="CENTER" />
+                    <Button alignment="CENTER" layoutY="700.0" maxHeight="100.0" maxWidth="200.0" mnemonicParsing="false" onAction="#handleLogOut" prefHeight="100.0" prefWidth="200.0" styleClass="navigationButton" text="LOG OUT" textAlignment="CENTER" />
                 </children>
             </AnchorPane>
         </VBox>
@@ -123,7 +124,65 @@
                     <Button fx:id="shoes" maxHeight="30" maxWidth="225" minHeight="30" minWidth="225" mnemonicParsing="false" prefHeight="30.0" prefWidth="225" styleClass="textButton" text="Shoes" />
                 </HBox>
             </VBox>
-            <Label layoutX="680.0" layoutY="25.0" styleClass="importantText" text="SETTINGS" />
+
+            <Label layoutX="660.0" layoutY="25.0" styleClass="importantText" text="SETTINGS" />
+
+            <!-- Settings Form -->
+            <VBox layoutX="400.0" layoutY="80.0" spacing="20" style="-fx-background-color: white; -fx-padding: 30; -fx-background-radius: 10;">
+
+                <!-- Full Name -->
+                <HBox spacing="20" alignment="CENTER_LEFT">
+                    <Label text="Full Name:" style="-fx-font-weight: bold; -fx-font-size: 14px; -fx-min-width: 150;" />
+                    <TextField fx:id="settingsFullName" prefWidth="400" prefHeight="40" promptText="Enter full name" />
+                </HBox>
+
+                <!-- Email -->
+                <HBox spacing="20" alignment="CENTER_LEFT">
+                    <Label text="Email:" style="-fx-font-weight: bold; -fx-font-size: 14px; -fx-min-width: 150;" />
+                    <TextField fx:id="settingsEmail" prefWidth="400" prefHeight="40" promptText="Enter email" />
+                </HBox>
+
+                <!-- Phone -->
+                <HBox spacing="20" alignment="CENTER_LEFT">
+                    <Label text="Phone:" style="-fx-font-weight: bold; -fx-font-size: 14px; -fx-min-width: 150;" />
+                    <TextField fx:id="settingsPhone" prefWidth="400" prefHeight="40" promptText="Enter phone number" />
+                </HBox>
+
+                <!-- Date of Birth -->
+                <HBox spacing="20" alignment="CENTER_LEFT">
+                    <Label text="Date of Birth:" style="-fx-font-weight: bold; -fx-font-size: 14px; -fx-min-width: 150;" />
+                    <TextField fx:id="settingsDob" prefWidth="400" prefHeight="40" promptText="YYYY-MM-DD" />
+                </HBox>
+
+                <!-- Current Password -->
+                <HBox spacing="20" alignment="CENTER_LEFT">
+                    <Label text="Current Password:" style="-fx-font-weight: bold; -fx-font-size: 14px; -fx-min-width: 150;" />
+                    <PasswordField fx:id="settingsCurrentPassword" prefWidth="400" prefHeight="40" promptText="Enter current password" />
+                </HBox>
+
+                <!-- New Password -->
+                <HBox spacing="20" alignment="CENTER_LEFT">
+                    <Label text="New Password:" style="-fx-font-weight: bold; -fx-font-size: 14px; -fx-min-width: 150;" />
+                    <PasswordField fx:id="settingsNewPassword" prefWidth="400" prefHeight="40" promptText="Enter new password (min 8 chars)" />
+                </HBox>
+
+                <!-- Confirm New Password -->
+                <HBox spacing="20" alignment="CENTER_LEFT">
+                    <Label text="Confirm Password:" style="-fx-font-weight: bold; -fx-font-size: 14px; -fx-min-width: 150;" />
+                    <PasswordField fx:id="settingsConfirmPassword" prefWidth="400" prefHeight="40" promptText="Confirm new password" />
+                </HBox>
+
+                <!-- Status Label -->
+                <Label fx:id="settingsStatusLabel" text="" style="-fx-font-size: 13px;" />
+
+                <!-- Buttons -->
+                <HBox spacing="20">
+                    <Button onAction="#handleSaveSettings" text="💾 Save Changes" prefWidth="200" prefHeight="50" styleClass="submitButton" />
+                    <Button onAction="#handleDeleteAccount" text="🗑 Delete Account" prefWidth="200" prefHeight="50" styleClass="actionButton" />
+                </HBox>
+
+            </VBox>
+
         </AnchorPane>
     </center>
     <stylesheets>

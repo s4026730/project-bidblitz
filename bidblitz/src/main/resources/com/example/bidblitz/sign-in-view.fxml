@@ -7,6 +7,7 @@
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.MenuButton?>
 <?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.PasswordField?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
@@ -95,8 +96,8 @@
             <Label layoutX="400.0" layoutY="100.0" styleClass="importantText" text="Username:" />
             <Label layoutX="400.0" layoutY="250.0" styleClass="importantText" text="Password" />
             <TextField fx:id="signinUsername" layoutX="400.0" layoutY="160.0" styleClass="signinTextfield" />
-            <TextField fx:id="signinPassword" layoutX="400.0" layoutY="310.0" styleClass="signinTextfield" />
-            <Button fx:id="signinButton" layoutX="400.0" layoutY="446.0" mnemonicParsing="false" prefWidth="600" styleClass="submitButton" text="Sign In" />
+            <PasswordField fx:id="signinPassword" layoutX="400.0" layoutY="310.0" styleClass="signinTextfield" />
+            <Button fx:id="signinButton" layoutX="400.0" layoutY="446.0" mnemonicParsing="false" onAction="#handleSignIn" prefWidth="600" styleClass="submitButton" text="Sign In" />
             <Text layoutX="670.0" layoutY="570.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="OR" text="OR" />
             <Button fx:id="signinGoogleButton" layoutX="400.0" layoutY="600.0" prefWidth="600" styleClass="actionButton" text="Sign In With Google" textAlignment="CENTER">
                 <graphic>
