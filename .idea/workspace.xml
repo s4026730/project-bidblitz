@@ -4,11 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="02ae6a1a-35c8-472c-8de6-6c67efd03109" name="Changes" comment="log out/sign up/ sign in/ email required domain/ password length required">
+    <list default="true" id="02ae6a1a-35c8-472c-8de6-6c67efd03109" name="Changes" comment="About us for user and guest">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bidblitz/src/main/resources/com/example/bidblitz/guest-about-us-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/bidblitz/src/main/resources/com/example/bidblitz/guest-about-us-view.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bidblitz/src/main/resources/com/example/bidblitz/user-about-us-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/bidblitz/src/main/resources/com/example/bidblitz/user-about-us-view.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bidblitz/src/main/resources/css/General.css" beforeDir="false" afterPath="$PROJECT_DIR$/bidblitz/src/main/resources/css/General.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bidblitz/src/main/java/com/example/bidblitz/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/bidblitz/src/main/java/com/example/bidblitz/MainController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bidblitz/src/main/resources/com/example/bidblitz/guest-help-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/bidblitz/src/main/resources/com/example/bidblitz/guest-help-view.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bidblitz/src/main/resources/com/example/bidblitz/profile-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/bidblitz/src/main/resources/com/example/bidblitz/profile-view.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bidblitz/src/main/resources/com/example/bidblitz/user-help-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/bidblitz/src/main/resources/com/example/bidblitz/user-help-view.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,36 +65,36 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.Launcher.executor": "Run",
-    "Application.Main.executor": "Run",
-    "JUnit.AuctionServiceTest and 1 more.executor": "Run",
-    "JUnit.AuctionServiceTest.executor": "Run",
-    "JUnit.UserServiceTest.executor": "Run",
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.MCP Project settings loaded": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
-    "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
-    "git-widget-placeholder": "Khoa",
-    "ignore.virus.scanning.warn.message": "true",
-    "junie.onboarding.icon.badge.shown": "true",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "D:/project-bidblitz-group/bidblitz/src/main/java/com/example/bidblitz",
-    "node.js.detected.package.eslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.0",
-    "to.speed.mode.migration.done": "true",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.Launcher.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.AuctionServiceTest and 1 more.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.AuctionServiceTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.UserServiceTest.executor&quot;: &quot;Run&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.MCP Project settings loaded&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
+    &quot;com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;Khoa&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/project-bidblitz-group/bidblitz/src/main/java/com/example/bidblitz&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;to.speed.mode.migration.done&quot;: &quot;true&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\project-bidblitz-group\bidblitz\src\main\java\com\example\bidblitz" />
@@ -185,7 +186,8 @@
       <updated>1778423573842</updated>
       <workItem from="1779180736521" duration="2031000" />
       <workItem from="1779198284917" duration="632000" />
-      <workItem from="1779198943830" duration="13761000" />
+      <workItem from="1779198943830" duration="14020000" />
+      <workItem from="1779236332450" duration="1216000" />
     </task>
     <task id="LOCAL-00001" summary="Adding experimenting scroll functionalities and their styles (Currently still WIP in Guest About US Page).">
       <option name="closed" value="true" />
@@ -379,7 +381,15 @@
       <option name="project" value="LOCAL" />
       <updated>1779206733460</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="About us for user and guest">
+      <option name="closed" value="true" />
+      <created>1779221342572</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1779221342572</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -433,6 +443,7 @@
     <MESSAGE value="Fixed UserServiceTest. Edit module-info.java and SampleDataLoader to fit with main branch. Everything worked correctly, data is correct on the neon database tables" />
     <MESSAGE value="Log in function and edit password field" />
     <MESSAGE value="log out/sign up/ sign in/ email required domain/ password length required" />
-    <option name="LAST_COMMIT_MESSAGE" value="log out/sign up/ sign in/ email required domain/ password length required" />
+    <MESSAGE value="About us for user and guest" />
+    <option name="LAST_COMMIT_MESSAGE" value="About us for user and guest" />
   </component>
 </project>

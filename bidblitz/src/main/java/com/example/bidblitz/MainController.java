@@ -28,6 +28,7 @@ import com.example.bidblitz.service.UserService;
 import java.math.BigDecimal;
 import javafx.scene.control.PasswordField;
 
+
 public class MainController {
     private Parent root;
     private Stage stage;
@@ -51,6 +52,7 @@ public class MainController {
     private ImageView banner;
     @FXML
     ImageView accountAvatar;
+    //sign in, sign up
     @FXML
     private Label accountUsername;
     @FXML
@@ -71,6 +73,16 @@ public class MainController {
     private Button signupButton;
     @FXML
     private Label signupErrorLabel;
+    //profile
+    @FXML private ImageView profileAvatar;
+    @FXML private Label profileFullName;
+    @FXML private Label profileUsername;
+    @FXML private Label profileEmail;
+    @FXML private Label profilePhone;
+    @FXML private Label profileDob;
+    @FXML private Label profileRole;
+    @FXML private Label profileBalanceLabel;
+    @FXML private Label profileRating;
 
     // Guest Pages Navigation & Other Features Codes:
     @FXML
@@ -595,6 +607,31 @@ public class MainController {
             signupErrorLabel.setVisible(true);
         }
     }
+    @FXML
+    public void initialize() {
+        if (profileFullName != null) {
+            loadProfileData();
+        }
+        setAccountInfo();
+    }
 
+    private void loadProfileData() {
+        UserEntity currentUser = Session.getCurrentUser();
+        if (currentUser == null) return;
+
+        UserService userService = new UserService();
+        User user = userService.getUserByUsername(currentUser.getUsername());
+        if (user == null) return;
+
+        profileFullName.setText(user.getFullName());
+        profileUsername.setText(user.getUsername());
+        profileEmail.setText(user.getEmail());
+        profilePhone.setText(user.getPhone() != null ? user.getPhone() : "N/A");
+        profileDob.setText(user.getDateOfBirth() != null ?
+                user.getDateOfBirth().toLocalDate().toString() : "N/A");
+        profileRole.setText(user.getRole());
+        profileBalanceLabel.setText("$" + String.format("%.2f", user.getAccountBalance()));
+        profileRating.setText(String.format("%.1f", user.getRating()) + " / 5.0");
+    }
 }
 

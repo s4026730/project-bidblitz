@@ -3,20 +3,16 @@
 <?import java.lang.String?>
 <?import java.net.URL?>
 <?import javafx.scene.control.Button?>
-<?import javafx.scene.control.Hyperlink?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Separator?>
 <?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.TitledPane?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.BorderPane?>
-<?import javafx.scene.layout.VBox?>
-<?import javafx.scene.text.Text?>
-<?import javafx.scene.control.MenuButton?>
-<?import javafx.scene.control.MenuItem?>
-<?import javafx.scene.control.ScrollPane?>
-<?import javafx.scene.control.ToolBar?>
-<?import javafx.geometry.Insets?>
-
 <?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
 <BorderPane fx:id="rootPane" prefHeight="1000" prefWidth="1710" styleClass="lightPageLayout" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.bidblitz.MainController">
     <top>
         <AnchorPane maxHeight="50.0" prefHeight="50.0">
@@ -92,11 +88,104 @@
                     <Button fx:id="shoes" maxHeight="30" maxWidth="225" minHeight="30" minWidth="225" mnemonicParsing="false" prefHeight="30.0" prefWidth="225" styleClass="textButton" text="Shoes" />
                 </HBox>
             </VBox>
-            <Label layoutX="680.0" layoutY="50.0" styleClass="importantText" text="HELP" />
+
+            <Label layoutX="660.0" layoutY="25.0" styleClass="importantText" text="HELP CENTER" />
+
+            <!-- Getting Started -->
+            <TitledPane expanded="false" layoutX="55.0" layoutY="80.0" maxWidth="440.0" prefWidth="440.0" styleClass="collapsibleContainer" text="Getting Started">
+                <content>
+                    <ScrollPane fitToWidth="true" prefHeight="750.0" hbarPolicy="NEVER"
+                                style="-fx-background: white; -fx-background-color: white; -fx-control-inner-background: white;">
+                        <content>
+                            <VBox spacing="8" style="-fx-padding: 12; -fx-background-color: white;">
+                                <Label prefWidth="400" wrapText="true" text="How to Create an Account?"
+                                       style="-fx-font-weight: bold; -fx-font-style: italic; -fx-font-size: 15px;" />
+                                <Label prefWidth="400" wrapText="true" text="Click SIGN UP in the top navigation bar or sidebar. Enter a unique username, a valid email address and a password of at least 8 characters. Click the Sign Up button to create your account. You will be redirected to the Sign In page once your account is created successfully." />
+                                <Separator visible="false" maxWidth="400"/>
+                                <Label prefWidth="400" wrapText="true" text="How to Sign In?"
+                                       style="-fx-font-weight: bold; -fx-font-style: italic; -fx-font-size: 15px;" />
+                                <Label prefWidth="400" wrapText="true" text="Click SIGN IN from the top navigation bar or sidebar. Enter your registered username and password, then click Sign In. You will be directed to your personal dashboard upon successful login." />
+                                <Separator visible="false" maxWidth="400"/>
+                                <Label prefWidth="400" wrapText="true" text="How to Top Up Balance?"
+                                       style="-fx-font-weight: bold; -fx-font-style: italic; -fx-font-size: 15px;" />
+                                <Label prefWidth="400" wrapText="true" text="After signing in, go to your profile menu and select View My Balance. Enter an amount between $5.00 and $10,000.00 and submit a top-up request. An administrator will review and approve your request, after which your balance will be updated." />
+                                <Separator visible="false" maxWidth="400"/>
+                                <Label prefWidth="400" wrapText="true" text="How to Sign Out?"
+                                       style="-fx-font-weight: bold; -fx-font-style: italic; -fx-font-size: 15px;" />
+                                <Label prefWidth="400" wrapText="true" text="Click LOG OUT from the left sidebar or select Log Out from the profile dropdown menu in the top right corner. You will be returned to the guest home page." />
+                            </VBox>
+                        </content>
+                    </ScrollPane>
+                </content>
+            </TitledPane>
+
+            <!-- Buying Guide -->
+            <TitledPane expanded="false" layoutX="520.0" layoutY="80.0" maxWidth="440.0" prefWidth="440.0" styleClass="collapsibleContainer" text="Buying Guide">
+                <content>
+                    <ScrollPane fitToWidth="true" prefHeight="750.0" hbarPolicy="NEVER"
+                                style="-fx-background: white; -fx-background-color: white; -fx-control-inner-background: white;">
+                        <content>
+                            <VBox spacing="8" style="-fx-padding: 12; -fx-background-color: white;">
+                                <Label prefWidth="400" wrapText="true" text="How to Browse Auctions?"
+                                       style="-fx-font-weight: bold; -fx-font-style: italic; -fx-font-size: 15px;" />
+                                <Label prefWidth="400" wrapText="true" text="Click AUCTION in the sidebar to view all active auction listings. Use the CATEGORY menu at the top to filter by product category such as Electronics, Technologies, Foods and Kitchen Tools, or Fashions. You can also use the search bar to find specific items." />
+                                <Separator visible="false" maxWidth="400"/>
+                                <Label prefWidth="400" wrapText="true" text="How to Place a Bid?"
+                                       style="-fx-font-weight: bold; -fx-font-style: italic; -fx-font-size: 15px;" />
+                                <Label prefWidth="400" wrapText="true" text="You must be signed in and have sufficient balance to place a bid. Open an active auction listing and enter a bid amount that exceeds the current highest bid by at least the minimum increment. Click Place Bid to confirm. Note: sellers cannot bid on their own listings." />
+                                <Separator visible="false" maxWidth="400"/>
+                                <Label prefWidth="400" wrapText="true" text="How to Win an Auction?"
+                                       style="-fx-font-weight: bold; -fx-font-style: italic; -fx-font-size: 15px;" />
+                                <Label prefWidth="400" wrapText="true" text="The user with the highest bid when the auction ends wins, provided the final bid meets the seller's reserve price. If no bids meet the reserve price, the auction ends as Unsold. Winning bidders are notified and payment is processed automatically." />
+                                <Separator visible="false" maxWidth="400"/>
+                                <Label prefWidth="400" wrapText="true" text="What is a Reserve Price?"
+                                       style="-fx-font-weight: bold; -fx-font-style: italic; -fx-font-size: 15px;" />
+                                <Label prefWidth="400" wrapText="true" text="A reserve price is the minimum amount the seller is willing to accept. It is set by the seller and is not visible to buyers. If the highest bid does not reach the reserve price by the end of the auction, the item will not be sold." />
+                                <Separator visible="false" maxWidth="400"/>
+                                <Label prefWidth="400" wrapText="true" text="How to Add to Watchlist?"
+                                       style="-fx-font-weight: bold; -fx-font-style: italic; -fx-font-size: 15px;" />
+                                <Label prefWidth="400" wrapText="true" text="When viewing an auction, click the Watchlist button to add it to your personal watchlist. You can view all watched items in your Inventory page. Sign in is required to use the watchlist feature." />
+                            </VBox>
+                        </content>
+                    </ScrollPane>
+                </content>
+            </TitledPane>
+
+            <!-- Account and Troubleshooting -->
+            <TitledPane expanded="false" layoutX="985.0" layoutY="80.0" maxWidth="440.0" prefWidth="440.0" styleClass="collapsibleContainer" text="Account and Troubleshooting">
+                <content>
+                    <ScrollPane fitToWidth="true" prefHeight="750.0" hbarPolicy="NEVER"
+                                style="-fx-background: white; -fx-background-color: white; -fx-control-inner-background: white;">
+                        <content>
+                            <VBox spacing="8" style="-fx-padding: 12; -fx-background-color: white;">
+                                <Label prefWidth="400" wrapText="true" text="Forgot Username?"
+                                       style="-fx-font-weight: bold; -fx-font-style: italic; -fx-font-size: 15px;" />
+                                <Label prefWidth="400" wrapText="true" text="On the Sign In page, click Forgot your username? Click here at the bottom. Enter your registered email address and your username will be sent to your email." />
+                                <Separator visible="false" maxWidth="400"/>
+                                <Label prefWidth="400" wrapText="true" text="Forgot Password?"
+                                       style="-fx-font-weight: bold; -fx-font-style: italic; -fx-font-size: 15px;" />
+                                <Label prefWidth="400" wrapText="true" text="On the Sign In page, click Forgot your password? Click here at the bottom. Enter your registered email address and follow the instructions sent to your email to reset your password." />
+                                <Separator visible="false" maxWidth="400"/>
+                                <Label prefWidth="400" wrapText="true" text="How to View Transaction History?"
+                                       style="-fx-font-weight: bold; -fx-font-style: italic; -fx-font-size: 15px;" />
+                                <Label prefWidth="400" wrapText="true" text="After signing in, click TRANSACTION HISTORY in the left sidebar. All your past purchases, sales and payments are displayed here with dates, amounts and status." />
+                                <Separator visible="false" maxWidth="400"/>
+                                <Label prefWidth="400" wrapText="true" text="Payment Issues?"
+                                       style="-fx-font-weight: bold; -fx-font-style: italic; -fx-font-size: 15px;" />
+                                <Label prefWidth="400" wrapText="true" text="If you experience payment issues, ensure your account balance is sufficient before placing a bid. Top-up requests must be approved by an administrator. If your approved top-up has not been reflected, please contact support." />
+                                <Separator visible="false" maxWidth="400"/>
+                                <Label prefWidth="400" wrapText="true" text="Contact Support?"
+                                       style="-fx-font-weight: bold; -fx-font-style: italic; -fx-font-size: 15px;" />
+                                <Label prefWidth="400" wrapText="true" text="For any issues not covered here, please contact our support team at support@bidblitz.com. Include your username and a clear description of the problem. Our team will respond within 24 hours." />
+                            </VBox>
+                        </content>
+                    </ScrollPane>
+                </content>
+            </TitledPane>
+
         </AnchorPane>
     </center>
     <stylesheets>
         <URL value="@../../../css/General.css" />
     </stylesheets>
 </BorderPane>
-

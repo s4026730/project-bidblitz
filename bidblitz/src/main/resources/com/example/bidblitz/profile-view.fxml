@@ -123,7 +123,70 @@
                     <Button fx:id="shoes" maxHeight="30" maxWidth="225" minHeight="30" minWidth="225" mnemonicParsing="false" prefHeight="30.0" prefWidth="225" styleClass="textButton" text="Shoes" />
                 </HBox>
             </VBox>
-            <Label layoutX="680.0" layoutY="25.0" styleClass="importantText" text="PROFILE" />
+
+            <!-- Profile Content -->
+            <Label layoutX="680.0" layoutY="25.0" styleClass="importantText" text="MY PROFILE" />
+
+            <!-- Avatar -->
+            <ImageView fx:id="profileAvatar" fitHeight="120.0" fitWidth="120.0" layoutX="200.0" layoutY="80.0" preserveRatio="false">
+                <image>
+                    <Image url="@../../../image/default-avatar.png" />
+                </image>
+            </ImageView>
+
+            <!-- Profile Info Card -->
+            <VBox layoutX="370.0" layoutY="80.0" spacing="20" style="-fx-background-color: white; -fx-padding: 30; -fx-background-radius: 10;">
+
+                <!-- Full Name -->
+                <HBox spacing="20" alignment="CENTER_LEFT">
+                    <Label text="Full Name:" style="-fx-font-weight: bold; -fx-font-size: 14px; -fx-min-width: 150;" />
+                    <Label fx:id="profileFullName" text="-" style="-fx-font-size: 14px;" />
+                </HBox>
+
+                <!-- Username -->
+                <HBox spacing="20" alignment="CENTER_LEFT">
+                    <Label text="Username:" style="-fx-font-weight: bold; -fx-font-size: 14px; -fx-min-width: 150;" />
+                    <Label fx:id="profileUsername" text="-" style="-fx-font-size: 14px;" />
+                </HBox>
+
+                <!-- Email -->
+                <HBox spacing="20" alignment="CENTER_LEFT">
+                    <Label text="Email:" style="-fx-font-weight: bold; -fx-font-size: 14px; -fx-min-width: 150;" />
+                    <Label fx:id="profileEmail" text="-" style="-fx-font-size: 14px;" />
+                </HBox>
+
+                <!-- Phone -->
+                <HBox spacing="20" alignment="CENTER_LEFT">
+                    <Label text="Phone:" style="-fx-font-weight: bold; -fx-font-size: 14px; -fx-min-width: 150;" />
+                    <Label fx:id="profilePhone" text="-" style="-fx-font-size: 14px;" />
+                </HBox>
+
+                <!-- Date of Birth -->
+                <HBox spacing="20" alignment="CENTER_LEFT">
+                    <Label text="Date of Birth:" style="-fx-font-weight: bold; -fx-font-size: 14px; -fx-min-width: 150;" />
+                    <Label fx:id="profileDob" text="-" style="-fx-font-size: 14px;" />
+                </HBox>
+
+                <!-- Role -->
+                <HBox spacing="20" alignment="CENTER_LEFT">
+                    <Label text="Role:" style="-fx-font-weight: bold; -fx-font-size: 14px; -fx-min-width: 150;" />
+                    <Label fx:id="profileRole" text="-" style="-fx-font-size: 14px;" />
+                </HBox>
+
+                <!-- Balance -->
+                <HBox spacing="20" alignment="CENTER_LEFT">
+                    <Label text="Account Balance:" style="-fx-font-weight: bold; -fx-font-size: 14px; -fx-min-width: 150;" />
+                    <Label fx:id="profileBalanceLabel" text="-" style="-fx-font-size: 14px; -fx-text-fill: #2e7d32;" />
+                </HBox>
+
+                <!-- Rating -->
+                <HBox spacing="20" alignment="CENTER_LEFT">
+                    <Label text="Rating:" style="-fx-font-weight: bold; -fx-font-size: 14px; -fx-min-width: 150;" />
+                    <Label fx:id="profileRating" text="-" style="-fx-font-size: 14px;" />
+                </HBox>
+
+            </VBox>
+
         </AnchorPane>
     </center>
     <stylesheets>
