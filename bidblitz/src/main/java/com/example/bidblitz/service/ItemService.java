@@ -27,10 +27,11 @@ public class ItemService {
             );
         }
 
-        // Reserve price cannot be negative
-        if(item.getReservePrice() < 0){
+        // Reserve price must be >= starting price
+        if(item.getReservePrice()
+                < item.getStartingPrice()){
             throw new IllegalArgumentException(
-                    "Invalid reserve price"
+                    "Reserve price cannot be lower than starting price"
             );
         }
 
@@ -85,5 +86,57 @@ public class ItemService {
                 "Item added successfully: "
                         + item.getTitle()
         );
+    }
+
+    public void updateItem(Item item){
+        validateItem(item);
+        System.out.println(
+                "Item updated successfully: "
+                        + item.getTitle()
+        );
+    }
+
+    public void deleteItem(Item item){
+        if(item == null){
+            throw new IllegalArgumentException(
+                    "Item cannot be null"
+            );
+        }
+        System.out.println(
+                "Item deleted successfully: "
+                        + item.getTitle()
+        );
+    }
+
+    public Item getItemById(int itemId){
+        if(itemId <= 0){
+            throw new IllegalArgumentException(
+                    "Invalid item ID"
+            );
+        }
+        return null;
+    }
+
+    public boolean searchByTitle(
+            Item item,
+            String keyword){
+        if(item == null || keyword == null){
+            return false;
+        }
+        return item.getTitle()
+                .toLowerCase()
+                .contains(keyword.toLowerCase());
+    }
+
+    public boolean filterByCategory(
+            Item item,
+            String categoryName){
+        if(item == null ||
+                categoryName == null){
+            return false;
+        }
+        return item.getCategory()
+                .getName()
+                .equalsIgnoreCase(categoryName);
     }
 }

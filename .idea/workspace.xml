@@ -4,16 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="02ae6a1a-35c8-472c-8de6-6c67efd03109" name="Changes" comment="Log in function and edit password field">
-      <change afterPath="$PROJECT_DIR$/bidblitz/src/main/java/com/example/bidblitz/model/ItemCondition.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bidblitz/src/main/java/com/example/bidblitz/service/ItemService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bidblitz/src/test/java/com/example/bidblitz/ItemServiceTest.java" afterDir="false" />
+    <list default="true" id="02ae6a1a-35c8-472c-8de6-6c67efd03109" name="Changes" comment="test: add user validation test cases">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bidblitz/src/main/java/com/example/bidblitz/model/Item.java" beforeDir="false" afterPath="$PROJECT_DIR$/bidblitz/src/main/java/com/example/bidblitz/model/Item.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bidblitz/src/main/java/com/example/bidblitz/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/bidblitz/src/main/java/com/example/bidblitz/model/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bidblitz/src/main/java/com/example/bidblitz/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/bidblitz/src/main/java/com/example/bidblitz/service/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bidblitz/src/main/java/module-info.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bidblitz/src/test/java/com/example/bidblitz/UserServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/bidblitz/src/test/java/com/example/bidblitz/UserServiceTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -391,7 +383,15 @@
       <option name="project" value="LOCAL" />
       <updated>1779202699376</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="test: add user validation test cases">
+      <option name="closed" value="true" />
+      <created>1779269183293</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1779269183293</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -444,6 +444,7 @@
     <MESSAGE value="Fixing module-info to work with eclipseLink" />
     <MESSAGE value="Fixed UserServiceTest. Edit module-info.java and SampleDataLoader to fit with main branch. Everything worked correctly, data is correct on the neon database tables" />
     <MESSAGE value="Log in function and edit password field" />
-    <option name="LAST_COMMIT_MESSAGE" value="Log in function and edit password field" />
+    <MESSAGE value="test: add user validation test cases" />
+    <option name="LAST_COMMIT_MESSAGE" value="test: add user validation test cases" />
   </component>
 </project>
