@@ -14,6 +14,9 @@
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Text?>
+<?import javafx.scene.control.PasswordField?>
+
+
 
 <?import javafx.scene.layout.HBox?>
 <BorderPane fx:id="rootPane" prefHeight="1000" prefWidth="1710" styleClass="lightPageLayout" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.bidblitz.MainController">
@@ -97,7 +100,9 @@
             <Label layoutX="400.0" layoutY="400.0" styleClass="importantText" text="Password" />
             <TextField fx:id="signupUsername" layoutX="400.0" layoutY="160.0" styleClass="signinTextfield" />
             <TextField fx:id="signupEmail" layoutX="400.0" layoutY="310.0" styleClass="signinTextfield" />
-            <Button fx:id="signupButton" layoutX="400.0" layoutY="570.0" mnemonicParsing="false" prefWidth="600" styleClass="submitButton" text="Sign Up" />
+            <Label fx:id="signupErrorLabel" layoutX="400.0" layoutY="530.0" styleClass="errorText" textFill="red" visible="false" />
+            <PasswordField fx:id="signupPassword" layoutX="400.0" layoutY="460.0" styleClass="signinTextfield" />
+            <Button fx:id="signupButton" layoutX="400.0" layoutY="570.0" mnemonicParsing="false" onAction="#handleSignUp" prefWidth="600" styleClass="submitButton" text="Sign Up" />
             <Text layoutX="670.0" layoutY="680.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="OR" text="OR" />
             <Button fx:id="signupGoogleButton" layoutX="400.0" layoutY="700.0" prefWidth="600" styleClass="actionButton" text="Sign Up With Google" textAlignment="CENTER">
                 <graphic>
@@ -107,7 +112,7 @@
                 </graphic>
             </Button>
             <Hyperlink layoutX="550.0" layoutY="800.0" onAction="#switchToSignIn" styleClass="actionHyperLink" text="Already have an account? Click here" />
-         <TextField fx:id="signupPassword" layoutX="400.0" layoutY="460.0" styleClass="signinTextfield" />
+
         </AnchorPane>
     </center>
     <stylesheets>

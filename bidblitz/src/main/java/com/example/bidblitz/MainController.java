@@ -4,8 +4,6 @@ import java.util.Locale;
 import java.io.IOException;
 import java.math.BigDecimal;
 import java.text.NumberFormat;
-
-import com.example.bidblitz.auction.Auction;
 import javafx.animation.FadeTransition;
 import javafx.animation.KeyFrame;
 import javafx.animation.Timeline;
@@ -25,6 +23,10 @@ import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
 import javafx.util.Duration;
+import com.example.bidblitz.model.User;
+import com.example.bidblitz.service.UserService;
+import java.math.BigDecimal;
+import javafx.scene.control.PasswordField;
 
 public class MainController {
     private Parent root;
@@ -54,61 +56,21 @@ public class MainController {
     @FXML
     private Label accountBalance;
     @FXML
-    private Label titleLabel;
+    private TextField signinUsername;
     @FXML
-    private Label sellerLabel;
+    private PasswordField signinPassword;
     @FXML
-    private Label categoryLabel;
+    private Button signinButton;
     @FXML
-    private Label priceLabel;
+    private TextField signupUsername;
     @FXML
-    private Label statusLabel;
+    private TextField signupEmail;
     @FXML
-    private Label highestBidLabel;
+    private PasswordField signupPassword;
     @FXML
-    private Label descriptionLabel;
-
-    public void displayAuctionDetails(Auction auction){
-        if(auction == null){
-            return;
-        }
-
-        titleLabel.setText(
-                auction.getItem().getTitle()
-        );
-        sellerLabel.setText(
-                auction.getItem()
-                        .getSeller()
-                        .getFullName()
-        );
-        categoryLabel.setText(
-                auction.getItem()
-                        .getCategory()
-                        .getName()
-        );
-        priceLabel.setText(
-                "$" + auction.getItem()
-                        .getStartingPrice()
-        );
-        statusLabel.setText(
-                auction.getStatus().toString()
-        );
-        descriptionLabel.setText(
-                auction.getItem()
-                        .getDescription()
-        );
-
-        if(auction.getHighestBid() != null){
-            highestBidLabel.setText(
-                    "$" + auction.getHighestBid()
-                            .getAmount()
-            );
-        } else {
-            highestBidLabel.setText(
-                    "No bids yet"
-            );
-        }
-    }
+    private Button signupButton;
+    @FXML
+    private Label signupErrorLabel;
 
     // Guest Pages Navigation & Other Features Codes:
     @FXML
@@ -284,10 +246,6 @@ public class MainController {
         try{
             FXMLLoader fxmlLoader = new FXMLLoader(Main.class.getResource(fxmlFile));
             root = fxmlLoader.load();
-            MainController controller = fxmlLoader.getController();
-            controller.displayAuctionDetails(
-                    DummyData.createTestAuction()
-            );
             stage = (Stage) rootPane.getScene().getWindow();
             demonstratedScene = new Scene(root, 1710, 1000);
             demonstratedScene.getStylesheets().add(getClass().getResource("/css/General.css").toExternalForm());
@@ -523,6 +481,118 @@ public class MainController {
         categoryPanel.setManaged(!isVisible);
         if(!isVisible){
             categoryPanel.toFront();
+        }
+    }
+    @FXML
+    protected void handleSignIn() throws IOException {
+        String username = signinUsername.getText().trim();
+        String password = signinPassword.getText().trim();
+
+        if (username.isEmpty() || password.isEmpty()) {
+            System.out.println("Please enter username and password.");
+            return;
+        }
+
+        UserService userService = new UserService();
+        User user = userService.login(username, password);
+
+        if (user == null) {
+            System.out.println("Invalid username or password.");
+            signinUsername.setStyle("-fx-border-color: red;");
+            signinPassword.setStyle("-fx-border-color: red;");
+            return;
+        }
+
+        // convert User to UserEntity and store in Session
+        UserEntity userEntity = new UserEntity(
+                user.getUsername(),
+                BigDecimal.valueOf(user.getAccountBalance()),
+                "/image/default-avatar.png"
+        );
+        Session.setCurrentUser(userEntity);
+
+        // load user home and set account info
+        fxmlFile = "user-main-view.fxml";
+        FXMLLoader fxmlLoader = new FXMLLoader(Main.class.getResource(fxmlFile));
+        root = fxmlLoader.load();
+        MainController controller = fxmlLoader.getController();
+        controller.slideshowSystem();
+        controller.setAccountInfo();
+        stage = (Stage) rootPane.getScene().getWindow();
+        demonstratedScene = new Scene(root, 1710, 1000);
+        demonstratedScene.getStylesheets().add(getClass().getResource("/css/General.css").toExternalForm());
+        stage.setScene(demonstratedScene);
+        stage.show();
+    }
+    @FXML
+    protected void handleLogOut() throws IOException {
+        Session.setCurrentUser(null);
+        switchToGuestHome();
+    }
+    @FXML
+    protected void handleSignUp() throws IOException {
+        String username = signupUsername.getText().trim();
+        String email = signupEmail.getText().trim();
+        String password = signupPassword.getText().trim();
+
+        // reset styles
+        signupUsername.setStyle("");
+        signupEmail.setStyle("");
+        signupErrorLabel.setVisible(false);
+
+        if (username.isEmpty() || email.isEmpty() || password.isEmpty()) {
+            signupErrorLabel.setText("Please fill in all fields.");
+            signupErrorLabel.setVisible(true);
+            return;
+        }
+
+        if (password.length() < 8) {
+            signupPassword.setStyle("-fx-border-color: red;");
+            signupErrorLabel.setText("Password must be at least 8 characters.");
+            signupErrorLabel.setVisible(true);
+            return;
+        }
+        if (!email.contains("@") || !email.contains(".")) {
+            signupEmail.setStyle("-fx-border-color: red;");
+            signupErrorLabel.setText("Invalid email format. Please use example@domain.com");
+            signupErrorLabel.setVisible(true);
+            return;
+        }
+
+        UserService userService = new UserService();
+
+        if (userService.isUsernameTaken(username)) {
+            signupUsername.setStyle("-fx-border-color: red;");
+            signupErrorLabel.setText("Username already taken. Please choose another.");
+            signupErrorLabel.setVisible(true);
+            return;
+        }
+
+        if (userService.isEmailTaken(email)) {
+            signupEmail.setStyle("-fx-border-color: red;");
+            signupErrorLabel.setText("Email already in use. Please use another email.");
+            signupErrorLabel.setVisible(true);
+            return;
+        }
+
+        User newUser = new User(
+                username,
+                java.time.LocalDateTime.now(),
+                email,
+                "",
+                username,
+                password,
+                User.ROLE_USER,
+                0.0
+        );
+
+        boolean added = userService.addUser(newUser);
+        if (added) {
+            System.out.println("Account created successfully!");
+            switchToSignIn();
+        } else {
+            signupErrorLabel.setText("Failed to create account. Please try again.");
+            signupErrorLabel.setVisible(true);
         }
     }
 

@@ -58,7 +58,7 @@
                     <MenuItem onAction="#switchToInventory" text="Inventory" />
                     <MenuItem onAction="#switchToSettings" text="Settings" />
                     <SeparatorMenuItem />
-                    <MenuItem text="Log Out" />
+                    <MenuItem text="Log Out" onAction="#handleLogOut" />
                 </items>
             </MenuButton>
         </AnchorPane>
@@ -74,7 +74,7 @@
                     <Button alignment="CENTER" layoutY="400.0" maxHeight="100.0" maxWidth="200.0" mnemonicParsing="false" onAction="#switchToUserHelp" prefHeight="100.0" prefWidth="200.0" styleClass="navigationButton" text="HELP" textAlignment="CENTER" />
                     <Button alignment="CENTER" layoutY="500.0" maxHeight="100.0" maxWidth="200.0" mnemonicParsing="false" onAction="#switchToUserAboutUs" prefHeight="100.0" prefWidth="200.0" styleClass="navigationButton" text="ABOUT US" textAlignment="CENTER" />
                     <Button alignment="CENTER" layoutY="600.0" maxHeight="100.0" maxWidth="200.0" mnemonicParsing="false" onAction="#switchToSettings" prefHeight="100.0" prefWidth="200.0" styleClass="navigationButton" text="SETTINGS" textAlignment="CENTER" />
-                    <Button alignment="CENTER" layoutY="700.0" maxHeight="100.0" maxWidth="200.0" mnemonicParsing="false" prefHeight="100.0" prefWidth="200.0" styleClass="navigationButton" text="LOG OUT" textAlignment="CENTER" />
+                    <Button alignment="CENTER" layoutY="700.0" maxHeight="100.0" maxWidth="200.0" mnemonicParsing="false" onAction="#handleLogOut" prefHeight="100.0" prefWidth="200.0" styleClass="navigationButton" text="LOG OUT" textAlignment="CENTER" />
                 </children>
             </AnchorPane>
         </VBox>
