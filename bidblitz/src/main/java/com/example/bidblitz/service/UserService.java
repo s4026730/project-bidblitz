@@ -39,15 +39,10 @@ public class UserService {
     }
 
     public boolean addUser(User user) {
-        if (user == null) {
+        if (!validateUserDetails(user)) {
             return false;
         }
-        if (user.getUsername() == null || user.getUsername().isEmpty()) {
-            return false;
-        }
-        if (user.getEmail() == null || user.getEmail().isEmpty()) {
-            return false;
-        }
+
         if (userRepository.isUsernameTaken(user.getUsername())) {
             return false;
         }
@@ -113,5 +108,42 @@ public class UserService {
 
     public boolean isUsernameTaken(String username) {
         return userRepository.isUsernameTaken(username);
+    }
+
+    public boolean validateUserDetails(User user){
+        // User object cannot be null
+        if(user == null){
+            return false;
+        }
+
+        // Full name cannot be empty
+        if(user.getFullName() == null ||
+                user.getFullName().isBlank()){
+            return false;
+        }
+
+        // Username cannot be empty
+        if(user.getUsername() == null ||
+                user.getUsername().isBlank()){
+            return false;
+        }
+
+        // Email cannot be empty
+        if(user.getEmail() == null ||
+                user.getEmail().isBlank()){
+            return false;
+        }
+
+        // Email must contain '@'
+        if(!user.getEmail().contains("@")){
+            return false;
+        }
+
+        // Phone number cannot be empty
+        if(user.getPhone() == null ||
+                user.getPhone().isBlank()){
+            return false;
+        }
+        return true;
     }
 }

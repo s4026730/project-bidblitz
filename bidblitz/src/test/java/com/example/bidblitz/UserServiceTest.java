@@ -161,4 +161,55 @@ public class UserServiceTest {
         User deleted = userService.getUserByUsername(testUser.getUsername());
         assertNull(deleted, "Should return null after deletion");
     }
+
+    @Test
+    @Order(16)
+    void testInvalidEmail() {
+        User invalidUser = new User(
+                "Invalid Email",
+                LocalDateTime.of(2000,1,1,0,0),
+                "invalidemail",
+                "0901234567",
+                "invalid_" + System.currentTimeMillis(),
+                "password123",
+                User.ROLE_USER,
+                100.0
+        );
+        boolean result = userService.addUser(invalidUser);
+        assertFalse(result, "Should reject invalid email format");
+    }
+
+    @Test
+    @Order(17)
+    void testEmptyUsername() {
+        User invalidUser = new User(
+                "Empty Username",
+                LocalDateTime.of(2000,1,1,0,0),
+                "empty@email.com",
+                "0901234567",
+                "",
+                "password123",
+                User.ROLE_USER,
+                100.0
+        );
+        boolean result = userService.addUser(invalidUser);
+        assertFalse(result, "Should reject empty username");
+    }
+
+    @Test
+    @Order(18)
+    void testEmptyFullName() {
+        User invalidUser = new User(
+                "",
+                LocalDateTime.of(2000,1,1,0,0),
+                "fullname@email.com",
+                "0901234567",
+                "fullname_" + System.currentTimeMillis(),
+                "password123",
+                User.ROLE_USER,
+                100.0
+        );
+        boolean result = userService.addUser(invalidUser);
+        assertFalse(result, "Should reject empty full name");
+    }
 }
