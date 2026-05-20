@@ -181,6 +181,16 @@ public class MainController {
     @FXML private Label categoryStatusLabel;
     @FXML private Label paymentStatusLabel;
 
+    //settings
+    @FXML private TextField settingsFullName;
+    @FXML private TextField settingsEmail;
+    @FXML private TextField settingsPhone;
+    @FXML private TextField settingsDob;
+    @FXML private PasswordField settingsCurrentPassword;
+    @FXML private PasswordField settingsNewPassword;
+    @FXML private PasswordField settingsConfirmPassword;
+    @FXML private Label settingsStatusLabel;
+
     // Guest Pages Navigation & Other Features Codes:
     @FXML
     protected void switchToGuestHome() throws IOException{
@@ -477,22 +487,23 @@ public class MainController {
     }//[1] [2] [3]
 
     @FXML
-    protected void switchToSettings () throws IOException{
-        fxmlFile ="settings-view.fxml";
-        try{
+    protected void switchToSettings() throws IOException {
+        fxmlFile = "settings-view.fxml";
+        try {
             FXMLLoader fxmlLoader = new FXMLLoader(Main.class.getResource(fxmlFile));
             root = fxmlLoader.load();
+            MainController controller = fxmlLoader.getController();
+            controller.setAccountInfo();
+            controller.loadSettingsData();
             stage = (Stage) rootPane.getScene().getWindow();
             demonstratedScene = new Scene(root, 1710, 1000);
             demonstratedScene.getStylesheets().add(getClass().getResource("/css/General.css").toExternalForm());
             stage.setScene(demonstratedScene);
             stage.show();
-        }
-        catch(IOException e){
-            System.err.println("Could not find "+ fxmlFile +". Check your folder structure!");
+        } catch (IOException e) {
             e.printStackTrace();
         }
-    }//[1] [2] [3]
+    }
 
     // Auction Functionality Codes (WIP):
     protected void handleAuctionSelection (ActionEvent event) throws IOException{
@@ -1182,5 +1193,125 @@ public class MainController {
         paymentStatusLabel.setText(result ? "Payment marked as FAILED." : "Failed to update.");
         loadAdminPayments();
     }
+    public void loadSettingsData() {
+        UserEntity currentUser = Session.getCurrentUser();
+        if (currentUser == null) return;
+        UserService userService = new UserService();
+        User user = userService.getUserByUsername(currentUser.getUsername());
+        if (user == null) return;
+
+        if (settingsFullName != null) settingsFullName.setText(user.getFullName());
+        if (settingsEmail != null) settingsEmail.setText(user.getEmail());
+        if (settingsPhone != null) settingsPhone.setText(user.getPhone() != null ? user.getPhone() : "");
+        if (settingsDob != null) settingsDob.setText(
+                user.getDateOfBirth() != null ? user.getDateOfBirth().toLocalDate().toString() : "");
+    }
+    @FXML
+    protected void handleSaveSettings() {
+        UserEntity currentUser = Session.getCurrentUser();
+        if (currentUser == null) return;
+
+        UserService userService = new UserService();
+        User user = userService.getUserByUsername(currentUser.getUsername());
+        if (user == null) return;
+
+        // validate current password
+        String currentPwd = settingsCurrentPassword.getText().trim();
+        if (currentPwd.isEmpty()) {
+            settingsStatusLabel.setText("Please enter your current password to save changes.");
+            settingsStatusLabel.setStyle("-fx-text-fill: red;");
+            return;
+        }
+        if (!user.getPassword().equals(currentPwd)) {
+            settingsStatusLabel.setText("Current password is incorrect.");
+            settingsStatusLabel.setStyle("-fx-text-fill: red;");
+            return;
+        }
+
+        // update fields
+        String fullName = settingsFullName.getText().trim();
+        String email = settingsEmail.getText().trim();
+        String phone = settingsPhone.getText().trim();
+        String dob = settingsDob.getText().trim();
+        String newPwd = settingsNewPassword.getText().trim();
+        String confirmPwd = settingsConfirmPassword.getText().trim();
+
+        if (!fullName.isEmpty()) user.setFullName(fullName);
+
+        if (!email.isEmpty() && !email.equals(user.getEmail())) {
+            if (!email.contains("@") || !email.contains(".")) {
+                settingsStatusLabel.setText("Invalid email format.");
+                settingsStatusLabel.setStyle("-fx-text-fill: red;");
+                return;
+            }
+            if (userService.isEmailTaken(email)) {
+                settingsStatusLabel.setText("Email already in use.");
+                settingsStatusLabel.setStyle("-fx-text-fill: red;");
+                return;
+            }
+            user.setEmail(email);
+        }
+
+        if (!phone.isEmpty()) user.setPhone(phone);
+
+        if (!dob.isEmpty()) {
+            try {
+                user.setDateOfBirth(java.time.LocalDate.parse(dob).atStartOfDay());
+            } catch (Exception e) {
+                settingsStatusLabel.setText("Invalid date format. Use YYYY-MM-DD.");
+                settingsStatusLabel.setStyle("-fx-text-fill: red;");
+                return;
+            }
+        }
+
+        if (!newPwd.isEmpty()) {
+            if (newPwd.length() < 8) {
+                settingsStatusLabel.setText("New password must be at least 8 characters.");
+                settingsStatusLabel.setStyle("-fx-text-fill: red;");
+                return;
+            }
+            if (!newPwd.equals(confirmPwd)) {
+                settingsStatusLabel.setText("New passwords do not match.");
+                settingsStatusLabel.setStyle("-fx-text-fill: red;");
+                return;
+            }
+            user.setPassword(newPwd);
+        }
+
+        boolean result = userService.updateUser(user);
+        if (result) {
+            settingsStatusLabel.setText("Settings saved successfully!");
+            settingsStatusLabel.setStyle("-fx-text-fill: green;");
+            settingsCurrentPassword.clear();
+            settingsNewPassword.clear();
+            settingsConfirmPassword.clear();
+        } else {
+            settingsStatusLabel.setText("Failed to save settings.");
+            settingsStatusLabel.setStyle("-fx-text-fill: red;");
+        }
+    }
+
+    @FXML
+    protected void handleDeleteAccount() {
+        UserEntity currentUser = Session.getCurrentUser();
+        if (currentUser == null) return;
+        UserService userService = new UserService();
+        User user = userService.getUserByUsername(currentUser.getUsername());
+        if (user == null) return;
+        boolean result = userService.deleteUser(user.getId());
+        if (result) {
+            Session.setCurrentUser(null);
+            try {
+                switchToGuestHome();
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        } else {
+            settingsStatusLabel.setText("Failed to delete account.");
+            settingsStatusLabel.setStyle("-fx-text-fill: red;");
+        }
+    }
+
+
 }
 
