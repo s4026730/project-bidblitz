@@ -5,16 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="02ae6a1a-35c8-472c-8de6-6c67efd03109" name="Changes" comment="Log in function and edit password field">
+      <change afterPath="$PROJECT_DIR$/bidblitz/src/main/java/com/example/bidblitz/model/ItemCondition.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bidblitz/src/main/java/com/example/bidblitz/service/ItemService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bidblitz/src/test/java/com/example/bidblitz/ItemServiceTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bidblitz/src/main/java/com/example/bidblitz/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/bidblitz/src/main/java/com/example/bidblitz/MainController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bidblitz/src/main/resources/com/example/bidblitz/profile-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/bidblitz/src/main/resources/com/example/bidblitz/profile-view.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bidblitz/src/main/resources/com/example/bidblitz/settings-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/bidblitz/src/main/resources/com/example/bidblitz/settings-view.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bidblitz/src/main/resources/com/example/bidblitz/sign-up-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/bidblitz/src/main/resources/com/example/bidblitz/sign-up-view.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bidblitz/src/main/resources/com/example/bidblitz/transaction-history-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/bidblitz/src/main/resources/com/example/bidblitz/transaction-history-view.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bidblitz/src/main/resources/com/example/bidblitz/user-about-us-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/bidblitz/src/main/resources/com/example/bidblitz/user-about-us-view.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bidblitz/src/main/resources/com/example/bidblitz/user-auction-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/bidblitz/src/main/resources/com/example/bidblitz/user-auction-view.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bidblitz/src/main/resources/com/example/bidblitz/user-help-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/bidblitz/src/main/resources/com/example/bidblitz/user-help-view.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bidblitz/src/main/resources/com/example/bidblitz/user-main-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/bidblitz/src/main/resources/com/example/bidblitz/user-main-view.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bidblitz/src/main/java/com/example/bidblitz/model/Item.java" beforeDir="false" afterPath="$PROJECT_DIR$/bidblitz/src/main/java/com/example/bidblitz/model/Item.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bidblitz/src/main/java/com/example/bidblitz/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/bidblitz/src/main/java/com/example/bidblitz/model/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bidblitz/src/main/java/com/example/bidblitz/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/bidblitz/src/main/java/com/example/bidblitz/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bidblitz/src/main/java/module-info.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bidblitz/src/test/java/com/example/bidblitz/UserServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/bidblitz/src/test/java/com/example/bidblitz/UserServiceTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -84,7 +83,8 @@
     "RunOnceActivity.git.unshallow": "true",
     "RunOnceActivity.typescript.service.memoryLimit.init": "true",
     "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
-    "git-widget-placeholder": "Khoa",
+    "dart.analysis.tool.window.visible": "false",
+    "git-widget-placeholder": "Huy",
     "ignore.virus.scanning.warn.message": "true",
     "junie.onboarding.icon.badge.shown": "true",
     "kotlin-language-version-configured": "true",
@@ -113,6 +113,19 @@
   <component name="RunManager" selected="Application.Launcher">
     <configuration name="Launcher" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.example.bidblitz.Launcher" />
+      <module name="bidblitz" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.bidblitz.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.example.bidblitz.Main" />
       <module name="bidblitz" />
       <extension name="coverage">
         <pattern>
@@ -168,6 +181,7 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.Launcher" />
+        <item itemvalue="Application.Main" />
         <item itemvalue="JUnit.UserServiceTest" />
         <item itemvalue="JUnit.AuctionServiceTest and 1 more" />
         <item itemvalue="JUnit.AuctionServiceTest" />

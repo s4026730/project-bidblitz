@@ -98,6 +98,16 @@ public class Item implements Serializable {
         System.out.println("Seller       : " + (seller != null ? seller.getUsername() : "N/A"));
     }
 
+    public boolean isActive() {
+        // Current system time
+        LocalDateTime now = LocalDateTime.now();
+
+        // Return true if current time
+        // is between listing start and end
+        return now.isAfter(listingStart)
+                && now.isBefore(listingEnd);
+    }
+
     @Override
     public String toString() {
         return "Item{"
